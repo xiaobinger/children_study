@@ -49,7 +49,7 @@ window.CS = window.CS || {};
     const box = document.getElementById('cartoonWatch');
     if (state.cartoonMins <= 0) {
       box.innerHTML =
-        '<div class="hint-text">⏳ 暂无动画时间<br>学习赢星星，兑换后这里会开启动画小剧场！</div>';
+        '<div class="hint-text">⏳ 暂无动画时间<br>学习赢星星，兑换后这里会开启动画小剧场！<br>家长也可先去「推荐动画库」选好动画备用哦。</div>';
       return;
     }
 
@@ -62,18 +62,20 @@ window.CS = window.CS || {};
     ).join('');
 
     const custom = state.cartoons.map((c) =>
-      '<button class="list-card" data-url="' + esc(c.url) + '">' +
+      '<div class="list-card" style="cursor:default">' +
       '<span class="lc-icon">' + esc(c.emoji || '📺') + '</span>' +
       '<span class="lc-body"><span class="lc-title">' + esc(c.title) + '</span>' +
-      '<span class="lc-sub">家长添加 · 点击观看</span></span>' +
-      '<span class="lc-arrow">↗</span></button>'
+      '<span class="lc-sub" style="word-break:break-all">' + esc(c.url) + '</span></span>' +
+      '<button class="icon-btn" data-url-open="' + esc(c.url) + '" title="打开" style="width:2rem;height:2rem;font-size:1rem">↗</button></div>'
     ).join('');
 
+    const customCount = state.cartoons.length;
     box.innerHTML =
       '<div class="watch-banner" id="watchBanner">⏱ 剩余动画时间：<b id="watchTime"></b></div>' +
       '<div class="section-title">🎭 动画小剧场</div>' +
       '<div class="card-list">' + builtin + '</div>' +
-      (custom ? '<div class="section-title">📺 家长添加的动画</div><div class="card-list">' + custom + '</div>' : '');
+      (custom ? '<div class="section-title">📺 我的动画（' + customCount + ' 部）</div><div class="card-list">' + custom + '</div>' : '') +
+      '<p class="hint-text">想要更多动画？<button class="tab-btn" id="goRecs" style="margin-left:.4em">去推荐动画库 👉</button></p>';
 
     updateWatchTime();
     box.querySelectorAll('[data-scene]').forEach((btn) => {
@@ -82,12 +84,15 @@ window.CS = window.CS || {};
         openTheater(btn.getAttribute('data-scene'), btn.getAttribute('data-title'));
       });
     });
-    box.querySelectorAll('[data-url]').forEach((btn) => {
-      btn.addEventListener('click', () => {
+    box.querySelectorAll('[data-url-open]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
         CS.sfx.tap();
-        window.open(btn.getAttribute('data-url'), '_blank', 'noopener');
+        window.open(btn.getAttribute('data-url-open'), '_blank', 'noopener');
       });
     });
+    const goRecs = document.getElementById('goRecs');
+    if (goRecs) goRecs.onclick = () => { CS.sfx.tap(); renderRecs(document.getElementById('view')); };
 
     // 每秒倒计时（页面可见时才计时）
     if (tickTimer) clearInterval(tickTimer);
@@ -100,7 +105,7 @@ window.CS = window.CS || {};
       }
       if (!document.hidden) {
         CS.reward.tickMins(1 / 60);
-        if (Math.random() < 0.1) CS.reward.saveMins(); // 时常持久化
+        if (Math.random() < 0.1) CS.reward.saveMins();
         updateWatchTime();
         if (state.cartoonMins <= 0) {
           clearInterval(tickTimer); tickTimer = null;
@@ -109,6 +114,92 @@ window.CS = window.CS || {};
         }
       }
     }, 1000);
+  }
+
+  /* ---------- 推荐动画库 + 全网搜索 ---------- */
+  function renderRecs(view) {
+    if (tickTimer) { clearInterval(tickTimer); tickTimer = null; }
+    const recs = CS.DATA.cartoonRecs || [];
+    const addedTitles = (state.cartoons || []).map((c) => c.title);
+
+    view.innerHTML =
+      '<div class="back-row"><h2 class="page-title" style="margin:0"><span class="pt-icon">📚</span>推荐动画库</h2>' +
+      '<button class="btn btn-ghost" id="recBack">‹ 返回</button></div>' +
+      '<p class="hint-text">精选适合小朋友的热门动画，一键添加到我的动画库；<br>也可全网搜索，找到喜欢的视频后手动录入链接。</p>' +
+
+      '<div class="quiz-area">' +
+      '<div class="quiz-question"><span class="q-emoji">🔍</span>全网搜索动画</div>' +
+      '<div class="form-row"><label for="searchKw">输入想看的动画名称</label>' +
+      '<input class="form-input" id="searchKw" placeholder="比如：小猪佩奇、汪汪队、恐龙动画..."></div>' +
+      '<div class="play-controls">' +
+      '<button class="btn btn-primary" id="searchBili">🔍 去哔哩哔哩搜索</button>' +
+      '<button class="btn btn-ghost" id="searchYt">📺 去 YouTube 搜索</button></div>' +
+      '<p class="hint-text">打开搜索页后复制视频链接，粘贴到下方录入</p>' +
+      '<div class="form-row"><label for="searchUrl">粘贴视频链接（https:// 开头）</label>' +
+      '<input class="form-input" id="searchUrl" placeholder="https://www.bilibili.com/video/..."></div>' +
+      '<div class="form-row"><label for="searchTitle">给它起个名字</label>' +
+      '<input class="form-input" id="searchTitle" maxlength="20" placeholder="比如：小猪佩奇 第一季"></div>' +
+      '<button class="btn btn-warn" id="searchAdd">＋ 添加到我的动画库</button></div>' +
+
+      '<div class="section-title">🌟 热门推荐（' + recs.length + ' 部，点一键添加）</div>' +
+      '<div class="card-list">' + recs.map((r) => {
+        const added = addedTitles.includes(r.title);
+        return '<div class="list-card" style="cursor:default">' +
+          '<span class="lc-icon">' + r.emoji + '</span>' +
+          '<span class="lc-body"><span class="lc-title">' + esc(r.title) + '</span>' +
+          '<span class="lc-sub">' + esc(r.desc) + '</span></span>' +
+          (added ? '<span class="done-badge">已添加 ✓</span>' :
+            '<button class="btn btn-primary" data-rec-add="' + esc(r.title) + '" style="padding:.4rem .9rem;font-size:.85rem">一键添加</button>') +
+          '</div>';
+      }).join('') + '</div>';
+
+    document.getElementById('recBack').onclick = () => { CS.sfx.tap(); CS.navigate('cartoon'); };
+
+    view.querySelectorAll('[data-rec-add]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const title = btn.getAttribute('data-rec-add');
+        const rec = recs.find((r) => r.title === title);
+        if (!rec) return;
+        if ((state.cartoons || []).some((c) => c.title === title)) return;
+        const urlMap = {
+          bilibili: 'https://search.bilibili.com/all?keyword=' + encodeURIComponent(rec.keyword || rec.title),
+          youtube: 'https://www.youtube.com/results?search_query=' + encodeURIComponent(rec.keyword || rec.title)
+        };
+        state.cartoons.push({
+          id: 'rec' + Date.now() + Math.random().toString(36).slice(2, 6),
+          title: rec.title, url: urlMap[rec.platform] || urlMap.bilibili, emoji: rec.emoji
+        });
+        store.set('cartoons', state.cartoons);
+        CS.sfx.star();
+        CS.toast('已添加：' + rec.title + ' 🎉');
+        renderRecs(view);
+      });
+    });
+
+    document.getElementById('searchBili').onclick = () => {
+      const kw = (document.getElementById('searchKw').value.trim() || '儿童动画');
+      window.open('https://search.bilibili.com/all?keyword=' + encodeURIComponent(kw), '_blank', 'noopener');
+      CS.sfx.tap();
+    };
+    document.getElementById('searchYt').onclick = () => {
+      const kw = (document.getElementById('searchKw').value.trim() || 'kids cartoon');
+      window.open('https://www.youtube.com/results?search_query=' + encodeURIComponent(kw), '_blank', 'noopener');
+      CS.sfx.tap();
+    };
+
+    document.getElementById('searchAdd').onclick = () => {
+      const url = document.getElementById('searchUrl').value.trim();
+      const title = document.getElementById('searchTitle').value.trim();
+      if (!title) { CS.toast('请填写动画名字'); return; }
+      if (!/^https:\/\//.test(url)) { CS.toast('链接需以 https:// 开头'); return; }
+      state.cartoons.push({ id: 'u' + Date.now(), title, url, emoji: '📺' });
+      store.set('cartoons', state.cartoons);
+      CS.sfx.star();
+      CS.toast('已添加：' + title + ' 🎉');
+      document.getElementById('searchUrl').value = '';
+      document.getElementById('searchTitle').value = '';
+      renderRecs(view);
+    };
   }
 
   function updateWatchTime() {

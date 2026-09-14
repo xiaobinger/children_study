@@ -74,4 +74,29 @@
   } else {
     boot();
   }
+
+  // 吉祥物互动
+  const mascotMessages = ['你真棒！⭐', '加油加油！💪', '今天学了什么呀？', '星星越多越好玩哦~', '记得休息小眼睛 👀', '背首诗给我听吧！📖', '你好呀！✨'];
+  const mascot = document.getElementById('mascot');
+  const mascotBubble = document.getElementById('mascotBubble');
+  let mascotTimer = null;
+  if (mascot) {
+    // 首次展示欢迎气泡
+    setTimeout(() => {
+      mascotBubble.textContent = CS.profile.name ? CS.profile.name + '，你好呀！🐱' : '你好呀！跟我一起玩吧~ 🐱';
+      mascotBubble.style.display = 'block';
+      mascotTimer = setTimeout(() => { mascotBubble.style.display = ''; }, 4000);
+    }, 1200);
+    mascot.addEventListener('click', () => {
+      const msg = mascotMessages[Math.floor(Math.random() * mascotMessages.length)];
+      mascotBubble.textContent = msg;
+      mascotBubble.style.display = 'block';
+      mascot.style.animation = 'none';
+      void mascot.offsetWidth;
+      mascot.style.animation = '';
+      CS.sfx && CS.sfx.tap();
+      clearTimeout(mascotTimer);
+      mascotTimer = setTimeout(() => { mascotBubble.style.display = ''; }, 3000);
+    });
+  }
 })(window.CS);
