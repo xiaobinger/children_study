@@ -88,7 +88,7 @@ window.CS = window.CS || {};
       const chars = line.split('').filter((c) => !/[，。？！、]/.test(c));
       const py = poem.pinyin[i] || [];
       const rendered = chars.map((c, j) =>
-        '<span class="ruby-char"><span class="ruby-py">' + esc(py[j] || '') + '</span>' + esc(c) + '</span>'
+        '<span class="ruby-char"><span class="ruby-py">' + esc(py[j] || '') + '</span><span class="char-base">' + esc(c) + '</span></span>'
       ).join('');
       return '<div class="poem-line">' + rendered + '</div>';
     }).join('');
@@ -150,7 +150,7 @@ window.CS = window.CS || {};
         i === hi
           ? '<span class="poem-blank"><span class="blank-fill"></span></span>'
           : '<span class="ruby-char">' +
-            (pyLine[i] ? '<span class="ruby-py">' + esc(pyLine[i]) + '</span>' : '') + esc(c) + '</span>'
+            (pyLine[i] ? '<span class="ruby-py">' + esc(pyLine[i]) + '</span>' : '') + '<span class="char-base">' + esc(c) + '</span></span>'
       ).join('');
 
       const opts = makeOptions(target, poem);

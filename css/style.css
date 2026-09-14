@@ -231,11 +231,17 @@ body.eye-care .module-card { --mc-bg: #f2e9d2; }
 .poem-title { font-size: 1.5rem; font-weight: 900; }
 .poem-author { color: var(--muted); margin: .35rem 0 1rem; font-size: .95rem; }
 .poem-line { font-size: clamp(1.25rem, 3.4vw, 1.7rem); font-weight: 700; letter-spacing: .12em; line-height: 2.6em; }
-.ruby-char { position: relative; display: inline-block; padding: 0 .06em; }
-.ruby-py { display: block; font-size: .45em; color: var(--primary); font-weight: 600; letter-spacing: 0; line-height: 1.1; margin-bottom: .1em; }
+.ruby-char { display: inline-flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 0 .06em; height: 2.6em; vertical-align: bottom; min-width: 1.2em; }
+.ruby-py { display: block; font-size: .45em; color: var(--primary); font-weight: 600; letter-spacing: 0; line-height: 1.2; }
+.ruby-char .char-base { display: block; line-height: 1.2; }
 .poem-blank {
-  display: inline-block; min-width: 1.3em; height: 1.3em; vertical-align: middle;
-  border-bottom: 4px solid var(--warn); margin: 0 .08em;
+  display: inline-flex; flex-direction: column; justify-content: flex-end; align-items: center;
+  min-width: 1.5em; height: 2.6em; vertical-align: bottom;
+  border-bottom: 4px solid var(--warn); margin: 0 .06em;
+}
+.poem-blank .blank-fill {
+  display: block; width: 100%; text-align: center;
+  color: var(--primary); font-weight: 700; font-size: 1em; line-height: 1.2;
 }
 .poem-blank.solved { border-color: var(--ok); }
 .poem-blank.solved .blank-fill { color: var(--ok); }
