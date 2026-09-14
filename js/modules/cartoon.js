@@ -261,8 +261,48 @@ window.CS = window.CS || {};
 
     document.getElementById('vpClose').onclick = () => { CS.sfx.tap(); closeVideoPlayer(); };
 
+    // 检测嵌入加载失败（iframe 被拒绝/超时）
+    if (urlInfo.type === 'youtube' || urlInfo.type === 'bilibili') {
+      detectEmbedFailure();
+    }
+
     // 启动播放计时
     startVideoTimer();
+  }
+
+  /* 检测 iframe 是否成功加载，超时则提示 */
+  function detectEmbedFailure() {
+    let checkCount = 0;
+    const maxChecks = 6; // 3 秒
+    const checker = setInterval(() => {
+      checkCount++;
+      const frame = document.getElementById('vpFrame');
+      if (!frame) { clearInterval(checker); return; }
+      let loaded = false;
+      try {
+        const doc = frame.contentDocument || frame.contentWindow?.document;
+        if (doc && doc.body && doc.body.innerHTML.length > 100) loaded = true;
+      } catch (e) {
+        // 跨域无法读取，但只要有内容就算加载；超时后提示
+      }
+      // 如果 window 是 file://，YouTube/Bilibili 通常会被阻止
+      if (checkCount >= maxChecks) {
+        clearInterval(checker);
+        const overlay = document.getElementById('vpOverlay');
+        if (overlay && !overlay.classList.contains('timeup')) {
+          const hint = document.getElementById('vpEmbedHint') || document.createElement('div');
+          hint.id = 'vpEmbedHint';
+          hint.className = 'vp-embed-hint';
+          hint.innerHTML = '⚠️ 视频加载失败：直接打开 index.html 无法播放。<br>请在本地服务器下运行（见 README），或点下方按钮在新窗口打开。<br>' +
+            '<button class="btn btn-primary" id="vpOpenExt" style="margin-top:.6rem">在新窗口打开 ↗</button>';
+          overlay.appendChild(hint);
+          document.getElementById('vpOpenExt').onclick = () => {
+            const frame = document.getElementById('vpFrame');
+            if (frame?.src && frame.src !== 'about:blank') window.open(frame.src.replace('embed/', 'watch?v=').replace(/\?.*/, ''), '_blank', 'noopener');
+          };
+        }
+      }
+    }, 500);
   }
 
   /* 解析视频链接 → {type, embed} */

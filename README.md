@@ -34,19 +34,25 @@
 
 ## 🚀 运行方式
 
-**无需安装任何依赖**，两种方式任选：
+> ⚠️ **重要**：本应用需要运行在本地 HTTP 服务器上（不能直接双击 `index.html`），否则动画播放器的 YouTube/Biframe 嵌入会被浏览器安全策略拦截。
 
-1. 直接双击 `index.html` 在浏览器中打开
-2. 或启动本地服务器（推荐）：
-   ```bash
-   # Python
-   python -m http.server 8080
-   # Node
-   npx serve .
-   ```
-   然后访问 http://localhost:8080
+### 一键启动（推荐）
 
-推荐使用 Chrome / Edge 浏览器（语音朗读、自动播放策略支持最佳）。
+双击运行 `start-server.bat`，然后浏览器访问 **http://localhost:8080**
+
+### 或手动启动
+
+```bash
+# Python（推荐）
+python -m http.server 8080
+
+# Node.js
+npx serve .
+
+# VS Code：安装 Live Server 插件后右键 index.html → Open with Live Server
+```
+
+启动后访问 http://localhost:8080 即可。
 
 ## 📁 目录结构
 
