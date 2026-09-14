@@ -56,6 +56,12 @@ window.CS = window.CS || {};
     eyeCare: store.get('eyeCare', false),
     restOn: store.get('restOn', true),
     done: store.get('done', {}),   // { poem_1: true, craft_1: true ... }
+    // 宝贝档案 / 奖励规则 / 动画时长 / 自定义动画库
+    profile: store.get('profile', null),
+    reward: store.get('reward', { stars: 20, minutes: 30 }),
+    cartoonMins: store.get('cartoonMins', 0),
+    cartoons: store.get('cartoons', []),
+    pin: store.get('pin', ''),
     startPage() {
       const p = store.get('lastPage', null);
       return p || 'home';
@@ -119,6 +125,7 @@ window.CS = window.CS || {};
     store.set('lastPage', currentPage);
     CS.stopMelody && CS.stopMelody();
     CS.stopSpeak && CS.stopSpeak();
+    CS.stopCartoon && CS.stopCartoon();
     view.innerHTML = '';
     view.className = 'view view-enter';
     requestAnimationFrame(() => { view.classList.remove('view-enter'); });
@@ -145,4 +152,57 @@ window.CS = window.CS || {};
     $, $$, esc, shuffle, rand, pick, store,
     AGE_GROUPS, agePool, state, register, navigate, render
   });
+
+  /* ---------- 档案与奖励辅助 ---------- */
+  // 生日 'YYYY-MM-DD' → 年龄组
+  function ageFromBirthday(bd) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(bd || '');
+    if (!m) return null;
+    const b = new Date(+m[1], +m[2] - 1, +m[3]);
+    if (isNaN(b.getTime())) return null;
+    const now = new Date();
+    let years = now.getFullYear() - b.getFullYear();
+    if (now < new Date(now.getFullYear(), +m[2] - 1, +m[3])) years--;
+    if (years < 5) return 'a1';
+    if (years < 7) return 'a2';
+    if (years < 9) return 'a3';
+    return 'a4';
+  }
+
+  CS.profile = {
+    get name() { return state.profile ? state.profile.name : ''; },
+    get avatar() { return state.profile ? state.profile.avatar : '🐣'; },
+    save(p) {
+      state.profile = { name: p.name || '', avatar: p.avatar || '🐣', birthday: p.birthday || null };
+      store.set('profile', state.profile);
+      const ag = ageFromBirthday(state.profile.birthday);
+      if (ag) { state.age = ag; store.set('age', ag); }
+      return ag;
+    },
+    ageFromBirthday
+  };
+
+  CS.reward = {
+    get stars() { return state.reward.stars; },
+    get minutes() { return state.reward.minutes; },
+    setRule(stars, minutes) {
+      state.reward = { stars: Math.max(1, stars | 0), minutes: Math.max(1, minutes | 0) };
+      store.set('reward', state.reward);
+    },
+    /* 兑换：够星数则扣星、加时长 */
+    exchange() {
+      if (state.stars < state.reward.stars) return false;
+      state.stars -= state.reward.stars;
+      store.set('stars', state.stars);
+      state.cartoonMins = Math.min(240, state.cartoonMins + state.reward.minutes);
+      store.set('cartoonMins', state.cartoonMins);
+      const el = document.getElementById('starCount');
+      if (el) el.textContent = state.stars;
+      return true;
+    },
+    saveMins() { store.set('cartoonMins', state.cartoonMins); },
+    tickMins(dec) {
+      state.cartoonMins = Math.max(0, state.cartoonMins - dec);
+    }
+  };
 })(window.CS);

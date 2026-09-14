@@ -12,6 +12,18 @@ window.CS = window.CS || {};
     return CS.DATA.poems.filter((p) => pool.includes(p.age));
   }
 
+  /* 扩展诗解锁：该年龄段核心诗全部闯关完成 */
+  function extraUnlocked(ageKey) {
+    const core = CS.DATA.poems.filter((p) => p.age === ageKey && p.tier !== 'extra');
+    return core.length > 0 && core.every((p) => state.done['poem_' + p.id]);
+  }
+
+  function coreProgress(ageKey) {
+    const core = CS.DATA.poems.filter((p) => p.age === ageKey && p.tier !== 'extra');
+    const done = core.filter((p) => state.done['poem_' + p.id]).length;
+    return { done, total: core.length };
+  }
+
   /* ---------- 路由分发：列表 or 详情 ---------- */
   function render(view, params) {
     if (params && params.id) renderDetail(view, params);
@@ -20,26 +32,45 @@ window.CS = window.CS || {};
 
   /* ---------- 列表页 ---------- */
   function renderList(view) {
-    const poems = listByAge();
-    if (!poems.length) {
+    const all = listByAge();
+    if (!all.length) {
       view.innerHTML = '<div class="empty-tip">这个年龄段暂时没有古诗，敬请期待 🌱</div>';
       return;
     }
+    const unlocked = extraUnlocked(state.age);
+    const prog = coreProgress(state.age);
+    const poems = all.filter((p) => p.tier !== 'extra' || extraUnlocked(p.age));
+    const lockedExtras = all.filter((p) => p.tier === 'extra' && p.age === state.age && !unlocked);
+
     const cards = poems.map((p) =>
       '<button class="list-card" data-id="' + p.id + '">' +
-      '<span class="lc-icon">📖</span>' +
+      '<span class="lc-icon">' + (p.tier === 'extra' ? '🌟' : '📖') + '</span>' +
       '<span class="lc-body"><span class="lc-title">' + esc(p.title) + '</span>' +
-      '<span class="lc-sub">' + esc(p.dynasty + ' · ' + p.author) + '</span></span>' +
+      '<span class="lc-sub">' + esc(p.dynasty + ' · ' + p.author) +
+      (p.tier === 'extra' ? ' · 新解锁' : '') + '</span></span>' +
       (state.done['poem_' + p.id] ? '<span class="done-badge">已闯关 ✓</span>' : '') +
       '<span class="lc-arrow">›</span></button>'
     ).join('');
 
+    const lockedHtml = lockedExtras.length
+      ? '<div class="section-title">🔒 扩展诗（闯关后解锁）</div>' +
+        '<p class="hint-text">当前年龄核心古诗闯关进度：' + prog.done + ' / ' + prog.total +
+        ' 首全部完成后，自动解锁 ' + lockedExtras.length + ' 首新古诗！</p>' +
+        '<div class="card-list" style="opacity:.55">' + lockedExtras.map((p) =>
+          '<div class="list-card" style="cursor:default">' +
+          '<span class="lc-icon">🔒</span>' +
+          '<span class="lc-body"><span class="lc-title">？？？</span>' +
+          '<span class="lc-sub">闯关解锁神秘新古诗</span></span></div>').join('') + '</div>'
+      : '';
+
     view.innerHTML =
       '<div class="back-row"><h2 class="page-title" style="margin:0"><span class="pt-icon">📖</span>古诗背诵</h2></div>' +
       '<p class="hint-text">点一首诗：先听朗读、看拼音，再去"填字闯关"赢星星！</p>' +
-      '<div class="card-list">' + cards + '</div>';
+      (unlocked ? '<p class="hint-text" style="color:var(--ok)">🎉 恭喜！已解锁扩展古诗，共 ' +
+        CS.DATA.poems.filter((p) => p.age === state.age && p.tier === 'extra').length + ' 首</p>' : '') +
+      '<div class="card-list">' + cards + '</div>' + lockedHtml;
 
-    view.querySelectorAll('.list-card').forEach((btn) => {
+    view.querySelectorAll('.list-card[data-id]').forEach((btn) => {
       btn.addEventListener('click', () => { CS.sfx.tap(); navigate('poem', { id: btn.getAttribute('data-id') }); });
     });
   }

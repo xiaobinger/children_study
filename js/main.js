@@ -11,23 +11,62 @@
     }
     CS.render();
 
-    // 首次使用引导
+    // 首次使用引导：建档 → 年龄
     if (!CS.store.get('welcomed', false)) {
       CS.showModal(
         '<h3>🎈 欢迎来到学习乐园</h3>' +
         '<p>这里有<b>古诗、识字、儿歌、课文、手工、数学</b>六大乐园，<br>' +
-        '先选择宝贝的年龄，就能开始快乐学习啦！<br><br>' +
-        '右上角 🌙 可开启<b>护眼模式</b>，<br>' +
+        '先告诉我宝贝的小名，就可以开始快乐学习啦！<br><br>' +
+        '右上角 🌙 可开启<b>护眼模式</b>，⚙️ 是家长中心；<br>' +
         '每学习 20 分钟会提醒宝贝休息小眼睛 👀</p>' +
-        '<button class="btn btn-primary btn-big" id="welcomeGo">开始学习 🚀</button>'
+        '<button class="btn btn-primary btn-big" id="welcomeGo">开始建档 🚀</button>'
       );
-      const goBtn = document.getElementById('welcomeGo');
-      goBtn.onclick = () => {
+      document.getElementById('welcomeGo').onclick = () => {
         CS.store.set('welcomed', true);
         CS.hideModal();
-        document.getElementById('ageBtn').click();
+        openProfileModal(true);
       };
     }
+  }
+
+  /* 首次建档弹窗 */
+  function openProfileModal(first) {
+    const avatars = ['🐣', '🐰', '🐼', '🐯', '🦊', '🐨', '🐷', '🐸', '🦄', '🐥', '🐳', '🦋'];
+    CS.showModal(
+      '<h3>' + (first ? '🎂 认识一下宝贝' : '✏️ 修改宝贝档案') + '</h3>' +
+      '<div class="form-row"><label for="pmName">宝贝昵称</label>' +
+      '<input class="form-input" id="pmName" maxlength="8" placeholder="比如：小豆丁"></div>' +
+      '<div class="form-row"><label for="pmBirth">生日（选填，自动定难度）</label>' +
+      '<input class="form-input" id="pmBirth" type="date"></div>' +
+      '<div class="form-row"><label>选一个头像</label><div class="avatar-grid">' +
+      avatars.map((a, i) => '<button class="avatar-cell' + (i === 0 ? ' sel' : '') + '" data-a="' + a + '">' + a + '</button>').join('') +
+      '</div></div>' +
+      '<button class="btn btn-primary btn-big" id="pmSave">开始学习 🚀</button>'
+    );
+    let avatar = avatars[0];
+    document.querySelectorAll('#modalBox .avatar-cell').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        avatar = btn.getAttribute('data-a');
+        document.querySelectorAll('#modalBox .avatar-cell').forEach((b) => b.classList.remove('sel'));
+        btn.classList.add('sel');
+        CS.sfx.tap();
+      });
+    });
+    document.getElementById('pmSave').onclick = () => {
+      const name = document.getElementById('pmName').value.trim();
+      const birthday = document.getElementById('pmBirth').value;
+      const ag = CS.profile.save({ name, avatar, birthday });
+      CS.hideModal();
+      CS.sfx.star();
+      CS.toast('你好呀，' + (name || '小朋友') + ' ' + avatar);
+      CS.render();
+      if (!ag) {
+        setTimeout(() => document.getElementById('ageBtn').click(), 250);
+      } else {
+        document.getElementById('ageBtnText').textContent =
+          CS.AGE_GROUPS.find((g) => g.key === ag).range;
+      }
+    };
   }
 
   if (document.readyState === 'loading') {

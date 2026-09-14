@@ -24,8 +24,9 @@ index.html
 - 路由名与模块页面一一对应；模块内部列表/详情由同一 renderFn 按 `params.id` 分发
 
 ### 状态与存储（core.js）
-- `CS.state`：`age`（a1-a4）、`stars`、`sound`、`eyeCare`、`restOn`、`done`（完成标记字典）
-- localStorage 前缀 `cs_`；年龄内容池 `CS.agePool(ageKey)` 实现高年龄包含低年龄内容
+- `CS.state`：`age`（a1-a4）、`stars`、`sound`、`eyeCare`、`restOn`、`done`（完成标记字典）、`profile`（宝贝档案）、`reward`（兑换规则 `{stars, minutes}`）、`cartoonMins`（剩余动画分钟）、`cartoons`（自定义动画链接）、`pin`（家长密码）
+- 奖励辅助 `CS.reward`：`exchange()` 扣星加时长、`setRule()` 改规则、`tickMins()` 倒计时；`CS.profile.save()` 建档（填生日自动算年龄组）
+- localStorage 前缀 `cs_`
 
 ### 音频（audio.js）
 - `CS.sfx.*`：tap/correct/wrong/star/finish 短音效（Web Audio 合成）
@@ -43,15 +44,17 @@ index.html
 - 渲染函数签名 `(view, params)`，直接写 `view.innerHTML`
 - 数据均为静态作者内容，动态值一律过 `CS.esc()` 转义
 - 游戏通用模式：轮次循环 → 锁 `locked` 防连点 → 正误反馈动画（.correct/.wrong）→ 结束调 `CS.showResult`
+- 现有模块：home / more / poem / literacy / song / text / craft / math / cartoon（动画小剧场）/ parent（家长中心）
 
 ## 内容数据规范（js/data/）
 
 - 所有条目带 `age: 'a1'|'a2'|'a3'|'a4'` 标签，渲染时按 `CS.agePool(state.age)` 过滤
-- **poems**：`{id, age, title, author, dynasty, lines[], pinyin[][]?, desc}`；pinyin 为每句逐字注音（去掉标点后与文字一一对应），a1/a2 提供
+- **poems**：`{id, age, title, author, dynasty, lines[], pinyin[][]?, desc, tier?}`；pinyin 为每句逐字注音，a1/a2 提供；`tier: 'extra'` 为扩展诗，需同年龄核心诗全部闯关后才解锁显示，实现渐进式扩库
 - **characters**：`{a1: [{char, py, word, emoji, sent}], a3/a4: 词/成语无 word}`
 - **songs**：`{lines[], melody[]?, bpm}`；melody 每行一段简谱
 - **texts**：`{passage[], quiz: [{q, opts[], ans}]}`（原创内容，避免教材版权）
 - **crafts**：`{materials[], steps: [{title, desc, emoji}], tip}`
+- **cartoons**：内置小剧场 `{id, type:'scene', scene, emoji, title, desc}`；自定义链接由家长在家长中心添加，存于 `state.cartoons`
 - **mathgen**：程序化出题 `makeRound(ageKey, count)`，RECIPES 定义各年龄题型组合
 
 ## 新增内容指引
