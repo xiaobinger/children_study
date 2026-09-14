@@ -218,12 +218,6 @@ window.CS = window.CS || {};
     });
     applyEye();
 
-    const parentBtn = $('#parentBtn');
-    parentBtn.addEventListener('click', () => {
-      CS.sfx.tap();
-      navigate('parent');
-    });
-
     $$('.topbar-logo, .bottombar-item').forEach((btn) => {
       btn.addEventListener('click', () => {
         const target = btn.getAttribute('data-nav');

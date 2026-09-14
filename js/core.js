@@ -126,6 +126,7 @@ window.CS = window.CS || {};
     CS.stopMelody && CS.stopMelody();
     CS.stopSpeak && CS.stopSpeak();
     CS.stopCartoon && CS.stopCartoon();
+    CS.stopVideo && CS.stopVideo();
     view.innerHTML = '';
     view.className = 'view view-enter';
     requestAnimationFrame(() => { view.classList.remove('view-enter'); });

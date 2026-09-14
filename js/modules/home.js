@@ -141,6 +141,7 @@ window.CS = window.CS || {};
 
   function renderMore(view) {
     const list = [
+      { key: 'literacy', icon: '🔤', name: '识字乐园', desc: '字卡学习、找字游戏' },
       { key: 'song', icon: '🎵', name: '儿歌欢唱', desc: '电子琴伴奏 + 歌词逐行跟唱' },
       { key: 'text', icon: '📚', name: '课文阅读', desc: '原创小故事 + 阅读理解题' },
       { key: 'craft', icon: '✂️', name: '手工课堂', desc: '步骤打卡式手工教程' },
@@ -155,10 +156,14 @@ window.CS = window.CS || {};
         '<span class="mc-name">' + esc(m.name) + '</span>' +
         '<span class="mc-desc">' + esc(m.desc) + '</span></button>'
       ).join('') + '</div>' +
+      '<div class="section-title">👨‍👩‍👧 家长中心</div>' +
+      '<button class="btn btn-ghost btn-big" id="moreParent" style="width:100%;justify-content:flex-start;gap:.6rem;border-radius:18px">' +
+      '<span style="font-size:1.5rem">⚙️</span><span>家长中心 · 管理档案、奖励规则、动画库</span></button>' +
       '<div class="hint-text">更多内容持续添加中……</div>';
     view.querySelectorAll('.module-card').forEach((btn) => {
       btn.addEventListener('click', () => { CS.sfx.tap(); navigate(btn.getAttribute('data-nav')); });
     });
+    document.getElementById('moreParent').onclick = () => { CS.sfx.tap(); navigate('parent'); };
   }
 
   CS.register('home', renderHome);
