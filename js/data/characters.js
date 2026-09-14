@@ -1,0 +1,90 @@
+/* ============ 识字数据 ============ */
+/* a1/a2: 单字卡 {char, py, word, emoji, sent}
+   a3: 词语卡；a4: 成语卡 {char(词), py, emoji, sent(释义)} */
+window.CS = window.CS || {};
+CS.DATA = CS.DATA || {};
+
+CS.DATA.characters = {
+  a1: [
+    { char: '一', py: 'yī', word: '一个', emoji: '☝️', sent: '我吃了一个苹果。' },
+    { char: '二', py: 'èr', word: '二哥', emoji: '✌️', sent: '我家养了二条金鱼。' },
+    { char: '三', py: 'sān', word: '三个', emoji: '🤟', sent: '桌上有三本书。' },
+    { char: '四', py: 'sì', word: '四季', emoji: '🪑', sent: '一年有春、夏、秋、冬四季。' },
+    { char: '五', py: 'wǔ', word: '五指', emoji: '🖐️', sent: '一只手有五根手指。' },
+    { char: '六', py: 'liù', word: '六一', emoji: '🎈', sent: '六一儿童节是我们的节日。' },
+    { char: '七', py: 'qī', word: '七彩', emoji: '🌈', sent: '彩虹有七种颜色。' },
+    { char: '八', py: 'bā', word: '八哥', emoji: '🐦', sent: '八哥鸟会学人说话。' },
+    { char: '九', py: 'jiǔ', word: '九月', emoji: '🍂', sent: '九月十日是教师节。' },
+    { char: '十', py: 'shí', word: '十分', emoji: '🔟', sent: '我十分喜欢画画。' },
+    { char: '日', py: 'rì', word: '日出', emoji: '☀️', sent: '太阳从东方升起，这叫日出。' },
+    { char: '月', py: 'yuè', word: '月亮', emoji: '🌙', sent: '晚上，月亮挂在天上。' },
+    { char: '水', py: 'shuǐ', word: '喝水', emoji: '💧', sent: '多喝水身体好。' },
+    { char: '火', py: 'huǒ', word: '火焰', emoji: '🔥', sent: '火焰是红色的。' },
+    { char: '山', py: 'shān', word: '大山', emoji: '⛰️', sent: '远处有一座高高的大山。' },
+    { char: '木', py: 'mù', word: '树木', emoji: '🌳', sent: '公园里种了很多树木。' },
+    { char: '人', py: 'rén', word: '人们', emoji: '🧑', sent: '公园里人们在散步。' },
+    { char: '口', py: 'kǒu', word: '人口', emoji: '👄', sent: '嘴巴又叫口，用来吃饭说话。' },
+    { char: '手', py: 'shǒu', word: '小手', emoji: '✋', sent: '我用小手写字画画。' },
+    { char: '大', py: 'dà', word: '大人', emoji: '🐘', sent: '大象是陆地上的大动物。' },
+    { char: '小', py: 'xiǎo', word: '小鸟', emoji: '🐦', sent: '小鸟在树上唱歌。' },
+    { char: '上', py: 'shàng', word: '上学', emoji: '⬆️', sent: '我每天高高兴兴上学去。' },
+    { char: '下', py: 'xià', word: '下雨', emoji: '⬇️', sent: '下雨了，记得带伞。' },
+    { char: '天', py: 'tiān', word: '天空', emoji: '🌤️', sent: '天空中有白云飘过。' }
+  ],
+  a2: [
+    { char: '云', py: 'yún', word: '白云', emoji: '☁️', sent: '白云像棉花糖一样。' },
+    { char: '雨', py: 'yǔ', word: '雨水', emoji: '🌧️', sent: '雨水浇灌了小花小草。' },
+    { char: '花', py: 'huā', word: '花朵', emoji: '🌸', sent: '春天开满了美丽的花朵。' },
+    { char: '草', py: 'cǎo', word: '小草', emoji: '🌿', sent: '小草从泥土里探出头。' },
+    { char: '虫', py: 'chóng', word: '昆虫', emoji: '🐛', sent: '蝴蝶是一种美丽的昆虫。' },
+    { char: '鱼', py: 'yú', word: '小鱼', emoji: '🐟', sent: '小鱼在水里游来游去。' },
+    { char: '鸟', py: 'niǎo', word: '小鸟', emoji: '🐦', sent: '小鸟在树枝上搭窝。' },
+    { char: '马', py: 'mǎ', word: '小马', emoji: '🐴', sent: '小马跑得很快。' },
+    { char: '牛', py: 'niú', word: '水牛', emoji: '🐮', sent: '水牛在河边吃草。' },
+    { char: '羊', py: 'yáng', word: '小羊', emoji: '🐑', sent: '小羊咩咩叫妈妈。' },
+    { char: '猫', py: 'māo', word: '小猫', emoji: '🐱', sent: '小猫最爱捉老鼠。' },
+    { char: '狗', py: 'gǒu', word: '小狗', emoji: '🐶', sent: '小狗汪汪看家门。' },
+    { char: '鸡', py: 'jī', word: '公鸡', emoji: '🐓', sent: '公鸡喔喔叫我们起床。' },
+    { char: '兔', py: 'tù', word: '白兔', emoji: '🐰', sent: '小白兔爱吃萝卜和青菜。' },
+    { char: '爸', py: 'bà', word: '爸爸', emoji: '👨', sent: '爸爸带我去看电影。' },
+    { char: '妈', py: 'mā', word: '妈妈', emoji: '👩', sent: '妈妈做的饭最香。' },
+    { char: '你', py: 'nǐ', word: '你好', emoji: '👋', sent: '见面要说"你好"。' },
+    { char: '我', py: 'wǒ', word: '我们', emoji: '🙋', sent: '我们是好朋友。' },
+    { char: '他', py: 'tā', word: '他人', emoji: '🧒', sent: '要乐于帮助他人。' },
+    { char: '星', py: 'xīng', word: '星星', emoji: '⭐', sent: '夜晚天上有很多星星。' },
+    { char: '石', py: 'shí', word: '石头', emoji: '🪨', sent: '小溪边有圆圆的石头。' },
+    { char: '风', py: 'fēng', word: '大风', emoji: '🌬️', sent: '大风吹得树叶沙沙响。' }
+  ],
+  a3: [
+    { char: '朋友', py: 'péng you', emoji: '🤝', sent: '我和朋友一起玩滑梯。' },
+    { char: '学校', py: 'xué xiào', emoji: '🏫', sent: '我们的学校很漂亮。' },
+    { char: '老师', py: 'lǎo shī', emoji: '👩‍🏫', sent: '老师教我们认字读书。' },
+    { char: '同学', py: 'tóng xué', emoji: '🧑‍🎓', sent: '同学之间要互相帮助。' },
+    { char: '读书', py: 'dú shū', emoji: '📚', sent: '每天读书让我更聪明。' },
+    { char: '学习', py: 'xué xí', emoji: '✏️', sent: '学习是一件快乐的事。' },
+    { char: '春天', py: 'chūn tiān', emoji: '🌱', sent: '春天来了，花都开了。' },
+    { char: '秋天', py: 'qiū tiān', emoji: '🍁', sent: '秋天树叶变成了金黄色。' },
+    { char: '快乐', py: 'kuài lè', emoji: '😄', sent: '帮助别人让我很快乐。' },
+    { char: '勇敢', py: 'yǒng gǎn', emoji: '🦸', sent: '打针的时候我很勇敢。' },
+    { char: '劳动', py: 'láo dòng', emoji: '🧹', sent: '爱劳动的孩子人人夸。' },
+    { char: '祖国', py: 'zǔ guó', emoji: '🇨🇳', sent: '我爱我的祖国。' },
+    { char: '诚实', py: 'chéng shí', emoji: '🤞', sent: '做诚实的孩子不说谎。' },
+    { char: '时间', py: 'shí jiān', emoji: '⏰', sent: '我们要珍惜时间。' },
+    { char: '医生', py: 'yī shēng', emoji: '👨‍⚕️', sent: '医生帮生病的人治病。' },
+    { char: '警察', py: 'jǐng chá', emoji: '👮', sent: '警察叔叔保护大家的安全。' }
+  ],
+  a4: [
+    { char: '一举两得', py: 'yī jǔ liǎng dé', emoji: '🎯', sent: '释义：做一件事同时得到两方面的好处。例：帮妈妈做家务，既锻炼了身体，又让妈妈开心，真是一举两得。' },
+    { char: '守株待兔', py: 'shǒu zhū dài tù', emoji: '🌳', sent: '释义：守在树旁等兔子撞树。比喻不主动努力，妄想不劳而获。' },
+    { char: '画蛇添足', py: 'huà shé tiān zú', emoji: '🐍', sent: '释义：画好蛇又添上脚。比喻多此一举，反而坏事。' },
+    { char: '亡羊补牢', py: 'wáng yáng bǔ láo', emoji: '🐑', sent: '释义：丢了羊修好羊圈。比喻出了问题及时补救，还不算晚。' },
+    { char: '掩耳盗铃', py: 'yǎn ěr dào líng', emoji: '🔔', sent: '释义：捂住耳朵偷铃铛。比喻自己欺骗自己。' },
+    { char: '拔苗助长', py: 'bá miáo zhù zhǎng', emoji: '🌾', sent: '释义：把苗拔高帮它长。比喻违反规律急于求成，反而坏事。' },
+    { char: '狐假虎威', py: 'hú jiǎ hǔ wēi', emoji: '🦊', sent: '释义：狐狸借老虎的威风。比喻借别人的势力吓唬人。' },
+    { char: '井底之蛙', py: 'jǐng dǐ zhī wā', emoji: '🐸', sent: '释义：井底的青蛙只能看到一小块天。比喻见识狭窄的人。' },
+    { char: '水滴石穿', py: 'shuǐ dī shí chuān', emoji: '💧', sent: '释义：水不停地滴能把石头滴穿。比喻坚持努力就能成功。' },
+    { char: '闻鸡起舞', py: 'wén jī qǐ wǔ', emoji: '🐔', sent: '释义：听到鸡叫就起来练武。形容勤奋努力、自强不息。' },
+    { char: '胸有成竹', py: 'xiōng yǒu chéng zhú', emoji: '🎍', sent: '释义：画竹子前心里已有竹子的形象。比喻做事之前已有周密的打算。' },
+    { char: '雪中送炭', py: 'xuě zhōng sòng tàn', emoji: '🎿', sent: '释义：下雪天送炭火取暖。比喻在别人急需时给予帮助。' }
+  ]
+};
