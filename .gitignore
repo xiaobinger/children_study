@@ -1,0 +1,15 @@
+# Android 构建缓存（Gradle wrapper + 依赖缓存，可再生，不纳入版本控制）
+android_build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.log
