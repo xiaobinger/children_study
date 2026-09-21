@@ -62,6 +62,8 @@ window.CS = window.CS || {};
     cartoonMins: store.get('cartoonMins', 0),
     cartoons: store.get('cartoons', []),
     pin: store.get('pin', ''),
+    ai: store.get('ai', null),   // 家长端配置的 AI 伙伴 { on, baseUrl, apiKey, model }
+    mascotAuto: store.get('mascotAuto', { on: true, interval: 5 }),  // 宠物主动语音互动 { on, interval(分钟) }
     startPage() {
       const p = store.get('lastPage', null);
       return p || 'home';
@@ -76,6 +78,10 @@ window.CS = window.CS || {};
         void el.parentElement.offsetWidth;
         el.parentElement.classList.add('star-bump');
       }
+      // 学习得星，宠物同步涨经验
+      if (n > 0 && CS.pet) CS.pet.gainExp(n);
+      // 小爱音箱：得星表扬播报（模块内部有开关判断 + 900ms 合并缓冲）
+      if (n > 0 && CS.xiaoai) CS.xiaoai.praise(n);
     },
     markDone(id) {
       state.done[id] = true;
@@ -140,7 +146,7 @@ window.CS = window.CS || {};
   function updateNav(name) {
     $$('.bottombar-item').forEach((btn) => {
       const target = btn.getAttribute('data-nav');
-      const on = target === name || (target === 'more' && ['song', 'text', 'craft'].includes(name)) ||
+      const on = target === name || (target === 'more' && ['song', 'text', 'story', 'craft'].includes(name)) ||
         (target === 'home' && name === 'home');
       btn.classList.toggle('active', on);
     });
@@ -178,6 +184,7 @@ window.CS = window.CS || {};
       store.set('profile', state.profile);
       const ag = ageFromBirthday(state.profile.birthday);
       if (ag) { state.age = ag; store.set('age', ag); }
+      document.dispatchEvent(new CustomEvent('cs:profile-saved'));
       return ag;
     },
     ageFromBirthday

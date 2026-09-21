@@ -73,7 +73,7 @@ window.CS = window.CS || {};
     box.querySelector('#fcSpeak').onclick = () => {
       const c = list[idx];
       const text = c.char.length > 2 ? c.char + '。' + c.sent : c.char + '，' + c.word + '。' + c.sent;
-      if (!CS.speak(text)) toast('当前浏览器不支持朗读');
+      if (!CS.speak(text, { key: 'char:' + state.age + ':' + c.char })) toast('当前浏览器不支持朗读');
     };
 
     show(rand(list.length));
@@ -112,8 +112,9 @@ window.CS = window.CS || {};
         '</div>';
 
       locked = false;
-      box.querySelector('#litHint').onclick = () => CS.speak(target.char);
-      CS.speak(target.char);
+      const voiceKey = 'char:' + state.age + ':' + target.char;
+      box.querySelector('#litHint').onclick = () => CS.speak(target.char, { key: voiceKey });
+      CS.speak(target.char, { key: voiceKey });
 
       box.querySelectorAll('.char-cell').forEach((btn) => {
         btn.addEventListener('click', () => {

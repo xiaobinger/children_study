@@ -1,0 +1,2457 @@
+[
+ {
+  "key": "poem:p1",
+  "text": "咏鹅，骆宾王。鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。",
+  "file": "audio/poem/p001.mp3"
+ },
+ {
+  "key": "poem:p2",
+  "text": "静夜思，李白。床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "file": "audio/poem/p002.mp3"
+ },
+ {
+  "key": "poem:p3",
+  "text": "春晓，孟浩然。春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。",
+  "file": "audio/poem/p003.mp3"
+ },
+ {
+  "key": "poem:p4",
+  "text": "悯农，李绅。锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。",
+  "file": "audio/poem/p004.mp3"
+ },
+ {
+  "key": "poem:p5",
+  "text": "画，王维。远看山有色，近听水无声。春去花还在，人来鸟不惊。",
+  "file": "audio/poem/p005.mp3"
+ },
+ {
+  "key": "poem:p6",
+  "text": "登鹳雀楼，王之涣。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。",
+  "file": "audio/poem/p006.mp3"
+ },
+ {
+  "key": "poem:p7",
+  "text": "江雪，柳宗元。千山鸟飞绝，万径人踪灭。孤舟蓑笠翁，独钓寒江雪。",
+  "file": "audio/poem/p007.mp3"
+ },
+ {
+  "key": "poem:p8",
+  "text": "寻隐者不遇，贾岛。松下问童子，言师采药去。只在此山中，云深不知处。",
+  "file": "audio/poem/p008.mp3"
+ },
+ {
+  "key": "poem:p9",
+  "text": "古朗月行（节选），李白。小时不识月，呼作白玉盘。又疑瑶台镜，飞在青云端。",
+  "file": "audio/poem/p009.mp3"
+ },
+ {
+  "key": "poem:p10",
+  "text": "风，李峤。解落三秋叶，能开二月花。过江千尺浪，入竹万竿斜。",
+  "file": "audio/poem/p010.mp3"
+ },
+ {
+  "key": "poem:p11",
+  "text": "望庐山瀑布，李白。日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天。",
+  "file": "audio/poem/p011.mp3"
+ },
+ {
+  "key": "poem:p12",
+  "text": "赠汪伦，李白。李白乘舟将欲行，忽闻岸上踏歌声。桃花潭水深千尺，不及汪伦送我情。",
+  "file": "audio/poem/p012.mp3"
+ },
+ {
+  "key": "poem:p13",
+  "text": "绝句，杜甫。两个黄鹂鸣翠柳，一行白鹭上青天。窗含西岭千秋雪，门泊东吴万里船。",
+  "file": "audio/poem/p013.mp3"
+ },
+ {
+  "key": "poem:p14",
+  "text": "早发白帝城，李白。朝辞白帝彩云间，千里江陵一日还。两岸猿声啼不住，轻舟已过万重山。",
+  "file": "audio/poem/p014.mp3"
+ },
+ {
+  "key": "poem:p15",
+  "text": "出塞，王昌龄。秦时明月汉时关，万里长征人未还。但使龙城飞将在，不教胡马度阴山。",
+  "file": "audio/poem/p015.mp3"
+ },
+ {
+  "key": "poem:p16",
+  "text": "题西林壁，苏轼。横看成岭侧成峰，远近高低各不同。不识庐山真面目，只缘身在此山中。",
+  "file": "audio/poem/p016.mp3"
+ },
+ {
+  "key": "poem:p17",
+  "text": "饮湖上初晴后雨，苏轼。水光潋滟晴方好，山色空蒙雨亦奇。欲把西湖比西子，淡妆浓抹总相宜。",
+  "file": "audio/poem/p017.mp3"
+ },
+ {
+  "key": "poem:p18",
+  "text": "小池，杨万里。泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。",
+  "file": "audio/poem/p018.mp3"
+ },
+ {
+  "key": "poem:p19",
+  "text": "村居，高鼎。草长莺飞二月天，拂堤杨柳醉春烟。儿童散学归来早，忙趁东风放纸鸢。",
+  "file": "audio/poem/p019.mp3"
+ },
+ {
+  "key": "poem:p20",
+  "text": "泊船瓜洲，王安石。京口瓜洲一水间，钟山只隔数重山。春风又绿江南岸，明月何时照我还。",
+  "file": "audio/poem/p020.mp3"
+ },
+ {
+  "key": "poem:x1",
+  "text": "池上，白居易。小娃撑小艇，偷采白莲回。不解藏踪迹，浮萍一道开。",
+  "file": "audio/poem/p021.mp3"
+ },
+ {
+  "key": "poem:x2",
+  "text": "悯农（其二），李绅。春种一粒粟，秋收万颗子。四海无闲田，农夫犹饿死。",
+  "file": "audio/poem/p022.mp3"
+ },
+ {
+  "key": "poem:x3",
+  "text": "绝句（迟日江山丽），杜甫。迟日江山丽，春风花草香。泥融飞燕子，沙暖睡鸳鸯。",
+  "file": "audio/poem/p023.mp3"
+ },
+ {
+  "key": "poem:x4",
+  "text": "夜宿山寺，李白。危楼高百尺，手可摘星辰。不敢高声语，恐惊天上人。",
+  "file": "audio/poem/p024.mp3"
+ },
+ {
+  "key": "poem:x5",
+  "text": "鹿柴，王维。空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "file": "audio/poem/p025.mp3"
+ },
+ {
+  "key": "poem:x6",
+  "text": "相思，王维。红豆生南国，春来发几枝。愿君多采撷，此物最相思。",
+  "file": "audio/poem/p026.mp3"
+ },
+ {
+  "key": "poem:x7",
+  "text": "山行，杜牧。远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。",
+  "file": "audio/poem/p027.mp3"
+ },
+ {
+  "key": "poem:x8",
+  "text": "清明，杜牧。清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。",
+  "file": "audio/poem/p028.mp3"
+ },
+ {
+  "key": "poem:x9",
+  "text": "暮江吟，白居易。一道残阳铺水中，半江瑟瑟半江红。可怜九月初三夜，露似真珠月似弓。",
+  "file": "audio/poem/p029.mp3"
+ },
+ {
+  "key": "poem:x10",
+  "text": "元日，王安石。爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。",
+  "file": "audio/poem/p030.mp3"
+ },
+ {
+  "key": "poem:x11",
+  "text": "江南春，杜牧。千里莺啼绿映红，水村山郭酒旗风。南朝四百八十寺，多少楼台烟雨中。",
+  "file": "audio/poem/p031.mp3"
+ },
+ {
+  "key": "poem:x12",
+  "text": "六月二十七日望湖楼醉书，苏轼。黑云翻墨未遮山，白雨跳珠乱入船。卷地风来忽吹散，望湖楼下水如天。",
+  "file": "audio/poem/p032.mp3"
+ },
+ {
+  "key": "poem:a1x1",
+  "text": "一去二三里，邵雍。一去二三里，烟村四五家。亭台六七座，八九十枝花。",
+  "file": "audio/poem/p033.mp3"
+ },
+ {
+  "key": "poem:a1x2",
+  "text": "咏雪，郑板桥。一片两片三四片，五六七八九十片，千片万片无数片，飞入梅花都不见。",
+  "file": "audio/poem/p034.mp3"
+ },
+ {
+  "key": "poem:a1x3",
+  "text": "鸟鸣涧，王维。人闲桂花落，夜静春山空。月出惊山鸟，时鸣春涧中。",
+  "file": "audio/poem/p035.mp3"
+ },
+ {
+  "key": "poem:a1x4",
+  "text": "遗爱寺，白居易。弄石临溪坐，寻花绕寺行。时时闻鸟语，处处是泉声。",
+  "file": "audio/poem/p036.mp3"
+ },
+ {
+  "key": "poem:a1x5",
+  "text": "竹里馆，王维。独坐幽篁里，弹琴复长啸。深林人不知，明月来相照。",
+  "file": "audio/poem/p037.mp3"
+ },
+ {
+  "key": "poem:a1x6",
+  "text": "送别，王维。山中相送罢，日暮掩柴扉。春草明年绿，王孙归不归。",
+  "file": "audio/poem/p038.mp3"
+ },
+ {
+  "key": "poem:a1x7",
+  "text": "杂诗，王维。君自故乡来，应知故乡事。来日绮窗前，寒梅著花未。",
+  "file": "audio/poem/p039.mp3"
+ },
+ {
+  "key": "poem:a1x8",
+  "text": "秋浦歌，李白。白发三千丈，缘愁似个长。不知明镜里，何处得秋霜。",
+  "file": "audio/poem/p040.mp3"
+ },
+ {
+  "key": "poem:a1x9",
+  "text": "八阵图，杜甫。功盖三分国，名成八阵图。江流石不转，遗恨失吞吴。",
+  "file": "audio/poem/p041.mp3"
+ },
+ {
+  "key": "poem:a1x10",
+  "text": "所见，袁枚。牧童骑黄牛，歌声振林樾。意欲捕鸣蝉，忽然闭口立。",
+  "file": "audio/poem/p042.mp3"
+ },
+ {
+  "key": "poem:a1x11",
+  "text": "独坐敬亭山，李白。众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。",
+  "file": "audio/poem/p043.mp3"
+ },
+ {
+  "key": "poem:a1x12",
+  "text": "舟夜书所见，查慎行。月黑见渔灯，孤光一点萤。微微风簇浪，散作满河星。",
+  "file": "audio/poem/p044.mp3"
+ },
+ {
+  "key": "poem:a1x13",
+  "text": "江南，汉乐府。江南可采莲，莲叶何田田。鱼戏莲叶间，鱼戏莲叶东，鱼戏莲叶西，鱼戏莲叶南，鱼戏莲叶北。",
+  "file": "audio/poem/p045.mp3"
+ },
+ {
+  "key": "poem:a1x14",
+  "text": "逢雪宿芙蓉山主人，刘长卿。日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。",
+  "file": "audio/poem/p046.mp3"
+ },
+ {
+  "key": "poem:a2x1",
+  "text": "小儿垂钓，胡令能。蓬头稚子学垂纶，侧坐莓苔草映身。路人借问遥招手，怕得鱼惊不应人。",
+  "file": "audio/poem/p047.mp3"
+ },
+ {
+  "key": "poem:a2x2",
+  "text": "宿新市徐公店，杨万里。篱落疏疏一径深，树头新绿未成阴。儿童急走追黄蝶，飞入菜花无处寻。",
+  "file": "audio/poem/p048.mp3"
+ },
+ {
+  "key": "poem:a2x3",
+  "text": "望天门山，李白。天门中断楚江开，碧水东流至此回。两岸青山相对出，孤帆一片日边来。",
+  "file": "audio/poem/p049.mp3"
+ },
+ {
+  "key": "poem:a2x4",
+  "text": "游园不值，叶绍翁。应怜屐齿印苍苔，小扣柴扉久不开。春色满园关不住，一枝红杏出墙来。",
+  "file": "audio/poem/p050.mp3"
+ },
+ {
+  "key": "poem:a2x5",
+  "text": "望洞庭，刘禹锡。湖光秋月两相和，潭面无风镜未磨。遥望洞庭山水翠，白银盘里一青螺。",
+  "file": "audio/poem/p051.mp3"
+ },
+ {
+  "key": "poem:a2x6",
+  "text": "枫桥夜泊，张继。月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。",
+  "file": "audio/poem/p052.mp3"
+ },
+ {
+  "key": "poem:a2x7",
+  "text": "九月九日忆山东兄弟，王维。独在异乡为异客，每逢佳节倍思亲。遥知兄弟登高处，遍插茱萸少一人。",
+  "file": "audio/poem/p053.mp3"
+ },
+ {
+  "key": "poem:a2x8",
+  "text": "回乡偶书，贺知章。少小离家老大回，乡音无改鬓毛衰。儿童相见不相识，笑问客从何处来。",
+  "file": "audio/poem/p054.mp3"
+ },
+ {
+  "key": "poem:a2x9",
+  "text": "凉州词，王之涣。黄河远上白云间，一片孤城万仞山。羌笛何须怨杨柳，春风不度玉门关。",
+  "file": "audio/poem/p055.mp3"
+ },
+ {
+  "key": "poem:a2x10",
+  "text": "大林寺桃花，白居易。人间四月芳菲尽，山寺桃花始盛开。长恨春归无觅处，不知转入此中来。",
+  "file": "audio/poem/p056.mp3"
+ },
+ {
+  "key": "poem:a2x11",
+  "text": "芙蓉楼送辛渐，王昌龄。寒雨连江夜入吴，平明送客楚山孤。洛阳亲友如相问，一片冰心在玉壶。",
+  "file": "audio/poem/p057.mp3"
+ },
+ {
+  "key": "poem:a2x12",
+  "text": "送元二使安西，王维。渭城朝雨浥轻尘，客舍青青柳色新。劝君更尽一杯酒，西出阳关无故人。",
+  "file": "audio/poem/p058.mp3"
+ },
+ {
+  "key": "poem:a2x13",
+  "text": "黄鹤楼送孟浩然之广陵，李白。故人西辞黄鹤楼，烟花三月下扬州。孤帆远影碧空尽，唯见长江天际流。",
+  "file": "audio/poem/p059.mp3"
+ },
+ {
+  "key": "poem:a2x14",
+  "text": "蜂，罗隐。不论平地与山尖，无限风光尽被占。采得百花成蜜后，为谁辛苦为谁甜。",
+  "file": "audio/poem/p060.mp3"
+ },
+ {
+  "key": "poem:a3x1",
+  "text": "敕勒歌，北朝民歌。敕勒川，阴山下。天似穹庐，笼盖四野。天苍苍，野茫茫，风吹草低见牛羊。",
+  "file": "audio/poem/p061.mp3"
+ },
+ {
+  "key": "poem:a3x2",
+  "text": "忆江南，白居易。江南好，风景旧曾谙。日出江花红胜火，春来江水绿如蓝。能不忆江南。",
+  "file": "audio/poem/p062.mp3"
+ },
+ {
+  "key": "poem:a3x3",
+  "text": "惠崇春江晚景，苏轼。竹外桃花三两枝，春江水暖鸭先知。蒌蒿满地芦芽短，正是河豚欲上时。",
+  "file": "audio/poem/p063.mp3"
+ },
+ {
+  "key": "poem:a3x4",
+  "text": "浪淘沙，刘禹锡。九曲黄河万里沙，浪淘风簸自天涯。如今直上银河去，同到牵牛织女家。",
+  "file": "audio/poem/p064.mp3"
+ },
+ {
+  "key": "poem:a3x5",
+  "text": "春夜喜雨，杜甫。好雨知时节，当春乃发生。随风潜入夜，润物细无声。野径云俱黑，江船火独明。晓看红湿处，花重锦官城。",
+  "file": "audio/poem/p065.mp3"
+ },
+ {
+  "key": "poem:a3x6",
+  "text": "江畔独步寻花，杜甫。黄四娘家花满蹊，千朵万朵压枝低。留连戏蝶时时舞，自在娇莺恰恰啼。",
+  "file": "audio/poem/p066.mp3"
+ },
+ {
+  "key": "poem:a3x7",
+  "text": "游子吟，孟郊。慈母手中线，游子身上衣。临行密密缝，意恐迟迟归。谁言寸草心，报得三春晖。",
+  "file": "audio/poem/p067.mp3"
+ },
+ {
+  "key": "poem:a3x8",
+  "text": "晓出净慈寺送林子方，杨万里。毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。",
+  "file": "audio/poem/p068.mp3"
+ },
+ {
+  "key": "poem:a3x9",
+  "text": "渔歌子，张志和。西塞山前白鹭飞，桃花流水鳜鱼肥。青箬笠，绿蓑衣，斜风细雨不须归。",
+  "file": "audio/poem/p069.mp3"
+ },
+ {
+  "key": "poem:a3x10",
+  "text": "观书有感，朱熹。半亩方塘一鉴开，天光云影共徘徊。问渠那得清如许，为有源头活水来。",
+  "file": "audio/poem/p070.mp3"
+ },
+ {
+  "key": "poem:a3x11",
+  "text": "石灰吟，于谦。千锤万凿出深山，烈火焚烧若等闲。粉骨碎身浑不怕，要留清白在人间。",
+  "file": "audio/poem/p071.mp3"
+ },
+ {
+  "key": "poem:a3x12",
+  "text": "长歌行（节选），汉乐府。青青园中葵，朝露待日晞。阳春布德泽，万物生光辉。少壮不努力，老大徒伤悲。",
+  "file": "audio/poem/p072.mp3"
+ },
+ {
+  "key": "poem:a4x1",
+  "text": "将进酒（节选），李白。君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪。天生我材必有用，千金散尽还复来。",
+  "file": "audio/poem/p073.mp3"
+ },
+ {
+  "key": "poem:a4x2",
+  "text": "行路难（节选），李白。金樽清酒斗十千，玉盘珍羞直万钱。停杯投箸不能食，拔剑四顾心茫然。长风破浪会有时，直挂云帆济沧海。",
+  "file": "audio/poem/p074.mp3"
+ },
+ {
+  "key": "poem:a4x3",
+  "text": "无题，李商隐。相见时难别亦难，东风无力百花残。春蚕到死丝方尽，蜡炬成灰泪始干。晓镜但愁云鬓改，夜吟应觉月光寒。蓬山此去无多路，青鸟殷勤为探看。",
+  "file": "audio/poem/p075.mp3"
+ },
+ {
+  "key": "poem:a4x4",
+  "text": "酬乐天扬州初逢席上见赠，刘禹锡。巴山楚水凄凉地，二十三年弃置身。怀旧空吟闻笛赋，到乡翻似烂柯人。沉舟侧畔千帆过，病树前头万木春。今日听君歌一曲，暂凭杯酒长精神。",
+  "file": "audio/poem/p076.mp3"
+ },
+ {
+  "key": "poem:a4x5",
+  "text": "赤壁，杜牧。折戟沉沙铁未销，自将磨洗认前朝。东风不与周郎便，铜雀春深锁二乔。",
+  "file": "audio/poem/p077.mp3"
+ },
+ {
+  "key": "poem:a4x6",
+  "text": "泊秦淮，杜牧。烟笼寒水月笼沙，夜泊秦淮近酒家。商女不知亡国恨，隔江犹唱后庭花。",
+  "file": "audio/poem/p078.mp3"
+ },
+ {
+  "key": "poem:a4x7",
+  "text": "夜雨寄北，李商隐。君问归期未有期，巴山夜雨涨秋池。何当共剪西窗烛，却话巴山夜雨时。",
+  "file": "audio/poem/p079.mp3"
+ },
+ {
+  "key": "poem:a4x8",
+  "text": "己亥杂诗，龚自珍。九州生气恃风雷，万马齐喑究可哀。我劝天公重抖擞，不拘一格降人才。",
+  "file": "audio/poem/p080.mp3"
+ },
+ {
+  "key": "poem:a4x9",
+  "text": "望岳，杜甫。岱宗夫如何？齐鲁青未了。造化钟神秀，阴阳割昏晓。荡胸生曾云，决眦入归鸟。会当凌绝顶，一览众山小。",
+  "file": "audio/poem/p081.mp3"
+ },
+ {
+  "key": "poem:a4x10",
+  "text": "春望，杜甫。国破山河在，城春草木深。感时花溅泪，恨别鸟惊心。烽火连三月，家书抵万金。白头搔更短，浑欲不胜簪。",
+  "file": "audio/poem/p082.mp3"
+ },
+ {
+  "key": "poem:a4x11",
+  "text": "茅屋为秋风所破歌（节选），杜甫。安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山。呜呼！何时眼前突兀见此屋，吾庐独破受冻死亦足。",
+  "file": "audio/poem/p083.mp3"
+ },
+ {
+  "key": "poem:a4x12",
+  "text": "水调歌头（节选），苏轼。明月几时有？把酒问青天。不知天上宫阙，今夕是何年。人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。",
+  "file": "audio/poem/p084.mp3"
+ },
+ {
+  "key": "char:a1:一",
+  "text": "一，一个。我吃了一个苹果。",
+  "file": "audio/char/a1_c001.mp3"
+ },
+ {
+  "key": "char:a1:二",
+  "text": "二，二哥。我家养了二条金鱼。",
+  "file": "audio/char/a1_c002.mp3"
+ },
+ {
+  "key": "char:a1:三",
+  "text": "三，三个。桌上有三本书。",
+  "file": "audio/char/a1_c003.mp3"
+ },
+ {
+  "key": "char:a1:四",
+  "text": "四，四季。一年有春、夏、秋、冬四季。",
+  "file": "audio/char/a1_c004.mp3"
+ },
+ {
+  "key": "char:a1:五",
+  "text": "五，五指。一只手有五根手指。",
+  "file": "audio/char/a1_c005.mp3"
+ },
+ {
+  "key": "char:a1:六",
+  "text": "六，六一。六一儿童节是我们的节日。",
+  "file": "audio/char/a1_c006.mp3"
+ },
+ {
+  "key": "char:a1:七",
+  "text": "七，七彩。彩虹有七种颜色。",
+  "file": "audio/char/a1_c007.mp3"
+ },
+ {
+  "key": "char:a1:八",
+  "text": "八，八哥。八哥鸟会学人说话。",
+  "file": "audio/char/a1_c008.mp3"
+ },
+ {
+  "key": "char:a1:九",
+  "text": "九，九月。九月十日是教师节。",
+  "file": "audio/char/a1_c009.mp3"
+ },
+ {
+  "key": "char:a1:十",
+  "text": "十，十分。我十分喜欢画画。",
+  "file": "audio/char/a1_c010.mp3"
+ },
+ {
+  "key": "char:a1:日",
+  "text": "日，日出。太阳从东方升起，这叫日出。",
+  "file": "audio/char/a1_c011.mp3"
+ },
+ {
+  "key": "char:a1:月",
+  "text": "月，月亮。晚上，月亮挂在天上。",
+  "file": "audio/char/a1_c012.mp3"
+ },
+ {
+  "key": "char:a1:水",
+  "text": "水，喝水。多喝水身体好。",
+  "file": "audio/char/a1_c013.mp3"
+ },
+ {
+  "key": "char:a1:火",
+  "text": "火，火焰。火焰是红色的。",
+  "file": "audio/char/a1_c014.mp3"
+ },
+ {
+  "key": "char:a1:山",
+  "text": "山，大山。远处有一座高高的大山。",
+  "file": "audio/char/a1_c015.mp3"
+ },
+ {
+  "key": "char:a1:木",
+  "text": "木，树木。公园里种了很多树木。",
+  "file": "audio/char/a1_c016.mp3"
+ },
+ {
+  "key": "char:a1:人",
+  "text": "人，人们。公园里人们在散步。",
+  "file": "audio/char/a1_c017.mp3"
+ },
+ {
+  "key": "char:a1:口",
+  "text": "口，人口。嘴巴又叫口，用来吃饭说话。",
+  "file": "audio/char/a1_c018.mp3"
+ },
+ {
+  "key": "char:a1:手",
+  "text": "手，小手。我用小手写字画画。",
+  "file": "audio/char/a1_c019.mp3"
+ },
+ {
+  "key": "char:a1:大",
+  "text": "大，大人。大象是陆地上的大动物。",
+  "file": "audio/char/a1_c020.mp3"
+ },
+ {
+  "key": "char:a1:小",
+  "text": "小，小鸟。小鸟在树上唱歌。",
+  "file": "audio/char/a1_c021.mp3"
+ },
+ {
+  "key": "char:a1:上",
+  "text": "上，上学。我每天高高兴兴上学去。",
+  "file": "audio/char/a1_c022.mp3"
+ },
+ {
+  "key": "char:a1:下",
+  "text": "下，下雨。下雨了，记得带伞。",
+  "file": "audio/char/a1_c023.mp3"
+ },
+ {
+  "key": "char:a1:天",
+  "text": "天，天空。天空中有白云飘过。",
+  "file": "audio/char/a1_c024.mp3"
+ },
+ {
+  "key": "char:a1:爷",
+  "text": "爷，爷爷。爷爷带我去公园放风筝。",
+  "file": "audio/char/a1_c025.mp3"
+ },
+ {
+  "key": "char:a1:奶",
+  "text": "奶，奶奶。奶奶做的饭菜真好吃呀。",
+  "file": "audio/char/a1_c026.mp3"
+ },
+ {
+  "key": "char:a1:家",
+  "text": "家，家人。我们一家人在一起很开心。",
+  "file": "audio/char/a1_c027.mp3"
+ },
+ {
+  "key": "char:a1:门",
+  "text": "门，开门。进门之前要先敲一敲门。",
+  "file": "audio/char/a1_c028.mp3"
+ },
+ {
+  "key": "char:a1:窗",
+  "text": "窗，窗户。早晨打开窗户透透新鲜空气。",
+  "file": "audio/char/a1_c029.mp3"
+ },
+ {
+  "key": "char:a1:车",
+  "text": "车，汽车。马路上汽车一辆接一辆。",
+  "file": "audio/char/a1_c030.mp3"
+ },
+ {
+  "key": "char:a1:飞",
+  "text": "飞，飞机。小鸟在天空中自由地飞翔。",
+  "file": "audio/char/a1_c031.mp3"
+ },
+ {
+  "key": "char:a1:机",
+  "text": "机，机器。机器人会帮我打扫房间。",
+  "file": "audio/char/a1_c032.mp3"
+ },
+ {
+  "key": "char:a1:树",
+  "text": "树，大树。小鸟在大树上快乐地唱歌。",
+  "file": "audio/char/a1_c033.mp3"
+ },
+ {
+  "key": "char:a1:林",
+  "text": "林，树林。树林里藏着许多小动物。",
+  "file": "audio/char/a1_c034.mp3"
+ },
+ {
+  "key": "char:a1:头",
+  "text": "头，头发。我摇了摇头表示不同意。",
+  "file": "audio/char/a1_c035.mp3"
+ },
+ {
+  "key": "char:a1:雪",
+  "text": "雪，雪花。雪花从天上轻轻飘下来。",
+  "file": "audio/char/a1_c036.mp3"
+ },
+ {
+  "key": "char:a1:电",
+  "text": "电，电话。打雷闪电时要待在家里。",
+  "file": "audio/char/a1_c037.mp3"
+ },
+ {
+  "key": "char:a1:灯",
+  "text": "灯，台灯。天黑了，我打开台灯看书。",
+  "file": "audio/char/a1_c038.mp3"
+ },
+ {
+  "key": "char:a1:书",
+  "text": "书，读书。书包里装着心爱的图书。",
+  "file": "audio/char/a1_c039.mp3"
+ },
+ {
+  "key": "char:a1:笔",
+  "text": "笔，铅笔。小小的铅笔帮我写出漂亮的字。",
+  "file": "audio/char/a1_c040.mp3"
+ },
+ {
+  "key": "char:a1:纸",
+  "text": "纸，白纸。我在白纸上画了一朵花。",
+  "file": "audio/char/a1_c041.mp3"
+ },
+ {
+  "key": "char:a1:画",
+  "text": "画，画画。我画了一幅美丽的图画。",
+  "file": "audio/char/a1_c042.mp3"
+ },
+ {
+  "key": "char:a1:球",
+  "text": "球，皮球。我们一起拍皮球真开心。",
+  "file": "audio/char/a1_c043.mp3"
+ },
+ {
+  "key": "char:a1:饭",
+  "text": "饭，米饭。香喷喷的米饭营养又好吃。",
+  "file": "audio/char/a1_c044.mp3"
+ },
+ {
+  "key": "char:a1:茶",
+  "text": "茶，喝茶。爷爷一边喝茶一边看报纸。",
+  "file": "audio/char/a1_c045.mp3"
+ },
+ {
+  "key": "char:a1:菜",
+  "text": "菜，青菜。我爱吃青菜和新鲜蔬菜。",
+  "file": "audio/char/a1_c046.mp3"
+ },
+ {
+  "key": "char:a1:杯",
+  "text": "杯，杯子。我用杯子喝水不洒出来。",
+  "file": "audio/char/a1_c047.mp3"
+ },
+ {
+  "key": "char:a1:碗",
+  "text": "碗，饭碗。我把碗里的饭吃得干干净净。",
+  "file": "audio/char/a1_c048.mp3"
+ },
+ {
+  "key": "char:a1:勺",
+  "text": "勺，勺子。我用小勺子一口一口喝汤。",
+  "file": "audio/char/a1_c049.mp3"
+ },
+ {
+  "key": "char:a1:盘",
+  "text": "盘，盘子。盘子里的苹果又香又甜。",
+  "file": "audio/char/a1_c050.mp3"
+ },
+ {
+  "key": "char:a1:衣",
+  "text": "衣，衣服。天冷了要穿上厚厚的衣服。",
+  "file": "audio/char/a1_c051.mp3"
+ },
+ {
+  "key": "char:a1:物",
+  "text": "物，动物。动物园里有很多可爱的动物。",
+  "file": "audio/char/a1_c052.mp3"
+ },
+ {
+  "key": "char:a1:鞋",
+  "text": "鞋，鞋子。进屋要把鞋子摆放整齐。",
+  "file": "audio/char/a1_c053.mp3"
+ },
+ {
+  "key": "char:a1:帽",
+  "text": "帽，帽子。夏天出门要戴上小帽子。",
+  "file": "audio/char/a1_c054.mp3"
+ },
+ {
+  "key": "char:a1:袜",
+  "text": "袜，袜子。干净的小袜子天天换洗。",
+  "file": "audio/char/a1_c055.mp3"
+ },
+ {
+  "key": "char:a1:红",
+  "text": "红，红色。红红的花朵开满了枝头。",
+  "file": "audio/char/a1_c056.mp3"
+ },
+ {
+  "key": "char:a1:黄",
+  "text": "黄，黄色。黄黄的香蕉像小小的月亮。",
+  "file": "audio/char/a1_c057.mp3"
+ },
+ {
+  "key": "char:a1:蓝",
+  "text": "蓝，蓝色。蓝蓝的天上飘着朵朵白云。",
+  "file": "audio/char/a1_c058.mp3"
+ },
+ {
+  "key": "char:a1:绿",
+  "text": "绿，绿色。小草绿绿的像地毯一样。",
+  "file": "audio/char/a1_c059.mp3"
+ },
+ {
+  "key": "char:a1:黑",
+  "text": "黑，黑色。黑黑的夜晚有星星眨眼。",
+  "file": "audio/char/a1_c060.mp3"
+ },
+ {
+  "key": "char:a1:白",
+  "text": "白，白色。白白的云朵像棉花糖一样。",
+  "file": "audio/char/a1_c061.mp3"
+ },
+ {
+  "key": "char:a1:彩",
+  "text": "彩，彩色。雨后的天边出现了七色彩虹。",
+  "file": "audio/char/a1_c062.mp3"
+ },
+ {
+  "key": "char:a1:色",
+  "text": "色，颜色。彩虹有七种漂亮的颜色。",
+  "file": "audio/char/a1_c063.mp3"
+ },
+ {
+  "key": "char:a1:高",
+  "text": "高，高大。长颈鹿长得比大树还高。",
+  "file": "audio/char/a1_c064.mp3"
+ },
+ {
+  "key": "char:a1:矮",
+  "text": "矮，高矮。弟弟个子矮，够不着门铃。",
+  "file": "audio/char/a1_c065.mp3"
+ },
+ {
+  "key": "char:a1:胖",
+  "text": "胖，胖胖。胖胖的小猪呼噜噜睡觉。",
+  "file": "audio/char/a1_c066.mp3"
+ },
+ {
+  "key": "char:a1:瘦",
+  "text": "瘦，瘦小。瘦瘦的小猴子爬树最快。",
+  "file": "audio/char/a1_c067.mp3"
+ },
+ {
+  "key": "char:a1:坐",
+  "text": "坐，坐下。小朋友上课要坐得端端正正。",
+  "file": "audio/char/a1_c068.mp3"
+ },
+ {
+  "key": "char:a1:立",
+  "text": "立，起立。升国旗时我们要起立敬礼。",
+  "file": "audio/char/a1_c069.mp3"
+ },
+ {
+  "key": "char:a1:走",
+  "text": "走，走路。走路要看好脚下的路哦。",
+  "file": "audio/char/a1_c070.mp3"
+ },
+ {
+  "key": "char:a1:跑",
+  "text": "跑，跑步。小朋友在操场上快乐奔跑。",
+  "file": "audio/char/a1_c071.mp3"
+ },
+ {
+  "key": "char:a1:跳",
+  "text": "跳，跳高。小青蛙在荷叶上蹦蹦跳跳。",
+  "file": "audio/char/a1_c072.mp3"
+ },
+ {
+  "key": "char:a1:看",
+  "text": "看，看书。我坐在窗边安静地看书。",
+  "file": "audio/char/a1_c073.mp3"
+ },
+ {
+  "key": "char:a1:听",
+  "text": "听，听话。认真听讲才能学到本领。",
+  "file": "audio/char/a1_c074.mp3"
+ },
+ {
+  "key": "char:a1:说",
+  "text": "说，说话。说话的时候要看着对方。",
+  "file": "audio/char/a1_c075.mp3"
+ },
+ {
+  "key": "char:a1:读",
+  "text": "读，读书。我每天晚上大声读故事。",
+  "file": "audio/char/a1_c076.mp3"
+ },
+ {
+  "key": "char:a1:写",
+  "text": "写，写字。我认真地把字写得漂漂亮亮。",
+  "file": "audio/char/a1_c077.mp3"
+ },
+ {
+  "key": "char:a1:吃",
+  "text": "吃，吃饭。吃饭之前要把小手洗干净。",
+  "file": "audio/char/a1_c078.mp3"
+ },
+ {
+  "key": "char:a1:喝",
+  "text": "喝，喝水。运动以后要多喝白开水。",
+  "file": "audio/char/a1_c079.mp3"
+ },
+ {
+  "key": "char:a1:睡",
+  "text": "睡，睡觉。小朋友要早睡早起身体好。",
+  "file": "audio/char/a1_c080.mp3"
+ },
+ {
+  "key": "char:a1:玩",
+  "text": "玩，玩耍。完成作业再去开心地玩耍。",
+  "file": "audio/char/a1_c081.mp3"
+ },
+ {
+  "key": "char:a1:进",
+  "text": "进，进来。老师走进教室开始上课。",
+  "file": "audio/char/a1_c082.mp3"
+ },
+ {
+  "key": "char:a1:出",
+  "text": "出，出门。出门前要和爸爸妈妈说再见。",
+  "file": "audio/char/a1_c083.mp3"
+ },
+ {
+  "key": "char:a1:开",
+  "text": "开，开门。春天到，花儿一朵朵开放了。",
+  "file": "audio/char/a1_c084.mp3"
+ },
+ {
+  "key": "char:a1:关",
+  "text": "关，关门。睡觉前要关好门窗和台灯。",
+  "file": "audio/char/a1_c085.mp3"
+ },
+ {
+  "key": "char:a1:来",
+  "text": "来，来了。新的一年悄悄地来到了。",
+  "file": "audio/char/a1_c086.mp3"
+ },
+ {
+  "key": "char:a1:去",
+  "text": "去，回去。周末我们去动物园看熊猫。",
+  "file": "audio/char/a1_c087.mp3"
+ },
+ {
+  "key": "char:a1:回",
+  "text": "回，回家。放学以后要早点回到家。",
+  "file": "audio/char/a1_c088.mp3"
+ },
+ {
+  "key": "char:a1:她",
+  "text": "她，她们。她和好朋友一起做游戏。",
+  "file": "audio/char/a1_c089.mp3"
+ },
+ {
+  "key": "char:a1:它",
+  "text": "它，它们。它们是小兔子爱吃的萝卜。",
+  "file": "audio/char/a1_c090.mp3"
+ },
+ {
+  "key": "char:a1:儿",
+  "text": "儿，儿歌。我们一起唱快乐的儿歌。",
+  "file": "audio/char/a1_c091.mp3"
+ },
+ {
+  "key": "char:a1:子",
+  "text": "子，儿子。我是爸爸妈妈的好孩子。",
+  "file": "audio/char/a1_c092.mp3"
+ },
+ {
+  "key": "char:a1:女",
+  "text": "女，女孩。姐姐是个爱笑的女孩子。",
+  "file": "audio/char/a1_c093.mp3"
+ },
+ {
+  "key": "char:a1:孩",
+  "text": "孩，孩子。孩子们在草地上追蝴蝶。",
+  "file": "audio/char/a1_c094.mp3"
+ },
+ {
+  "key": "char:a1:好",
+  "text": "好，好人。好朋友们互相帮助真开心。",
+  "file": "audio/char/a1_c095.mp3"
+ },
+ {
+  "key": "char:a1:瓜",
+  "text": "瓜，西瓜。夏天的西瓜又甜又解渴。",
+  "file": "audio/char/a1_c096.mp3"
+ },
+ {
+  "key": "char:a1:果",
+  "text": "果，水果。每天吃点水果身体棒棒的。",
+  "file": "audio/char/a1_c097.mp3"
+ },
+ {
+  "key": "char:a1:米",
+  "text": "米，大米。妈妈把白米煮成香香的饭。",
+  "file": "audio/char/a1_c098.mp3"
+ },
+ {
+  "key": "char:a1:耳",
+  "text": "耳，耳朵。小兔子的长耳朵竖起来啦。",
+  "file": "audio/char/a1_c099.mp3"
+ },
+ {
+  "key": "char:a1:心",
+  "text": "心，开心。帮助别人我心里很开心。",
+  "file": "audio/char/a1_c100.mp3"
+ },
+ {
+  "key": "char:a1:本",
+  "text": "本，本子。我的本子写得整整齐齐。",
+  "file": "audio/char/a1_c101.mp3"
+ },
+ {
+  "key": "char:a1:刀",
+  "text": "刀，小刀。使用小刀时要注意安全。",
+  "file": "audio/char/a1_c102.mp3"
+ },
+ {
+  "key": "char:a1:田",
+  "text": "田，田地。农民伯伯在田里插秧苗。",
+  "file": "audio/char/a1_c103.mp3"
+ },
+ {
+  "key": "char:a1:土",
+  "text": "土，泥土。种子在泥土里慢慢发芽。",
+  "file": "audio/char/a1_c104.mp3"
+ },
+ {
+  "key": "char:a1:河",
+  "text": "河，小河。小河的水哗啦啦地流着。",
+  "file": "audio/char/a1_c105.mp3"
+ },
+ {
+  "key": "char:a2:云",
+  "text": "云，白云。白云像棉花糖一样。",
+  "file": "audio/char/a2_c001.mp3"
+ },
+ {
+  "key": "char:a2:雨",
+  "text": "雨，雨水。雨水浇灌了小花小草。",
+  "file": "audio/char/a2_c002.mp3"
+ },
+ {
+  "key": "char:a2:花",
+  "text": "花，花朵。春天开满了美丽的花朵。",
+  "file": "audio/char/a2_c003.mp3"
+ },
+ {
+  "key": "char:a2:草",
+  "text": "草，小草。小草从泥土里探出头。",
+  "file": "audio/char/a2_c004.mp3"
+ },
+ {
+  "key": "char:a2:虫",
+  "text": "虫，昆虫。蝴蝶是一种美丽的昆虫。",
+  "file": "audio/char/a2_c005.mp3"
+ },
+ {
+  "key": "char:a2:鱼",
+  "text": "鱼，小鱼。小鱼在水里游来游去。",
+  "file": "audio/char/a2_c006.mp3"
+ },
+ {
+  "key": "char:a2:鸟",
+  "text": "鸟，小鸟。小鸟在树枝上搭窝。",
+  "file": "audio/char/a2_c007.mp3"
+ },
+ {
+  "key": "char:a2:马",
+  "text": "马，小马。小马跑得很快。",
+  "file": "audio/char/a2_c008.mp3"
+ },
+ {
+  "key": "char:a2:牛",
+  "text": "牛，水牛。水牛在河边吃草。",
+  "file": "audio/char/a2_c009.mp3"
+ },
+ {
+  "key": "char:a2:羊",
+  "text": "羊，小羊。小羊咩咩叫妈妈。",
+  "file": "audio/char/a2_c010.mp3"
+ },
+ {
+  "key": "char:a2:猫",
+  "text": "猫，小猫。小猫最爱捉老鼠。",
+  "file": "audio/char/a2_c011.mp3"
+ },
+ {
+  "key": "char:a2:狗",
+  "text": "狗，小狗。小狗汪汪看家门。",
+  "file": "audio/char/a2_c012.mp3"
+ },
+ {
+  "key": "char:a2:鸡",
+  "text": "鸡，公鸡。公鸡喔喔叫我们起床。",
+  "file": "audio/char/a2_c013.mp3"
+ },
+ {
+  "key": "char:a2:兔",
+  "text": "兔，白兔。小白兔爱吃萝卜和青菜。",
+  "file": "audio/char/a2_c014.mp3"
+ },
+ {
+  "key": "char:a2:爸",
+  "text": "爸，爸爸。爸爸带我去看电影。",
+  "file": "audio/char/a2_c015.mp3"
+ },
+ {
+  "key": "char:a2:妈",
+  "text": "妈，妈妈。妈妈做的饭最香。",
+  "file": "audio/char/a2_c016.mp3"
+ },
+ {
+  "key": "char:a2:你",
+  "text": "你，你好。见面要说\"你好\"。",
+  "file": "audio/char/a2_c017.mp3"
+ },
+ {
+  "key": "char:a2:我",
+  "text": "我，我们。我们是好朋友。",
+  "file": "audio/char/a2_c018.mp3"
+ },
+ {
+  "key": "char:a2:他",
+  "text": "他，他人。要乐于帮助他人。",
+  "file": "audio/char/a2_c019.mp3"
+ },
+ {
+  "key": "char:a2:星",
+  "text": "星，星星。夜晚天上有很多星星。",
+  "file": "audio/char/a2_c020.mp3"
+ },
+ {
+  "key": "char:a2:石",
+  "text": "石，石头。小溪边有圆圆的石头。",
+  "file": "audio/char/a2_c021.mp3"
+ },
+ {
+  "key": "char:a2:风",
+  "text": "风，大风。大风吹得树叶沙沙响。",
+  "file": "audio/char/a2_c022.mp3"
+ },
+ {
+  "key": "char:a2:朋",
+  "text": "朋，朋友。我们做一辈子的好朋友。",
+  "file": "audio/char/a2_c023.mp3"
+ },
+ {
+  "key": "char:a2:友",
+  "text": "友，友爱。好朋友之间要友爱互助。",
+  "file": "audio/char/a2_c024.mp3"
+ },
+ {
+  "key": "char:a2:同",
+  "text": "同，同班。同班同学要互相帮助呀。",
+  "file": "audio/char/a2_c025.mp3"
+ },
+ {
+  "key": "char:a2:学",
+  "text": "学，学习。每天学习一点点进步大。",
+  "file": "audio/char/a2_c026.mp3"
+ },
+ {
+  "key": "char:a2:老",
+  "text": "老，老师。老师像妈妈一样关心我们。",
+  "file": "audio/char/a2_c027.mp3"
+ },
+ {
+  "key": "char:a2:师",
+  "text": "师，师长。我们要尊敬老师和长辈。",
+  "file": "audio/char/a2_c028.mp3"
+ },
+ {
+  "key": "char:a2:校",
+  "text": "校，校园。校园里种满了美丽的花。",
+  "file": "audio/char/a2_c029.mp3"
+ },
+ {
+  "key": "char:a2:教",
+  "text": "教，教室。教室里传来朗朗读书声。",
+  "file": "audio/char/a2_c030.mp3"
+ },
+ {
+  "key": "char:a2:室",
+  "text": "室，教室。教室是我们的学习小天地。",
+  "file": "audio/char/a2_c031.mp3"
+ },
+ {
+  "key": "char:a2:板",
+  "text": "板，黑板。黑板上写满了工整的字。",
+  "file": "audio/char/a2_c032.mp3"
+ },
+ {
+  "key": "char:a2:桌",
+  "text": "桌，桌子。课桌上摆放着整齐的书。",
+  "file": "audio/char/a2_c033.mp3"
+ },
+ {
+  "key": "char:a2:明",
+  "text": "明，明天。明天我要去爷爷家做客。",
+  "file": "audio/char/a2_c034.mp3"
+ },
+ {
+  "key": "char:a2:亮",
+  "text": "亮，明亮。明亮的教室让人心情好。",
+  "file": "audio/char/a2_c035.mp3"
+ },
+ {
+  "key": "char:a2:安",
+  "text": "安，安全。记住安全第一很重要哦。",
+  "file": "audio/char/a2_c036.mp3"
+ },
+ {
+  "key": "char:a2:静",
+  "text": "静，安静。午睡时教室里安安静静。",
+  "file": "audio/char/a2_c037.mp3"
+ },
+ {
+  "key": "char:a2:勇",
+  "text": "勇，勇敢。遇到困难要勇敢地面对。",
+  "file": "audio/char/a2_c038.mp3"
+ },
+ {
+  "key": "char:a2:敢",
+  "text": "敢，敢于。上课要敢于举手发言哦。",
+  "file": "audio/char/a2_c039.mp3"
+ },
+ {
+  "key": "char:a2:聪",
+  "text": "聪，聪明。爱动脑筋的孩子更聪明。",
+  "file": "audio/char/a2_c040.mp3"
+ },
+ {
+  "key": "char:a2:勤",
+  "text": "勤，勤劳。勤劳的小蜜蜂忙着采蜜。",
+  "file": "audio/char/a2_c041.mp3"
+ },
+ {
+  "key": "char:a2:劳",
+  "text": "劳，劳动。爱劳动的孩子人人夸奖。",
+  "file": "audio/char/a2_c042.mp3"
+ },
+ {
+  "key": "char:a2:认",
+  "text": "认，认真。认真做事才能做得更好。",
+  "file": "audio/char/a2_c043.mp3"
+ },
+ {
+  "key": "char:a2:真",
+  "text": "真，真心。他真心诚意地向我道歉。",
+  "file": "audio/char/a2_c044.mp3"
+ },
+ {
+  "key": "char:a2:快",
+  "text": "快，快乐。把快乐分享给好朋友吧。",
+  "file": "audio/char/a2_c045.mp3"
+ },
+ {
+  "key": "char:a2:乐",
+  "text": "乐，音乐。听着音乐我们跳起舞来。",
+  "file": "audio/char/a2_c046.mp3"
+ },
+ {
+  "key": "char:a2:生",
+  "text": "生，生日。生日那天我收到了礼物。",
+  "file": "audio/char/a2_c047.mp3"
+ },
+ {
+  "key": "char:a2:气",
+  "text": "气，生气。生气的时候先深呼吸一下。",
+  "file": "audio/char/a2_c048.mp3"
+ },
+ {
+  "key": "char:a2:害",
+  "text": "害，害怕。害怕的时候要想勇敢的事。",
+  "file": "audio/char/a2_c049.mp3"
+ },
+ {
+  "key": "char:a2:怕",
+  "text": "怕，不怕。勇敢的孩子什么都不怕。",
+  "file": "audio/char/a2_c050.mp3"
+ },
+ {
+  "key": "char:a2:喜",
+  "text": "喜，喜欢。大家欢欢喜喜迎新年啦。",
+  "file": "audio/char/a2_c051.mp3"
+ },
+ {
+  "key": "char:a2:欢",
+  "text": "欢，欢笑。节日里到处是欢声笑语。",
+  "file": "audio/char/a2_c052.mp3"
+ },
+ {
+  "key": "char:a2:想",
+  "text": "想，想念。放假的时候我很想念老师。",
+  "file": "audio/char/a2_c053.mp3"
+ },
+ {
+  "key": "char:a2:帮",
+  "text": "帮，帮忙。同学有困难我们要帮忙。",
+  "file": "audio/char/a2_c054.mp3"
+ },
+ {
+  "key": "char:a2:助",
+  "text": "助，助人。帮助别人自己也很快乐。",
+  "file": "audio/char/a2_c055.mp3"
+ },
+ {
+  "key": "char:a2:感",
+  "text": "感，感谢。我要感谢帮助过我的人。",
+  "file": "audio/char/a2_c056.mp3"
+ },
+ {
+  "key": "char:a2:谢",
+  "text": "谢，谢谢。收到礼物要说声谢谢你。",
+  "file": "audio/char/a2_c057.mp3"
+ },
+ {
+  "key": "char:a2:礼",
+  "text": "礼，礼物。我准备了小礼物送妈妈。",
+  "file": "audio/char/a2_c058.mp3"
+ },
+ {
+  "key": "char:a2:道",
+  "text": "道，道歉。做错事要主动道歉改正。",
+  "file": "audio/char/a2_c059.mp3"
+ },
+ {
+  "key": "char:a2:节",
+  "text": "节，节日。我最喜欢过快乐的节日。",
+  "file": "audio/char/a2_c060.mp3"
+ },
+ {
+  "key": "char:a2:新",
+  "text": "新，新年。新年到了家家户户贴春联。",
+  "file": "audio/char/a2_c061.mp3"
+ },
+ {
+  "key": "char:a2:年",
+  "text": "年，过年。过年时全家一起吃饺子。",
+  "file": "audio/char/a2_c062.mp3"
+ },
+ {
+  "key": "char:a2:祝",
+  "text": "祝，祝福。祝爷爷奶奶身体健康长寿。",
+  "file": "audio/char/a2_c063.mp3"
+ },
+ {
+  "key": "char:a2:春",
+  "text": "春，春天。春天里小燕子飞回来了。",
+  "file": "audio/char/a2_c064.mp3"
+ },
+ {
+  "key": "char:a2:夏",
+  "text": "夏，夏天。夏天我们喜欢去游泳玩水。",
+  "file": "audio/char/a2_c065.mp3"
+ },
+ {
+  "key": "char:a2:秋",
+  "text": "秋，秋天。秋天到，树叶飘飘落下来。",
+  "file": "audio/char/a2_c066.mp3"
+ },
+ {
+  "key": "char:a2:冬",
+  "text": "冬，冬天。冬天的雪花像白蝴蝶。",
+  "file": "audio/char/a2_c067.mp3"
+ },
+ {
+  "key": "char:a2:暖",
+  "text": "暖，温暖。春天温暖的阳光照大地。",
+  "file": "audio/char/a2_c068.mp3"
+ },
+ {
+  "key": "char:a2:热",
+  "text": "热，热情。大家热情地欢迎新同学。",
+  "file": "audio/char/a2_c069.mp3"
+ },
+ {
+  "key": "char:a2:凉",
+  "text": "凉，凉快。大树下乘凉舒服又凉快。",
+  "file": "audio/char/a2_c070.mp3"
+ },
+ {
+  "key": "char:a2:寒",
+  "text": "寒，寒冷。寒冷的冬天我穿上棉袄。",
+  "file": "audio/char/a2_c071.mp3"
+ },
+ {
+  "key": "char:a2:冷",
+  "text": "冷，冰冷。冬天河水变得冰冷刺骨。",
+  "file": "audio/char/a2_c072.mp3"
+ },
+ {
+  "key": "char:a2:东",
+  "text": "东，东方。早晨的太阳从东方升起。",
+  "file": "audio/char/a2_c073.mp3"
+ },
+ {
+  "key": "char:a2:南",
+  "text": "南，南方。冬天大雁要飞去南方啦。",
+  "file": "audio/char/a2_c074.mp3"
+ },
+ {
+  "key": "char:a2:西",
+  "text": "西，西边。傍晚的太阳落到西边了。",
+  "file": "audio/char/a2_c075.mp3"
+ },
+ {
+  "key": "char:a2:北",
+  "text": "北，北方。北方的小朋友会滑冰哦。",
+  "file": "audio/char/a2_c076.mp3"
+ },
+ {
+  "key": "char:a2:方",
+  "text": "方，方向。指南针能帮我们找方向。",
+  "file": "audio/char/a2_c077.mp3"
+ },
+ {
+  "key": "char:a2:向",
+  "text": "向，方向。向日葵总是向着太阳转。",
+  "file": "audio/char/a2_c078.mp3"
+ },
+ {
+  "key": "char:a2:前",
+  "text": "前，前面。排队时不要站到前面去。",
+  "file": "audio/char/a2_c079.mp3"
+ },
+ {
+  "key": "char:a2:后",
+  "text": "后，后面。学校后面有一个小花园。",
+  "file": "audio/char/a2_c080.mp3"
+ },
+ {
+  "key": "char:a2:左",
+  "text": "左，左边。写字要用左手压住本子。",
+  "file": "audio/char/a2_c081.mp3"
+ },
+ {
+  "key": "char:a2:右",
+  "text": "右，右边。马路的右边有一家书店。",
+  "file": "audio/char/a2_c082.mp3"
+ },
+ {
+  "key": "char:a2:中",
+  "text": "中，中间。我坐在爸爸和妈妈中间。",
+  "file": "audio/char/a2_c083.mp3"
+ },
+ {
+  "key": "char:a2:间",
+  "text": "间，房间。我把房间整理得干干净净。",
+  "file": "audio/char/a2_c084.mp3"
+ },
+ {
+  "key": "char:a2:旁",
+  "text": "旁，旁边。我旁边坐着我的好朋友。",
+  "file": "audio/char/a2_c085.mp3"
+ },
+ {
+  "key": "char:a2:近",
+  "text": "近，附近。我家附近有一座小公园。",
+  "file": "audio/char/a2_c086.mp3"
+ },
+ {
+  "key": "char:a2:远",
+  "text": "远，远方。远方传来一阵悠扬的歌声。",
+  "file": "audio/char/a2_c087.mp3"
+ },
+ {
+  "key": "char:a2:声",
+  "text": "声，声音。教室里响起了读书的声音。",
+  "file": "audio/char/a2_c088.mp3"
+ },
+ {
+  "key": "char:a2:音",
+  "text": "音，音乐。小鸟的叫声像音乐一样。",
+  "file": "audio/char/a2_c089.mp3"
+ },
+ {
+  "key": "char:a2:叫",
+  "text": "叫，叫声。闹钟一叫我马上就起床。",
+  "file": "audio/char/a2_c090.mp3"
+ },
+ {
+  "key": "char:a2:笑",
+  "text": "笑，笑脸。妹妹的笑脸像红苹果一样。",
+  "file": "audio/char/a2_c091.mp3"
+ },
+ {
+  "key": "char:a2:哭",
+  "text": "哭，哭泣。摔倒了不哭自己站起来。",
+  "file": "audio/char/a2_c092.mp3"
+ },
+ {
+  "key": "char:a2:唱",
+  "text": "唱，唱歌。我们在音乐课上大声唱歌。",
+  "file": "audio/char/a2_c093.mp3"
+ },
+ {
+  "key": "char:a2:舞",
+  "text": "舞，跳舞。姐姐跳舞像蝴蝶一样美。",
+  "file": "audio/char/a2_c094.mp3"
+ },
+ {
+  "key": "char:a2:游",
+  "text": "游，游泳。小鱼在河里自由地游来游去。",
+  "file": "audio/char/a2_c095.mp3"
+ },
+ {
+  "key": "char:a2:运",
+  "text": "运，运动。多做运动身体才会棒棒的。",
+  "file": "audio/char/a2_c096.mp3"
+ },
+ {
+  "key": "char:a2:动",
+  "text": "动，活动。下课时我们做户外活动。",
+  "file": "audio/char/a2_c097.mp3"
+ },
+ {
+  "key": "char:a2:今",
+  "text": "今，今天。今天轮到我值日打扫卫生。",
+  "file": "audio/char/a2_c098.mp3"
+ },
+ {
+  "key": "char:a2:早",
+  "text": "早，早晨。早晨我迎着太阳去上学。",
+  "file": "audio/char/a2_c099.mp3"
+ },
+ {
+  "key": "char:a2:午",
+  "text": "午，中午。中午的太阳晒得暖暖的。",
+  "file": "audio/char/a2_c100.mp3"
+ },
+ {
+  "key": "char:a2:晚",
+  "text": "晚，晚上。晚上我们一起看星星月亮。",
+  "file": "audio/char/a2_c101.mp3"
+ },
+ {
+  "key": "char:a2:夜",
+  "text": "夜，夜晚。夜晚的天上星星亮晶晶。",
+  "file": "audio/char/a2_c102.mp3"
+ },
+ {
+  "key": "char:a3:朋友",
+  "text": "朋友，undefined。我和朋友一起玩滑梯。",
+  "file": "audio/char/a3_c001.mp3"
+ },
+ {
+  "key": "char:a3:学校",
+  "text": "学校，undefined。我们的学校很漂亮。",
+  "file": "audio/char/a3_c002.mp3"
+ },
+ {
+  "key": "char:a3:老师",
+  "text": "老师，undefined。老师教我们认字读书。",
+  "file": "audio/char/a3_c003.mp3"
+ },
+ {
+  "key": "char:a3:同学",
+  "text": "同学，undefined。同学之间要互相帮助。",
+  "file": "audio/char/a3_c004.mp3"
+ },
+ {
+  "key": "char:a3:读书",
+  "text": "读书，undefined。每天读书让我更聪明。",
+  "file": "audio/char/a3_c005.mp3"
+ },
+ {
+  "key": "char:a3:学习",
+  "text": "学习，undefined。学习是一件快乐的事。",
+  "file": "audio/char/a3_c006.mp3"
+ },
+ {
+  "key": "char:a3:春天",
+  "text": "春天，undefined。春天来了，花都开了。",
+  "file": "audio/char/a3_c007.mp3"
+ },
+ {
+  "key": "char:a3:秋天",
+  "text": "秋天，undefined。秋天树叶变成了金黄色。",
+  "file": "audio/char/a3_c008.mp3"
+ },
+ {
+  "key": "char:a3:快乐",
+  "text": "快乐，undefined。帮助别人让我很快乐。",
+  "file": "audio/char/a3_c009.mp3"
+ },
+ {
+  "key": "char:a3:勇敢",
+  "text": "勇敢，undefined。打针的时候我很勇敢。",
+  "file": "audio/char/a3_c010.mp3"
+ },
+ {
+  "key": "char:a3:劳动",
+  "text": "劳动，undefined。爱劳动的孩子人人夸。",
+  "file": "audio/char/a3_c011.mp3"
+ },
+ {
+  "key": "char:a3:祖国",
+  "text": "祖国，undefined。我爱我的祖国。",
+  "file": "audio/char/a3_c012.mp3"
+ },
+ {
+  "key": "char:a3:诚实",
+  "text": "诚实，undefined。做诚实的孩子不说谎。",
+  "file": "audio/char/a3_c013.mp3"
+ },
+ {
+  "key": "char:a3:时间",
+  "text": "时间，undefined。我们要珍惜时间。",
+  "file": "audio/char/a3_c014.mp3"
+ },
+ {
+  "key": "char:a3:医生",
+  "text": "医生，undefined。医生帮生病的人治病。",
+  "file": "audio/char/a3_c015.mp3"
+ },
+ {
+  "key": "char:a3:警察",
+  "text": "警察，undefined。警察叔叔保护大家的安全。",
+  "file": "audio/char/a3_c016.mp3"
+ },
+ {
+  "key": "char:a3:温暖",
+  "text": "温暖，undefined。妈妈的怀抱最温暖了。",
+  "file": "audio/char/a3_c017.mp3"
+ },
+ {
+  "key": "char:a3:茂盛",
+  "text": "茂盛，undefined。校园里的树木长得很茂盛。",
+  "file": "audio/char/a3_c018.mp3"
+ },
+ {
+  "key": "char:a3:漂亮",
+  "text": "漂亮，undefined。花园里的花开得真漂亮。",
+  "file": "audio/char/a3_c019.mp3"
+ },
+ {
+  "key": "char:a3:美丽",
+  "text": "美丽，undefined。蝴蝶扇动着美丽的翅膀。",
+  "file": "audio/char/a3_c020.mp3"
+ },
+ {
+  "key": "char:a3:聪明",
+  "text": "聪明，undefined。聪明的小猴想出了好办法。",
+  "file": "audio/char/a3_c021.mp3"
+ },
+ {
+  "key": "char:a3:勤劳",
+  "text": "勤劳，undefined。勤劳的蜜蜂一大早就采蜜。",
+  "file": "audio/char/a3_c022.mp3"
+ },
+ {
+  "key": "char:a3:认真",
+  "text": "认真，undefined。哥哥写作业的时候很认真。",
+  "file": "audio/char/a3_c023.mp3"
+ },
+ {
+  "key": "char:a3:仔细",
+  "text": "仔细，undefined。做题目要仔细不能马虎。",
+  "file": "audio/char/a3_c024.mp3"
+ },
+ {
+  "key": "char:a3:耐心",
+  "text": "耐心，undefined。老师耐心地教我们写字。",
+  "file": "audio/char/a3_c025.mp3"
+ },
+ {
+  "key": "char:a3:骄傲",
+  "text": "骄傲，undefined。成绩好也不能骄傲自满。",
+  "file": "audio/char/a3_c026.mp3"
+ },
+ {
+  "key": "char:a3:谦虚",
+  "text": "谦虚，undefined。谦虚的人更受大家欢迎。",
+  "file": "audio/char/a3_c027.mp3"
+ },
+ {
+  "key": "char:a3:守信",
+  "text": "守信，undefined。答应的事要做到才是守信。",
+  "file": "audio/char/a3_c028.mp3"
+ },
+ {
+  "key": "char:a3:友爱",
+  "text": "友爱，undefined。同学之间要团结友爱。",
+  "file": "audio/char/a3_c029.mp3"
+ },
+ {
+  "key": "char:a3:团结",
+  "text": "团结，undefined。蚂蚁团结起来搬走大青虫。",
+  "file": "audio/char/a3_c030.mp3"
+ },
+ {
+  "key": "char:a3:分享",
+  "text": "分享，undefined。我把苹果分享给好朋友。",
+  "file": "audio/char/a3_c031.mp3"
+ },
+ {
+  "key": "char:a3:关心",
+  "text": "关心，undefined。妈妈很关心我的身体。",
+  "file": "audio/char/a3_c032.mp3"
+ },
+ {
+  "key": "char:a3:帮助",
+  "text": "帮助，undefined。帮助别人是一种快乐。",
+  "file": "audio/char/a3_c033.mp3"
+ },
+ {
+  "key": "char:a3:感谢",
+  "text": "感谢，undefined。我感谢老师的耐心教导。",
+  "file": "audio/char/a3_c034.mp3"
+ },
+ {
+  "key": "char:a3:尊敬",
+  "text": "尊敬，undefined。我们要尊敬老师和长辈。",
+  "file": "audio/char/a3_c035.mp3"
+ },
+ {
+  "key": "char:a3:孝顺",
+  "text": "孝顺，undefined。小红帮奶奶捶背真孝顺。",
+  "file": "audio/char/a3_c036.mp3"
+ },
+ {
+  "key": "char:a3:礼貌",
+  "text": "礼貌，undefined。有礼貌的孩子人人喜欢。",
+  "file": "audio/char/a3_c037.mp3"
+ },
+ {
+  "key": "char:a3:整洁",
+  "text": "整洁，undefined。教室打扫得整洁又明亮。",
+  "file": "audio/char/a3_c038.mp3"
+ },
+ {
+  "key": "char:a3:安静",
+  "text": "安静，undefined。图书馆里要保持安静。",
+  "file": "audio/char/a3_c039.mp3"
+ },
+ {
+  "key": "char:a3:热闹",
+  "text": "热闹，undefined。元旦的联欢会特别热闹。",
+  "file": "audio/char/a3_c040.mp3"
+ },
+ {
+  "key": "char:a3:拥挤",
+  "text": "拥挤，undefined。放学时校门口有点拥挤。",
+  "file": "audio/char/a3_c041.mp3"
+ },
+ {
+  "key": "char:a3:辽阔",
+  "text": "辽阔，undefined。辽阔的草原一眼望不到边。",
+  "file": "audio/char/a3_c042.mp3"
+ },
+ {
+  "key": "char:a3:蜿蜒",
+  "text": "蜿蜒，undefined。长城像巨龙蜿蜒在群山间。",
+  "file": "audio/char/a3_c043.mp3"
+ },
+ {
+  "key": "char:a3:巍峨",
+  "text": "巍峨，undefined。巍峨的高山直插进云霄。",
+  "file": "audio/char/a3_c044.mp3"
+ },
+ {
+  "key": "char:a3:清澈",
+  "text": "清澈，undefined。湖水清澈得能看见小鱼。",
+  "file": "audio/char/a3_c045.mp3"
+ },
+ {
+  "key": "char:a3:碧绿",
+  "text": "碧绿，undefined。碧绿的荷叶铺满了池塘。",
+  "file": "audio/char/a3_c046.mp3"
+ },
+ {
+  "key": "char:a3:金黄",
+  "text": "金黄，undefined。秋天的稻田一片金黄。",
+  "file": "audio/char/a3_c047.mp3"
+ },
+ {
+  "key": "char:a3:雪白",
+  "text": "雪白，undefined。雪白的棉花像天上的云。",
+  "file": "audio/char/a3_c048.mp3"
+ },
+ {
+  "key": "char:a3:火红",
+  "text": "火红，undefined。火红的花朵开满了枝头。",
+  "file": "audio/char/a3_c049.mp3"
+ },
+ {
+  "key": "char:a3:蓝天",
+  "text": "蓝天，undefined。雄鹰在蓝天上自由飞翔。",
+  "file": "audio/char/a3_c050.mp3"
+ },
+ {
+  "key": "char:a3:白云",
+  "text": "白云，undefined。白云在蓝天上慢慢飘动。",
+  "file": "audio/char/a3_c051.mp3"
+ },
+ {
+  "key": "char:a3:彩虹",
+  "text": "彩虹，undefined。雨后天边架起一道彩虹。",
+  "file": "audio/char/a3_c052.mp3"
+ },
+ {
+  "key": "char:a3:朝霞",
+  "text": "朝霞，undefined。朝霞把天空染成了红色。",
+  "file": "audio/char/a3_c053.mp3"
+ },
+ {
+  "key": "char:a3:夕阳",
+  "text": "夕阳，undefined。夕阳把湖水照得金灿灿。",
+  "file": "audio/char/a3_c054.mp3"
+ },
+ {
+  "key": "char:a3:月光",
+  "text": "月光，undefined。月光洒在安静的小路上。",
+  "file": "audio/char/a3_c055.mp3"
+ },
+ {
+  "key": "char:a3:星辰",
+  "text": "星辰，undefined。夜晚的星辰眨着眼睛。",
+  "file": "audio/char/a3_c056.mp3"
+ },
+ {
+  "key": "char:a3:雷电",
+  "text": "雷电，undefined。雷电交加时要赶快回家。",
+  "file": "audio/char/a3_c057.mp3"
+ },
+ {
+  "key": "char:a3:霜露",
+  "text": "霜露，undefined。清晨的草叶上挂着霜露。",
+  "file": "audio/char/a3_c058.mp3"
+ },
+ {
+  "key": "char:a3:春风",
+  "text": "春风，undefined。春风轻轻吹绿了柳枝。",
+  "file": "audio/char/a3_c059.mp3"
+ },
+ {
+  "key": "char:a3:夏雨",
+  "text": "夏雨，undefined。一阵夏雨过后空气真清新。",
+  "file": "audio/char/a3_c060.mp3"
+ },
+ {
+  "key": "char:a3:秋叶",
+  "text": "秋叶，undefined。秋叶像蝴蝶一样飘落。",
+  "file": "audio/char/a3_c061.mp3"
+ },
+ {
+  "key": "char:a3:冬雪",
+  "text": "冬雪，undefined。冬雪给大地盖上了棉被。",
+  "file": "audio/char/a3_c062.mp3"
+ },
+ {
+  "key": "char:a3:山川",
+  "text": "山川，undefined。祖国的山川多么壮丽。",
+  "file": "audio/char/a3_c063.mp3"
+ },
+ {
+  "key": "char:a3:河流",
+  "text": "河流，undefined。河流弯弯地流向远方。",
+  "file": "audio/char/a3_c064.mp3"
+ },
+ {
+  "key": "char:a3:湖泊",
+  "text": "湖泊，undefined。平静的湖泊像一面镜子。",
+  "file": "audio/char/a3_c065.mp3"
+ },
+ {
+  "key": "char:a3:海洋",
+  "text": "海洋，undefined。海洋里生活着许多鱼。",
+  "file": "audio/char/a3_c066.mp3"
+ },
+ {
+  "key": "char:a3:森林",
+  "text": "森林，undefined。森林是小动物的家园。",
+  "file": "audio/char/a3_c067.mp3"
+ },
+ {
+  "key": "char:a3:草原",
+  "text": "草原，undefined。草原上牛羊成群结队。",
+  "file": "audio/char/a3_c068.mp3"
+ },
+ {
+  "key": "char:a3:沙漠",
+  "text": "沙漠，undefined。骆驼是沙漠里的大力士。",
+  "file": "audio/char/a3_c069.mp3"
+ },
+ {
+  "key": "char:a3:旅途",
+  "text": "旅途，undefined。旅途上我们看到了美景。",
+  "file": "audio/char/a3_c070.mp3"
+ },
+ {
+  "key": "char:a3:风景",
+  "text": "风景，undefined。山顶的风景美得像画。",
+  "file": "audio/char/a3_c071.mp3"
+ },
+ {
+  "key": "char:a3:丰收",
+  "text": "丰收，undefined。秋天农民伯伯喜迎丰收。",
+  "file": "audio/char/a3_c072.mp3"
+ },
+ {
+  "key": "char:a3:灿烂",
+  "text": "灿烂，undefined。阳光灿烂的日子去郊游。",
+  "file": "audio/char/a3_c073.mp3"
+ },
+ {
+  "key": "char:a3:雄伟",
+  "text": "雄伟，undefined。雄伟的长城像一条巨龙。",
+  "file": "audio/char/a3_c074.mp3"
+ },
+ {
+  "key": "char:a3:芬芳",
+  "text": "芬芳，undefined。花园里百花芬芳扑鼻。",
+  "file": "audio/char/a3_c075.mp3"
+ },
+ {
+  "key": "char:a3:宁静",
+  "text": "宁静，undefined。宁静的夜晚适合读故事。",
+  "file": "audio/char/a3_c076.mp3"
+ },
+ {
+  "key": "char:a4:一举两得",
+  "text": "一举两得。释义：做一件事同时得到两方面的好处。例：帮妈妈做家务，既锻炼了身体，又让妈妈开心，真是一举两得。",
+  "file": "audio/char/a4_c001.mp3"
+ },
+ {
+  "key": "char:a4:守株待兔",
+  "text": "守株待兔。释义：守在树旁等兔子撞树。比喻不主动努力，妄想不劳而获。",
+  "file": "audio/char/a4_c002.mp3"
+ },
+ {
+  "key": "char:a4:画蛇添足",
+  "text": "画蛇添足。释义：画好蛇又添上脚。比喻多此一举，反而坏事。",
+  "file": "audio/char/a4_c003.mp3"
+ },
+ {
+  "key": "char:a4:亡羊补牢",
+  "text": "亡羊补牢。释义：丢了羊修好羊圈。比喻出了问题及时补救，还不算晚。",
+  "file": "audio/char/a4_c004.mp3"
+ },
+ {
+  "key": "char:a4:掩耳盗铃",
+  "text": "掩耳盗铃。释义：捂住耳朵偷铃铛。比喻自己欺骗自己。",
+  "file": "audio/char/a4_c005.mp3"
+ },
+ {
+  "key": "char:a4:拔苗助长",
+  "text": "拔苗助长。释义：把苗拔高帮它长。比喻违反规律急于求成，反而坏事。",
+  "file": "audio/char/a4_c006.mp3"
+ },
+ {
+  "key": "char:a4:狐假虎威",
+  "text": "狐假虎威。释义：狐狸借老虎的威风。比喻借别人的势力吓唬人。",
+  "file": "audio/char/a4_c007.mp3"
+ },
+ {
+  "key": "char:a4:井底之蛙",
+  "text": "井底之蛙。释义：井底的青蛙只能看到一小块天。比喻见识狭窄的人。",
+  "file": "audio/char/a4_c008.mp3"
+ },
+ {
+  "key": "char:a4:水滴石穿",
+  "text": "水滴石穿。释义：水不停地滴能把石头滴穿。比喻坚持努力就能成功。",
+  "file": "audio/char/a4_c009.mp3"
+ },
+ {
+  "key": "char:a4:闻鸡起舞",
+  "text": "闻鸡起舞。释义：听到鸡叫就起来练武。形容勤奋努力、自强不息。",
+  "file": "audio/char/a4_c010.mp3"
+ },
+ {
+  "key": "char:a4:胸有成竹",
+  "text": "胸有成竹。释义：画竹子前心里已有竹子的形象。比喻做事之前已有周密的打算。",
+  "file": "audio/char/a4_c011.mp3"
+ },
+ {
+  "key": "char:a4:雪中送炭",
+  "text": "雪中送炭。释义：下雪天送炭火取暖。比喻在别人急需时给予帮助。",
+  "file": "audio/char/a4_c012.mp3"
+ },
+ {
+  "key": "char:a4:画龙点睛",
+  "text": "画龙点睛。这篇作文的结尾真是画龙点睛。",
+  "file": "audio/char/a4_c013.mp3"
+ },
+ {
+  "key": "char:a4:刻舟求剑",
+  "text": "刻舟求剑。刻舟求剑的人永远找不到宝剑。",
+  "file": "audio/char/a4_c014.mp3"
+ },
+ {
+  "key": "char:a4:叶公好龙",
+  "text": "叶公好龙。叶公好龙，见了真龙反而吓跑。",
+  "file": "audio/char/a4_c015.mp3"
+ },
+ {
+  "key": "char:a4:杯弓蛇影",
+  "text": "杯弓蛇影。杯弓蛇影，是自己吓自己呀。",
+  "file": "audio/char/a4_c016.mp3"
+ },
+ {
+  "key": "char:a4:滥竽充数",
+  "text": "滥竽充数。不会吹竽的他只能滥竽充数。",
+  "file": "audio/char/a4_c017.mp3"
+ },
+ {
+  "key": "char:a4:买椟还珠",
+  "text": "买椟还珠。买椟还珠，丢了最宝贵的东西。",
+  "file": "audio/char/a4_c018.mp3"
+ },
+ {
+  "key": "char:a4:自相矛盾",
+  "text": "自相矛盾。说话前后不一就自相矛盾了。",
+  "file": "audio/char/a4_c019.mp3"
+ },
+ {
+  "key": "char:a4:塞翁失马",
+  "text": "塞翁失马。塞翁失马，坏事也许变好事。",
+  "file": "audio/char/a4_c020.mp3"
+ },
+ {
+  "key": "char:a4:愚公移山",
+  "text": "愚公移山。我们要学习愚公移山的精神。",
+  "file": "audio/char/a4_c021.mp3"
+ },
+ {
+  "key": "char:a4:精卫填海",
+  "text": "精卫填海。精卫填海的故事让人感动。",
+  "file": "audio/char/a4_c022.mp3"
+ },
+ {
+  "key": "char:a4:夸父逐日",
+  "text": "夸父逐日。夸父逐日，是不放弃的精神。",
+  "file": "audio/char/a4_c023.mp3"
+ },
+ {
+  "key": "char:a4:女娲补天",
+  "text": "女娲补天。女娲补天，拯救了天下人们。",
+  "file": "audio/char/a4_c024.mp3"
+ },
+ {
+  "key": "char:a4:后羿射日",
+  "text": "后羿射日。后羿射日，射下了九个太阳。",
+  "file": "audio/char/a4_c025.mp3"
+ },
+ {
+  "key": "char:a4:卧薪尝胆",
+  "text": "卧薪尝胆。勾践卧薪尝胆，终于复了国。",
+  "file": "audio/char/a4_c026.mp3"
+ },
+ {
+  "key": "char:a4:破釜沉舟",
+  "text": "破釜沉舟。项羽破釜沉舟，誓要打胜仗。",
+  "file": "audio/char/a4_c027.mp3"
+ },
+ {
+  "key": "char:a4:四面楚歌",
+  "text": "四面楚歌。四面楚歌的项羽无路可逃。",
+  "file": "audio/char/a4_c028.mp3"
+ },
+ {
+  "key": "char:a4:背水一战",
+  "text": "背水一战。面对强敌，我们背水一战。",
+  "file": "audio/char/a4_c029.mp3"
+ },
+ {
+  "key": "char:a4:完璧归赵",
+  "text": "完璧归赵。蔺相如使和氏璧完璧归赵。",
+  "file": "audio/char/a4_c030.mp3"
+ },
+ {
+  "key": "char:a4:负荆请罪",
+  "text": "负荆请罪。廉颇负荆请罪，求得原谅。",
+  "file": "audio/char/a4_c031.mp3"
+ },
+ {
+  "key": "char:a4:纸上谈兵",
+  "text": "纸上谈兵。赵括纸上谈兵，打了败仗。",
+  "file": "audio/char/a4_c032.mp3"
+ },
+ {
+  "key": "char:a4:指鹿为马",
+  "text": "指鹿为马。指鹿为马，是颠倒黑白的话。",
+  "file": "audio/char/a4_c033.mp3"
+ },
+ {
+  "key": "char:a4:草木皆兵",
+  "text": "草木皆兵。敌人吓得草木皆兵，连夜逃。",
+  "file": "audio/char/a4_c034.mp3"
+ },
+ {
+  "key": "char:a4:风声鹤唳",
+  "text": "风声鹤唳。败军风声鹤唳，四处逃散。",
+  "file": "audio/char/a4_c035.mp3"
+ },
+ {
+  "key": "char:a4:手不释卷",
+  "text": "手不释卷。哥哥爱读书，总是手不释卷。",
+  "file": "audio/char/a4_c036.mp3"
+ },
+ {
+  "key": "char:a4:凿壁偷光",
+  "text": "凿壁偷光。匡衡凿壁偷光，刻苦读书。",
+  "file": "audio/char/a4_c037.mp3"
+ },
+ {
+  "key": "char:a4:悬梁刺股",
+  "text": "悬梁刺股。孙敬悬梁刺股，发奋苦读。",
+  "file": "audio/char/a4_c038.mp3"
+ },
+ {
+  "key": "char:a4:囊萤映雪",
+  "text": "囊萤映雪。车胤囊萤映雪，借光读书。",
+  "file": "audio/char/a4_c039.mp3"
+ },
+ {
+  "key": "char:a4:铁杵磨针",
+  "text": "铁杵磨针。只要功夫深，铁杵磨成针。",
+  "file": "audio/char/a4_c040.mp3"
+ },
+ {
+  "key": "char:a4:锲而不舍",
+  "text": "锲而不舍。学习要锲而不舍才能成功。",
+  "file": "audio/char/a4_c041.mp3"
+ },
+ {
+  "key": "char:a4:持之以恒",
+  "text": "持之以恒。做事持之以恒，终有收获。",
+  "file": "audio/char/a4_c042.mp3"
+ },
+ {
+  "key": "char:a4:全力以赴",
+  "text": "全力以赴。比赛前我们全力以赴地训练。",
+  "file": "audio/char/a4_c043.mp3"
+ },
+ {
+  "key": "char:a4:半途而废",
+  "text": "半途而废。做事情千万不能半途而废。",
+  "file": "audio/char/a4_c044.mp3"
+ },
+ {
+  "key": "char:a4:虎头蛇尾",
+  "text": "虎头蛇尾。做事虎头蛇尾可不行呀。",
+  "file": "audio/char/a4_c045.mp3"
+ },
+ {
+  "key": "char:a4:一鸣惊人",
+  "text": "一鸣惊人。他刻苦练习，终于一鸣惊人。",
+  "file": "audio/char/a4_c046.mp3"
+ },
+ {
+  "key": "char:a4:一箭双雕",
+  "text": "一箭双雕。射手一箭双雕，众人喝彩。",
+  "file": "audio/char/a4_c047.mp3"
+ },
+ {
+  "key": "char:a4:一石二鸟",
+  "text": "一石二鸟。一个好办法可以一石二鸟。",
+  "file": "audio/char/a4_c048.mp3"
+ },
+ {
+  "key": "char:a4:事半功倍",
+  "text": "事半功倍。好方法能让学习事半功倍。",
+  "file": "audio/char/a4_c049.mp3"
+ },
+ {
+  "key": "char:a4:事倍功半",
+  "text": "事倍功半。方法不对，就会事倍功半。",
+  "file": "audio/char/a4_c050.mp3"
+ },
+ {
+  "key": "char:a4:千钧一发",
+  "text": "千钧一发。千钧一发之际，消防员救出了孩子。",
+  "file": "audio/char/a4_c051.mp3"
+ },
+ {
+  "key": "char:a4:危在旦夕",
+  "text": "危在旦夕。病人危在旦夕，医生急救。",
+  "file": "audio/char/a4_c052.mp3"
+ },
+ {
+  "key": "char:a4:化险为夷",
+  "text": "化险为夷。消防员化险为夷，大家平安了。",
+  "file": "audio/char/a4_c053.mp3"
+ },
+ {
+  "key": "char:a4:转危为安",
+  "text": "转危为安。抢救及时，病人转危为安。",
+  "file": "audio/char/a4_c054.mp3"
+ },
+ {
+  "key": "char:a4:亡命之徒",
+  "text": "亡命之徒。警察终于抓住了亡命之徒。",
+  "file": "audio/char/a4_c055.mp3"
+ },
+ {
+  "key": "char:a4:舍生取义",
+  "text": "舍生取义。英雄舍生取义，令人敬佩。",
+  "file": "audio/char/a4_c056.mp3"
+ },
+ {
+  "key": "char:a4:舍己为人",
+  "text": "舍己为人。他舍己为人的精神值得学习。",
+  "file": "audio/char/a4_c057.mp3"
+ },
+ {
+  "key": "char:a4:拾金不昧",
+  "text": "拾金不昧。小明拾金不昧，交给老师。",
+  "file": "audio/char/a4_c058.mp3"
+ },
+ {
+  "key": "char:a4:助人为乐",
+  "text": "助人为乐。雷锋叔叔一生助人为乐。",
+  "file": "audio/char/a4_c059.mp3"
+ },
+ {
+  "key": "char:a4:见义勇为",
+  "text": "见义勇为。他见义勇为，受到了表扬。",
+  "file": "audio/char/a4_c060.mp3"
+ },
+ {
+  "key": "char:a4:大公无私",
+  "text": "大公无私。他大公无私，大家都信任他。",
+  "file": "audio/char/a4_c061.mp3"
+ },
+ {
+  "key": "char:a4:望梅止渴",
+  "text": "望梅止渴。望梅止渴的故事真有趣。",
+  "file": "audio/char/a4_c062.mp3"
+ },
+ {
+  "key": "char:a4:邯郸学步",
+  "text": "邯郸学步。邯郸学步，连路都不会走了。",
+  "file": "audio/char/a4_c063.mp3"
+ },
+ {
+  "key": "char:a4:温故知新",
+  "text": "温故知新。复习旧知识能温故知新。",
+  "file": "audio/char/a4_c064.mp3"
+ },
+ {
+  "key": "char:a4:一丝不苟",
+  "text": "一丝不苟。姐姐做事总是一丝不苟。",
+  "file": "audio/char/a4_c065.mp3"
+ },
+ {
+  "key": "char:a4:同心协力",
+  "text": "同心协力。大家同心协力完成了任务。",
+  "file": "audio/char/a4_c066.mp3"
+ },
+ {
+  "key": "char:a4:众志成城",
+  "text": "众志成城。大家众志成城，战胜了洪水。",
+  "file": "audio/char/a4_c067.mp3"
+ },
+ {
+  "key": "char:a4:取长补短",
+  "text": "取长补短。同学之间要互相取长补短。",
+  "file": "audio/char/a4_c068.mp3"
+ },
+ {
+  "key": "char:a4:无微不至",
+  "text": "无微不至。妈妈对我照顾得无微不至。",
+  "file": "audio/char/a4_c069.mp3"
+ },
+ {
+  "key": "char:a4:对症下药",
+  "text": "对症下药。医生对症下药，我很快好了。",
+  "file": "audio/char/a4_c070.mp3"
+ },
+ {
+  "key": "char:a4:举世闻名",
+  "text": "举世闻名。长城是举世闻名的建筑。",
+  "file": "audio/char/a4_c071.mp3"
+ },
+ {
+  "key": "char:a4:突飞猛进",
+  "text": "突飞猛进。这学期他的成绩突飞猛进。",
+  "file": "audio/char/a4_c072.mp3"
+ },
+ {
+  "key": "text:t1",
+  "text": "小鸭子学游泳。小鸭子跟着妈妈去河边。妈妈说：\"扑通！\"跳进水里。小鸭子也跳进水里，游啊游。小鸭子真棒，学会游泳啦！",
+  "file": "audio/text/t001.mp3"
+ },
+ {
+  "key": "text:t2",
+  "text": "下雨了。天空变黑了，滴滴答答，下雨了。小蚂蚁搬家的队伍排好长呀。小青蛙开心地唱起歌来。小花喝了雨水，变得更漂亮了。",
+  "file": "audio/text/t002.mp3"
+ },
+ {
+  "key": "text:t3",
+  "text": "红苹果。树上有一个大苹果。红红的，圆圆的，像个笑脸。风一吹，它就轻轻摇啊摇。咚！苹果掉下来，滚到小猪脚下。小猪捡起苹果，开心地说：\"真香呀！\"",
+  "file": "audio/text/t003.mp3"
+ },
+ {
+  "key": "text:t4",
+  "text": "自我介绍。大家好，我叫小明，我今年四岁啦。我喜欢画画和搭积木，家里有小狗汪汪。谢谢小朋友们，我们一起玩吧！",
+  "file": "audio/text/t004.mp3"
+ },
+ {
+  "key": "text:t5",
+  "text": "小猫咪。小猫咪，喵喵喵。它有一双大眼睛，长长的胡子。它最爱吃小鱼，睡在暖和的沙发上。",
+  "file": "audio/text/t005.mp3"
+ },
+ {
+  "key": "text:t6",
+  "text": "看图说话。图上画了一只小鸟。小鸟站在树枝上，张开嘴巴。它在唱歌呢，唱得真好听！",
+  "file": "audio/text/t006.mp3"
+ },
+ {
+  "key": "text:t7",
+  "text": "早上好。早上起床，太阳公公笑。小鸟说：\"早上好！\"小朋友说：\"太阳公公早上好！\"",
+  "file": "audio/text/t007.mp3"
+ },
+ {
+  "key": "text:t8",
+  "text": "小花园。花园里有红花、黄花、紫花。蝴蝶在花丛中飞来飞去。花儿真香呀，真美呀！",
+  "file": "audio/text/t008.mp3"
+ },
+ {
+  "key": "text:t9",
+  "text": "吃苹果。妈妈买回来大红苹果。小明洗了洗，咬了一口。\"真甜呀！\"小明说，\"妈妈你也吃！\"",
+  "file": "audio/text/t009.mp3"
+ },
+ {
+  "key": "text:t10",
+  "text": "我的家。我有一个温暖的家。家里有爸爸、妈妈和我。我爱我的家，我爱爸爸妈妈。",
+  "file": "audio/text/t010.mp3"
+ },
+ {
+  "key": "text:t11",
+  "text": "彩虹桥。雨停了，太阳出来了。小熊抬头一看，天上挂着一道彩虹。\"哇，多漂亮的桥呀！\"小熊说。彩虹有七种颜色：红、橙、黄、绿、青、蓝、紫。小熊想：要是能走上彩虹桥，摸一摸云朵，该多好呀！过了一会儿，彩虹慢慢不见了。小熊说：\"没关系，下次下过雨，你还会回来的。\"",
+  "file": "audio/text/t011.mp3"
+ },
+ {
+  "key": "text:t12",
+  "text": "小蜗牛的信。小蜗牛想给好朋友小蚂蚁写一封信。它写了很久很久，因为小蜗牛做事特别认真。信写好了，小蜗牛背着信出发了。它爬呀爬，爬了三天才到小蚂蚁家。小蚂蚁感动地说：\"谢谢你走了这么远的路！\"小蜗牛笑了：\"只要把信送到，再远我也开心。\"",
+  "file": "audio/text/t012.mp3"
+ },
+ {
+  "key": "text:t13",
+  "text": "太阳的颜色。小猴子问妈妈：\"太阳是什么颜色的？\"妈妈说：\"你去找一找答案吧。\"小猴子问苹果，苹果说：\"太阳是红色的，你看我红红的脸！\"小猴子问香蕉，香蕉说：\"太阳是黄色的，你看我黄黄的衣裳！\"小猴子问大海，大海说：\"太阳是蓝色的，你看我蓝蓝的波浪！\"小猴子回去告诉妈妈：\"太阳有很多很多颜色！\"妈妈笑着说：\"对呀，太阳的光里有七种颜色，合在一起就是明亮的白光。\"",
+  "file": "audio/text/t013.mp3"
+ },
+ {
+  "key": "text:t14",
+  "text": "小兔子借尾巴。小兔子没有尾巴，觉得好难看呀。它去向小猴子借尾巴，小猴子说：\"不行呀，我要用尾巴挂在树上呢。\"它去向小松鼠借尾巴，小松鼠说：\"不行呀，我要用尾巴当被子盖呢。\"它去向小鱼借尾巴，小鱼说：\"不行呀，我要用尾巴游泳呢。\"小兔子伤心地回家，妈妈笑着说：\"每个动物的尾巴都有不同的用途，我们的短尾巴也很可爱呀。\"小兔子想了想，开心地笑了。",
+  "file": "audio/text/t014.mp3"
+ },
+ {
+  "key": "text:t15",
+  "text": "春天来了。春天来了，天气变暖了。小草从泥土里钻出来，绿绿的。桃花开了，粉粉的，真好看。燕子从南方飞回来了，在天上叽叽喳喳。小朋友们脱掉厚厚的棉衣，到草地上放风筝。春天真美呀，大家都喜欢春天。",
+  "file": "audio/text/t015.mp3"
+ },
+ {
+  "key": "text:t16",
+  "text": "我的日记。今天是我上学的第一天，我好开心呀。老师教我们唱歌，还带我们做游戏。我认识了很多新朋友，我们一起玩滑梯。放学的时候，老师说：\"明天见！\"我背着书包回家，告诉妈妈：\"上学真好！\"",
+  "file": "audio/text/t016.mp3"
+ },
+ {
+  "key": "text:t17",
+  "text": "小猫钓鱼。小猫跟着妈妈去河边钓鱼。一开始，小猫很认真，盯着浮标看。一只蝴蝶飞来了，小猫扔下鱼竿去追蝴蝶。蜻蜓飞来了，小猫又去追蜻蜓。结果，小猫一条鱼也没钓到。妈妈说：\"做事要一心一意，不能三心二意。\"小猫记住了妈妈的话，第二天钓到了大鱼。",
+  "file": "audio/text/t017.mp3"
+ },
+ {
+  "key": "text:t18",
+  "text": "观察日记：豆子发芽。老师让我们回家观察豆子发芽的过程。第一天，我把豆子泡在水里，豆子变大了，皮皱皱的。第二天，豆子裂开了一条缝，露出白白的胚根。第三天，胚根越长越长，钻出弯弯的\"小尾巴\"。第四天，豆子上面长出了两片嫩绿的小叶子。原来，种子发芽需要水和适宜的温度，真神奇呀！",
+  "file": "audio/text/t018.mp3"
+ },
+ {
+  "key": "text:t19",
+  "text": "小熊过桥。小熊要去外婆家，要走一座独木桥。桥下的河水哗哗流，小熊吓得直发抖。乌鸦飞过来说：\"哇哇，小熊是胆小鬼！\"小熊很生气，大步走上桥。小鱼游出来说：\"小熊大胆往前走，有我保护你呢！\"小熊鼓起勇气，一步一步走过了独木桥。到了对岸，小熊说：\"其实过桥也没那么可怕嘛。\"",
+  "file": "audio/text/t019.mp3"
+ },
+ {
+  "key": "text:t20",
+  "text": "我的观察：蚂蚁。我在院子里观察蚂蚁。蚂蚁很小，身体分为头、胸、腹三部分。它们有六条腿，两根触角。蚂蚁喜欢吃甜的东西，我放了一块糖，很快就来了一大群。它们一起合作，把糖粒抬回洞里。蚂蚁虽小，但团结起来力量真大呀！",
+  "file": "audio/text/t020.mp3"
+ },
+ {
+  "key": "text:t21",
+  "text": "会\"睡觉\"的树叶。放学路上，小雨发现了一件奇怪的事。路边的含羞草，被她的手指轻轻一碰，叶子就合拢起来，好像害羞地闭上了眼睛。小雨回家查了百科全书，找到了答案。原来，含羞草的叶柄根部有一个鼓鼓的\"叶枕\"，里面装满了水。碰它的时候，叶枕里的水快速流向两边，叶子失去了支撑，就垂下来了。这是含羞草保护自己的本领，让想吃它的小虫子吓一跳，赶紧飞走。小雨把发现记在了观察日记里，她写道：\"大自然真是一位神奇的魔术师！\"",
+  "file": "audio/text/t021.mp3"
+ },
+ {
+  "key": "text:t22",
+  "text": "蚂蚁搬家队。星期天下午，天空阴沉沉的，快要下雨了。院子里出现了一支长长的队伍——蚂蚁搬家队。它们排着整齐的队伍，有的扛着白白的卵，有的抬着小小的食物碎屑，忙忙碌碌地往高处的新家走。一只小蚂蚁的粮食太大了，扛不动，急得团团转。两只大蚂蚁立刻跑过来帮忙，三只蚂蚁一起用力，把粮食稳稳地抬了起来。不到一小时，整支队伍就搬进了新家。过了一会儿，豆大的雨点果然落了下来。蚂蚁们躲在高高的新家里，一点儿也没淋湿。",
+  "file": "audio/text/t022.mp3"
+ },
+ {
+  "key": "text:t23",
+  "text": "月亮的\"魔术\"。农历初一的新月，细细的，像小姑娘的眉毛。过了几天，它慢慢变胖，成了弯弯的小船。到了十五，它变成了圆圆的大玉盘，又亮又美。然后，它又一天天\"瘦\"回去，最后躲起来不见了。其实月亮自己不会发光，也不会变大变小。它是被太阳照亮了一半，随着月亮绕着地球转，我们看到的亮面有时多、有时少，月亮就像在变魔术一样。原来，只要细心观察、认真思考，就能看穿月亮的\"魔术\"。",
+  "file": "audio/text/t023.mp3"
+ },
+ {
+  "key": "text:t24",
+  "text": "守株待兔。从前，有一个农夫在田里干活。忽然，一只兔子飞快地跑来，不小心撞在田边的树桩上，死了。农夫白白捡了一只兔子，高兴极了。他想：\"以后我天天守在树桩旁，不就能天天捡到兔子吗？\"于是，他再也不种地了，天天坐在树桩旁等兔子。日子一天天过去，田里长满了庄稼，农夫再也没有等到兔子。这个故事告诉我们：不能想着不劳而获，好成绩要靠自己努力。",
+  "file": "audio/text/t024.mp3"
+ },
+ {
+  "key": "text:t25",
+  "text": "掩耳盗铃。古时候，有一个人想偷邻居家的铃铛。他刚一碰铃铛，铃铛就\"叮当叮当\"地响起来。他想：\"铃铛一响，别人不就发现我了吗？\"他捂住自己的耳朵，以为自己听不见，别人也听不见。结果，他刚偷到铃铛，就被邻居发现了。这个故事告诉我们：自己捂住耳朵并不能让别人也听不见，自欺欺人是没有用的。",
+  "file": "audio/text/t025.mp3"
+ },
+ {
+  "key": "text:t26",
+  "text": "自然观察：向日葵。奶奶在院子里种了一棵向日葵。春天，它从土里钻出来，嫩嫩的叶子像两只小手。夏天，它长出了金黄色的大花盘，像一个小太阳。我发现一个奇怪的现象：早上，向日葵的脸朝东；中午，它朝上；傍晚，它朝西。原来，向日葵的花盘会随着太阳转动，这叫\"向光性\"。等到秋天，向日葵的花盘里结满了瓜子，沉甸甸地低下了头。向日葵真是一种有趣的植物呀！",
+  "file": "audio/text/t026.mp3"
+ },
+ {
+  "key": "text:t27",
+  "text": "成语故事：画蛇添足。古时候，有一家人祭祀祖先后，赏给仆人一壶酒。仆人商量说：\"这壶酒一个人喝太多，太少又不够喝。\"有人提议：\"我们比赛画蛇，谁先画完谁就喝酒。\"有一个人最先画好了蛇，得意地拿起酒壶。他看见别人还没画完，就自作聪明地说：\"我还能给蛇添上脚呢！\"正在这时，另一个人画好了，夺过酒壶说：\"蛇本来没有脚，你给它添上脚，那就不是蛇了！\"结果，画蛇添足的人没有喝到酒。这个故事告诉我们：做了多余的事，反而把事情弄糟。",
+  "file": "audio/text/t027.mp3"
+ },
+ {
+  "key": "text:t28",
+  "text": "观察日记：蚕宝宝。老师给我们发了蚕卵，让我们观察蚕的一生。刚孵出来的蚕宝宝很小，黑黑的，像小蚂蚁，叫\"蚁蚕\"。它们吃桑叶，一天天长大，颜色从黑变白。蚕宝宝要蜕四次皮，每次蜕皮后都长大一圈。等到蚕宝宝长得白白胖胖的，就开始吐丝结茧。茧是椭圆形的，蚕在里面变成了蛹。过了一段时间，蛹变成了蚕蛾，破茧而出。蚕的一生要经过卵、幼虫、蛹、成虫四个阶段，这叫\"完全变态\"。",
+  "file": "audio/text/t028.mp3"
+ },
+ {
+  "key": "text:t29",
+  "text": "藏在书包里的坚持。开学第一周，林小舟的跳绳成绩是全班倒数第一：一分钟只有四十个。体育老师说：\"期末要测一分钟一百二十个，现在就开始练吧。\"小舟每天放学后，都在楼下练十分钟跳绳。第一周，他总是被绳子绊倒，膝盖磕青了两块。第二周，他能连续跳二十个了。一个月后，他能跳五十个；两个月后，八十个。期末测试那天，小舟深吸一口气，手腕飞快地摇动绳子。\"一百二十六个！\"体育老师报出成绩，全班同学都为他鼓掌。小舟在日记里写道：\"原来，把大目标切成一小步一小步，每天进步一点点，就能变成连自己都惊讶的样子。\"",
+  "file": "audio/text/t029.mp3"
+ },
+ {
+  "key": "text:t30",
+  "text": "一滴水的旅行。我是一滴水，住在蓝蓝的大海里。太阳晒着海面，我变得越来越轻，慢慢变成了水蒸气，飞上了天空。在高高的天上，我很冷，抱住空气里的小灰尘，变成了小小的水滴。千千万万的小伙伴和我抱在一起，成了一朵白云。风带着我们飘过高山、田野和城市。一天，云里的小伙伴太多太挤，我们变成了雨点落下来。有的伙伴落进小河，有的钻进泥土，我掉进了一口井里。后来，我被抽上来送进了自来水厂，经过过滤和消毒，从学校的水龙头里流了出来。一个小男孩喝了一口水，笑着说：\"真甜呀！\"我的旅行还没有结束——过几天，我会变成汗珠或者水汽，再一次出发。",
+  "file": "audio/text/t030.mp3"
+ },
+ {
+  "key": "text:t31",
+  "text": "孔子拜师的故事。两千多年前，有一位大学问家叫孔子。人们都说他知识渊博，可他总觉得自己懂得还不够。听说城里有位叫老子的人，对礼仪学问很有研究，孔子决定去拜师。那时交通很不方便，孔子走了好多天，风尘仆仆地赶到老子家门口。见到老子，孔子恭恭敬敬地行礼，诚恳地请求：\"老师，请您收下我做学生吧。\"老子被他的诚心打动，把学问毫无保留地传授给他。有人问孔子：\"您已经这么有学问了，为什么还要拜师学习？\"孔子说：\"学习没有尽头，三个人一起走路，其中一定有可以做我老师的人。\"这就是成语\"三人行，必有我师\"的由来。真正有大学问的人，往往最懂得谦虚。",
+  "file": "audio/text/t031.mp3"
+ },
+ {
+  "key": "text:t32",
+  "text": "名家散文节选：春。盼望着，盼望着，东风来了，春天的脚步近了。一切都像刚睡醒的样子，欣欣然张开了眼。山朗润起来了，水涨起来了，太阳的脸红起来了。小草偷偷地从土里钻出来，嫩嫩的，绿绿的。园子里，田野里，瞧去，一大片一大片满是的。坐着，躺着，打两个滚，踢几脚球，赛几趟跑，捉几回迷藏。风轻悄悄的，草软绵绵的。桃树、杏树、梨树，你不让我，我不让你，都开满了花赶趟儿。红的像火，粉的像霞，白的像雪。花里带着甜味儿，闭了眼，树上仿佛已经满是桃儿、杏儿、梨儿。",
+  "file": "audio/text/t032.mp3"
+ },
+ {
+  "key": "text:t33",
+  "text": "哲理故事：渔夫与金鱼。从前，有一个渔夫住在海边，每天靠打鱼为生。有一天，他钓到了一条金鱼。金鱼说：\"放了我吧，我能满足你的愿望。\"渔夫心肠好，把金鱼放回了大海。回到家，渔夫的妻子说：\"去，向金鱼要一个新木盆！\"渔夫去了，金鱼满足了他的愿望。妻子又说要新房子，金鱼也满足了。妻子越来越贪心，她要做女王，让金鱼服侍她。渔夫无奈地去了大海，金鱼听完，摇了摇尾巴游走了。等渔夫回到家，一切又变回了原来的样子：破木盆、破渔网、破房子。这个故事告诉我们：贪心的人最终会失去一切。",
+  "file": "audio/text/t033.mp3"
+ },
+ {
+  "key": "text:t34",
+  "text": "科普短文：为什么天空是蓝色的。你有没有想过，为什么天空是蓝色的呢？太阳光看起来是白色的，其实它是由红、橙、黄、绿、蓝、靛、紫七种颜色混合而成的。当阳光穿过大气层时，会遇到空气分子和小水滴。波长较长的红光、橙光能直接穿过大气层，而波长较短的蓝光、紫光容易被空气分子散射。人的眼睛对蓝光比较敏感，所以我们看到的天空是蓝色的。在日出和日落时，阳光穿过更厚的大气层，蓝光被散射掉了，剩下的红光、橙光让天空变成了橙红色。这就是为什么朝霞和晚霞是红色的原因。科学就在我们身边，只要善于观察，就能发现很多奥秘。",
+  "file": "audio/text/t034.mp3"
+ },
+ {
+  "key": "text:t35",
+  "text": "名家散文节选：背影。我与父亲不相见已二年余了，我最不能忘记的是他的背影。那年冬天，祖母死了，父亲的差使也交卸了，正是祸不单行的日子。我从北京到徐州，打算跟着父亲奔丧回家。到徐州见着父亲，看见满院狼藉的东西，又想起祖母，不禁簌簌地流下眼泪。父亲说：\"事已如此，不必难过，好在天无绝人之路！\"回家变卖典质，父亲还了亏空；又借钱办了丧事。这些日子，家中光景很是惨淡，一半为了丧事，一半为了父亲赋闲。丧事完毕，父亲要到南京谋事，我要回北京念书，我们便同行。",
+  "file": "audio/text/t035.mp3"
+ },
+ {
+  "key": "text:t36",
+  "text": "哲理故事：小马过河。小马帮妈妈把一袋麦子驮到磨坊去。一条小河挡住了去路，河水哗哗地流着。小马为难了：能不能过去呢？他看见一头老牛在河边吃草，就跑过去问：\"牛伯伯，这条河我能过去吗？\"老牛说：\"水很浅，刚没小腿，能过去。\"小马刚要过去，忽然从树上跳下一只松鼠，拦住他说：\"小马，别过河，河水会淹死你的！\"松鼠说：\"昨天，我的一个伙伴就是掉进这条河里淹死的！\"小马没主意了，只好回家问妈妈。妈妈让他自己去试一试。小马小心地趟过了河——原来，河水既不像老牛说的那样浅，也不像松鼠说的那样深。这个故事告诉我们：别人的经验不一定适合自己，要亲自去尝试。",
+  "file": "audio/text/t036.mp3"
+ },
+ {
+  "key": "story:s1",
+  "text": "小白兔的红萝卜。小白兔在地里拔出一根大红萝卜。小灰兔饿了，肚子咕咕叫。小白兔说：\"我们一起吃吧！\"两个好朋友，把萝卜分成了两半，吃得真开心。",
+  "file": "audio/story/s001.mp3"
+ },
+ {
+  "key": "story:s2",
+  "text": "爱帮忙的小云朵。小云朵在天上飘呀飘。小花说：\"我口渴啦。\"小云朵就下了一场小雨。小花喝了水，开出漂亮的红花。小云朵说：\"能帮忙，我真开心！\"",
+  "file": "audio/story/s002.mp3"
+ },
+ {
+  "key": "story:s3",
+  "text": "不着急的小蜗牛。小蜗牛要去山顶看日出。小兔子说：\"你太慢啦，追不上的。\"小蜗牛不着急，爬呀爬，爬呀爬。天亮的时候，小蜗牛第一个看到了红红的太阳。",
+  "file": "audio/story/s003.mp3"
+ },
+ {
+  "key": "story:s4",
+  "text": "月亮的摇篮曲。天黑了，小星星们不想睡觉。月亮姐姐轻轻唱起摇篮曲：\"睡吧，睡吧……\"一颗、两颗、三颗，小星星们都闭上了眼睛。夜晚静悄悄的，大家都做着甜甜的梦。",
+  "file": "audio/story/s004.mp3"
+ },
+ {
+  "key": "story:s5",
+  "text": "彩虹色的种子。小熊在路边捡到一粒种子，种子上有七种颜色，像一道小彩虹。小熊把它种进花盆，每天浇水。一天过去了，两天过去了，花盆里什么也没长出来。小松鼠笑话他：\"那是一粒普通的石头吧，别浇了。\"小熊摇摇头：\"再等等看。\"他还是每天认真地浇水、晒太阳。第三十天早上，花盆里开出了一朵七彩的大花，比小熊的头还大！小松鼠看得张大了嘴巴。小熊笑着说：\"你看，等待和照顾，都不会白费。\"",
+  "file": "audio/story/s005.mp3"
+ },
+ {
+  "key": "story:s6",
+  "text": "小刺猬的拥抱。森林里流行见面抱一抱，可是谁都不敢抱小刺猬——他身上全是刺。小刺猬好难过，躲在树下哭：\"没有人愿意抱我。\"小兔子想了个办法，跑回家抱来一床软软的小毯子，轻轻披在小刺猬身上。\"现在可以抱你了吗？\"小兔子张开手臂。小刺猬愣住了，然后开心地笑了。他们抱在一起，像抱着一个软软的粽子。从那天起，森林里多了一条新规矩：想抱小刺猬，先带小毯子。",
+  "file": "audio/story/s006.mp3"
+ },
+ {
+  "key": "story:s7",
+  "text": "会魔法的\"谢谢\"。小狐狸听说，\"谢谢\"是一句有魔法的话，可他从来没说过。一天，大象伯伯用长鼻子帮他从树上摘下了风筝。小狐狸小声说：\"谢……谢谢！\"奇妙的事情发生了：大象伯伯的眼睛弯成了月牙，小狐狸自己的心里也暖暖的，像喝了一杯热牛奶。回家的路上，小狐狸对让路的小鹿说\"谢谢\"，对扫地的河马婶婶说\"谢谢\"。一天下来，小狐狸发现：说\"谢谢\"越多，心里的暖牛奶就越多。原来魔法是真的！",
+  "file": "audio/story/s007.mp3"
+ },
+ {
+  "key": "story:s8",
+  "text": "风娃娃送信。风娃娃在邮局找到一份工作：把蒲公英的种子送到远处的山坡上。第一趟，风娃娃只顾着玩，把种子撒进了小河里，种子们哭了。蒲公英妈妈说：\"答应别人的事，就要认真做到呀。\"风娃娃红着脸记住了。第二趟，他稳稳地托着种子，一颗一颗轻轻放在松软的泥土上。第二年春天，整个山坡开满了金黄的蒲公英，像给山盖了一条太阳毯。风娃娃骄傲地说：\"这是我送出的最好的信！\"",
+  "file": "audio/story/s008.mp3"
+ },
+ {
+  "key": "story:s9",
+  "text": "灯塔上的小星星。海边有一座老灯塔，灯塔顶上住着一颗小星星。她是天上最小最暗的一颗星，落下来的时候没有人在意。每天夜里，小星星都会把自己仅有的一点点光，加进灯塔的灯里，帮回家的船只照亮礁石。一天，大雾来了，海上什么也看不见。一艘小渔船迷了路，船上有位小男孩和他的爸爸。\"光太弱了，照不了那么远……\"小星星急得直发抖。可她想起船上的小男孩，还是把全部的光都拼了出来。奇迹发生了：小星星的光穿过浓雾，在海面上铺出一条细细的金线，正好指向安全的小港湾。第二天，小男孩带着一袋贝壳来到灯塔：\"谢谢你，最小的星星，你救了我和爸爸。\"小星星忽然明白了：光不在于多大，而在于愿不愿意为别人亮起来。",
+  "file": "audio/story/s009.mp3"
+ },
+ {
+  "key": "story:s10",
+  "text": "胆小的喷火龙。小火龙嘟嘟会喷火，可他一次也不敢喷——他怕烧到别人，怕做错事，怕大家笑话他。每次龙族比赛喷火，嘟嘟都躲在山洞里，把火苗小心地含在肚子里。一年冬天，大雪把整个山谷封住了，小动物们的家冷得像冰窖，食物也快吃完了。嘟嘟看着发抖的小兔子们，心里害怕极了。可是他更不忍心看大家挨冻。\"就……就喷一小下！\"嘟嘟闭着眼睛，鼓起勇气，轻轻喷出一团温暖的火苗，点着了大家的火堆。火没有烧到任何人，反而温暖了整个山谷。小动物们欢呼起来：\"嘟嘟是最棒的喷火龙！\"从那天起，嘟嘟明白了：勇气不是不害怕，而是害怕的时候，仍然愿意为了别人站出来。",
+  "file": "audio/story/s010.mp3"
+ },
+ {
+  "key": "story:s11",
+  "text": "时间小店。镇上有家奇怪的小店，门口挂着一个不走的钟。店主是位白胡子爷爷，卖的东西很特别——时间。\"一小时十分钟，一天五颗星。\"爷爷笑眯眯地说。小猴子皮皮用攒的零花钱买了一天时间。他把时间装进口袋，蹦蹦跳跳地想：\"今天我先玩个够，作业明天再说！\"奇怪的是，买来的时间过得飞快——口袋里沙沙地漏，一天一眨眼就没了，作业一个字也没写。皮皮气冲冲去找爷爷：\"你卖的时间是坏的！跑得太快了！\"爷爷摸摸胡子：\"孩子，时间从来不会等人。你把它用来做什么，它就变成什么样子。你让它溜走，它就是溜走的样子。\"皮皮懂了。他再用时间的时候，先认真写完作业，再痛痛快快地玩——这一次，玩的时间好像都变长了。",
+  "file": "audio/story/s011.mp3"
+ },
+ {
+  "key": "story:s12",
+  "text": "沙漠里的小种子。一阵大风把一粒小种子带到了沙漠里，埋进了滚烫的沙子下面。\"完了完了，\"种子害怕地想，\"这里没有水，我永远出不去了。\"可是她忽然感觉到底下有一点点的凉——是地下深处的水汽。小种子决定试一试。她把根一毫米一毫米地往下扎。白天热得喘不过气，夜里冷得发抖，她也没有停。不知道过了多少天，根终于碰到了真正的水源！小种子使劲往上顶，在沙丘上开出一朵粉红色的小花。路过的骆驼队都惊呆了：\"沙漠里居然有花！\"小花轻轻地说：\"绝望的地方，也可能藏着希望——只要你肯往下扎根，不放弃。\"",
+  "file": "audio/story/s012.mp3"
+ },
+ {
+  "key": "story:s13",
+  "text": "收集勇气的小狐狸。小狐狸阿澄有一个铁皮盒子，里面装的不是宝石，而是他收集的\"勇气\"——每次做成一件害怕的事，他就往盒子里放一颗小石子。盒子里已经有七颗石子了：第一次自己睡觉一颗，第一次举手发言一颗，第一次承认打碎花瓶一颗……这年秋天，森林小学要选一名代表，在山顶的篝火晚会上对着全森林讲话。阿澄被选中了，他却慌得整夜睡不着：\"几百双眼睛看着我，我会说不出话的。\"妈妈没有说\"别怕\"，只是把铁皮盒子放在他手心：\"数数你的石子，每一颗都是你害怕过、又做到了的事。\"晚会那天，阿澄走上山顶，腿在抖，声音也在抖。他从口袋里摸出一颗小石子紧紧握着，开口说出了第一句话。慢慢地，他的声音稳了，故事讲得越来越好，台下响起了雷鸣般的掌声。回家后，阿澄往盒子里放进第八颗石子——这一次的石子，比之前所有的都要亮。他终于明白：勇气不是天生就有的东西，它是一颗一颗收集起来的。",
+  "file": "audio/story/s013.mp3"
+ },
+ {
+  "key": "story:s14",
+  "text": "倒着走的时钟镇。地图上找不到的角落里，有一座时钟镇。镇上所有的钟都倒着走，滴答，滴答，把时间一分一分地\"退\"回去。镇长告诉大家：只要把时间退回去，就没有人犯错误——说错的话可以收回，考砸的试卷可以重考，打翻的牛奶会自己跳回杯子。小学生阿栗起初高兴极了。他把每一次失误都退了回去，日子看起来完美无缺。可是渐渐地，阿栗发现不对劲：因为错题总能退回去重做，他再也不认真检查了；因为道歉可以收回，他对朋友说话越来越随便。更糟的是，全镇的人都变得一样——大家不再小心做事，不再珍惜任何东西，反正时间可以倒流。一年冬天，钟表匠的孙女小满做了一件大事：她把镇中心的大钟调回了正着走。\"错误走了就走了，\"小满说，\"但它留下的教训是倒不回去的宝贝。真正重要的不是退回错误，而是带着教训往前走。\"起初大家都不习惯，可慢慢地，时钟镇的人重新学会了认真、珍惜和真诚。阿栗也变了——他的错题本越来越厚，成绩却越来越好。后来，时钟镇的钟再也没有倒着走过。",
+  "file": "audio/story/s014.mp3"
+ },
+ {
+  "key": "story:s15",
+  "text": "最后一棵会唱歌的树。很老很老的森林深处，长着最后一棵会唱歌的树。起风的时候，它的每片叶子都会发出叮叮咚咚的声音，像一整支小小的乐队。传说它的木料能做成世界上最美的钢琴。城市里的乐器商人带着电锯来了，出价高得吓人。守林人的孙女小茉拦在树前：\"它不卖！它一唱歌，整片森林的鸟都回来学，松鼠、小鹿都来听！\"商人笑了：\"一棵树而已。钢琴能弹出一样的音乐，还可以带回家。\"\"不一样的。\"小茉说，\"钢琴是给人听的，树是给整个森林听的。\"僵持不下时，小茉录下了大树唱歌的声音，寄给了远方的音乐家。音乐家听完后连夜赶来，在大树下举办了一场音乐会——没有砍一棵树，琴声和树叶声合在一起，美得让所有人落泪。音乐会结束后，无数人捐款在森林里建起了保护区，还种下了一片新的树苗。许多年后，树苗长成了小树。神奇的是，它们也学会了唱歌——叮叮，咚咚，声音还很稚嫩，但整片森林都在合唱。",
+  "file": "audio/story/s015.mp3"
+ },
+ {
+  "key": "story:s16",
+  "text": "小裁缝与星尘斗篷。小裁缝阿樵手艺很好，但店太小、名气太低，织一件斗篷要整整七天，常常等不起客人。一天，一位神秘客人留下半袋星尘：\"用它缝斗篷，一夜就能完工，华丽得像披着银河。全城的人都会来买。\"阿樵试了试——星尘斗篷真的又快又美，订单像雪片一样飞来。他不再量体、不再配色，星尘一撒，斗篷成堆地挂满店铺。可是穿的人渐渐发现了问题：星尘斗篷不挡风，不保暖，一场雨就褪了色，样子像极了，里子却空空的。老顾客寒着心走了。最后一位来找阿樵的，是位要嫁女儿的老母亲：\"我不要银河，我要一件女儿能穿十年的斗篷。你还有那样的手艺吗？\"阿樵关起门，把剩下的星尘倒进了河里。他重新拿起软尺，量肩、量臂，一针一线缝了整整七天。女儿披上斗篷那天，雪下得很大，她却暖得眼睛发亮。她逢人就说：\"这是我见过最好看的斗篷。\"后来，阿樵的店还是小小的，但门口总排着安静的队。他终于懂得：手艺人的魔法不在星尘里，而在每一针每一线的时间里。",
+  "file": "audio/story/s016.mp3"
+ }
+]

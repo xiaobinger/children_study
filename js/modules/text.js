@@ -59,7 +59,7 @@ window.CS = window.CS || {};
 
     document.getElementById('textBack').onclick = () => { CS.stopSpeak(); navigate('text'); };
     document.getElementById('textSpeak').onclick = () => {
-      if (!CS.speak(text.title + '。' + text.passage.join(''))) CS.toast('当前浏览器不支持朗读');
+      if (!CS.speak(text.title + '。' + text.passage.join(''), { key: 'text:' + text.id })) CS.toast('当前浏览器不支持朗读');
     };
     document.getElementById('textStop').onclick = () => CS.stopSpeak();
     document.getElementById('textQuiz').onclick = () => startQuiz(text);

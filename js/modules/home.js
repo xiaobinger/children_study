@@ -10,6 +10,7 @@ window.CS = window.CS || {};
     { key: 'literacy', icon: '🔤', name: '识字乐园', desc: '字卡学习、找字游戏', accent: 'literacy' },
     { key: 'song', icon: '🎵', name: '儿歌欢唱', desc: '边弹边唱，歌词跟读', accent: 'song' },
     { key: 'text', icon: '📚', name: '课文阅读', desc: '读小故事，答理解题', accent: 'text' },
+    { key: 'story', icon: '🏰', name: '童话城堡', desc: '原创童话，答题明理', accent: 'story' },
     { key: 'craft', icon: '✂️', name: '手工课堂', desc: '跟着步骤做手工', accent: 'craft' },
     { key: 'math', icon: '🔢', name: '数学闯关', desc: '数数、加减、乘除', accent: 'math' }
   ];
@@ -20,6 +21,7 @@ window.CS = window.CS || {};
     if (key === 'literacy') return CS.DATA.characters[state.age].length + ' 张字卡';
     if (key === 'song') return CS.DATA.songs.filter((s) => pool.includes(s.age)).length + ' 首儿歌';
     if (key === 'text') return CS.DATA.texts.filter((t) => pool.includes(t.age)).length + ' 篇课文';
+    if (key === 'story') return CS.DATA.stories.filter((s) => pool.includes(s.age)).length + ' 篇童话';
     if (key === 'craft') return CS.DATA.crafts.filter((c) => pool.includes(c.age)).length + ' 个手工';
     if (key === 'math') return '无限题目';
     if (key === 'cartoon') return state.cartoonMins > 0 ? '有 ' + Math.ceil(state.cartoonMins) + ' 分钟' : '攒星换动画';
@@ -46,6 +48,8 @@ window.CS = window.CS || {};
       .forEach((p) => items.push({ icon: '📖', name: p.title, sub: '古诗闯关', nav: 'poem', params: { id: p.id } }));
     CS.DATA.texts.filter((t) => pool.includes(t.age) && !state.done['text_' + t.id])
       .forEach((t) => items.push({ icon: t.emoji, name: t.title, sub: '课文阅读', nav: 'text', params: { id: t.id } }));
+    CS.DATA.stories.filter((s) => pool.includes(s.age) && !state.done['story_' + s.id])
+      .forEach((s) => items.push({ icon: s.emoji, name: s.title, sub: '童话城堡', nav: 'story', params: { id: s.id } }));
     CS.DATA.crafts.filter((c) => pool.includes(c.age) && !state.done['craft_' + c.id])
       .forEach((c) => items.push({ icon: c.emoji, name: c.title, sub: '手工时间', nav: 'craft', params: { id: c.id } }));
     CS.DATA.songs.filter((s) => pool.includes(s.age) && !state.done['song_' + s.id])
@@ -93,6 +97,7 @@ window.CS = window.CS || {};
       : '';
 
     const reward = state.reward;
+    const petLine = CS.pet ? ' · 伙伴 <b>Lv.' + CS.pet.level + ' ' + esc(CS.pet.title) + '</b>' : '';
     const cartoonCard =
       '<button class="module-card reward-card" data-nav="cartoon">' +
       '<span class="mc-count">' + esc(countFor('cartoon')) + '</span>' +
@@ -110,7 +115,7 @@ window.CS = window.CS || {};
       '<section class="hero">' +
       '<span class="hero-emoji e1">☁️</span><span class="hero-emoji e2">🌈</span><span class="hero-emoji e3">✨</span>' +
       '<h1><span class="hero-avatar">' + CS.profile.avatar + '</span> ' + esc(heroGreeting()) + '</h1>' +
-      '<p>现在是 <b>' + esc(ageLabel()) + '</b> · 已获得 <b>' + state.stars + '</b> 颗星星' +
+      '<p>现在是 <b>' + esc(ageLabel()) + '</b> · 已获得 <b>' + state.stars + '</b> 颗星星' + petLine +
       (state.cartoonMins > 0 ? ' · 动画时间还剩 <b>' + Math.ceil(state.cartoonMins) + '</b> 分钟' : '') + '<br>' +
       '攒满 <b>' + reward.stars + '</b> 颗星星可以换 <b>' + reward.minutes + '</b> 分钟动画哦！</p></section>' +
 
@@ -144,6 +149,7 @@ window.CS = window.CS || {};
       { key: 'literacy', icon: '🔤', name: '识字乐园', desc: '字卡学习、找字游戏' },
       { key: 'song', icon: '🎵', name: '儿歌欢唱', desc: '电子琴伴奏 + 歌词逐行跟唱' },
       { key: 'text', icon: '📚', name: '课文阅读', desc: '原创小故事 + 阅读理解题' },
+      { key: 'story', icon: '🏰', name: '童话城堡', desc: '原创童话 + 道理揭晓' },
       { key: 'craft', icon: '✂️', name: '手工课堂', desc: '步骤打卡式手工教程' },
       { key: 'cartoon', icon: '🎬', name: '动画小剧场', desc: '星星兑换动画时间' }
     ];

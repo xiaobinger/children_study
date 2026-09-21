@@ -26,6 +26,7 @@
       </div>
       <button class="icon-btn" id="soundBtn" aria-label="声音开关" title="声音开关">🔊</button>
       <button class="icon-btn" id="eyeBtn" aria-label="护眼模式" title="护眼模式">🌙</button>
+      <button class="icon-btn" id="parentBtn" aria-label="家长中心" title="家长中心">⚙️</button>
     </div>
   </header>
 
@@ -59,17 +60,34 @@
 
 <!-- 撒花画布 -->
 <canvas id="confettiCanvas"></canvas>
-<div class="mascot" id="mascot" title="点我试试！"><span class="mascot-bubble" id="mascotBubble">你好呀！</span>🐱</div>
+<button class="mascot" id="mascot" title="点我聊天！" aria-label="学习小伙伴">
+  <span class="mascot-bubble" id="mascotBubble">你好呀！</span>
+  <svg class="pet-svg" viewBox="0 0 120 120" aria-hidden="true" focusable="false" id="petSvg"></svg>
+  <span class="pet-hit" aria-hidden="true"></span>
+  <span class="pet-badge" id="petBadge" hidden>Lv.1</span>
+</button>
 
 <script src="js/data/poems.js"></script>
+<script src="js/data/poems-a1.js"></script>
+<script src="js/data/poems-a2.js"></script>
+<script src="js/data/poems-a3.js"></script>
+<script src="js/data/poems-a4.js"></script>
 <script src="js/data/characters.js"></script>
+<script src="js/data/chars-a1.js"></script>
+<script src="js/data/chars-a2.js"></script>
+<script src="js/data/chars-a3.js"></script>
+<script src="js/data/chars-a4.js"></script>
 <script src="js/data/songs.js"></script>
 <script src="js/data/texts.js"></script>
+<script src="js/data/stories.js"></script>
 <script src="js/data/crafts.js"></script>
 <script src="js/data/mathgen.js"></script>
 <script src="js/data/cartoons.js"></script>
 <script src="js/data/cartoon-recs.js"></script>
+<script src="js/data/fun.js?v=1.5.0"></script>
+<script src="js/voice-map.js"></script>
 <script src="js/core.js"></script>
+<script src="js/ai.js"></script>
 <script src="js/audio.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/modules/home.js"></script>
@@ -77,10 +95,14 @@
 <script src="js/modules/literacy.js"></script>
 <script src="js/modules/song.js"></script>
 <script src="js/modules/text.js"></script>
+<script src="js/modules/story.js"></script>
 <script src="js/modules/craft.js"></script>
 <script src="js/modules/math.js"></script>
 <script src="js/modules/cartoon.js"></script>
-<script src="js/modules/parent.js"></script>
+<script src="js/modules/parent.js?v=1.5.0"></script>
+<script src="js/animal.js"></script>
+<script src="js/pet.js"></script>
+<script src="js/xiaoai.js?v=1.5.0"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

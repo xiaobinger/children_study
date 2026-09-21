@@ -89,7 +89,13 @@ window.CS = window.CS || {};
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         CS.sfx.tap();
-        window.open(btn.getAttribute('data-url-open'), '_blank', 'noopener');
+        const url = btn.getAttribute('data-url-open');
+        // APK 环境拦截跳转，改为提示录入直链
+        if (typeof CsAudio !== 'undefined') {
+          openVideoPlayer({ title: '粘贴的视频', url: url, emoji: '📺' });
+        } else {
+          window.open(url, '_blank', 'noopener');
+        }
       });
     });
     box.querySelectorAll('[data-vp]').forEach((btn) => {
@@ -128,12 +134,11 @@ window.CS = window.CS || {};
   function renderRecs(view) {
     if (tickTimer) { clearInterval(tickTimer); tickTimer = null; }
     const recs = CS.DATA.cartoonRecs || [];
-    const addedTitles = (state.cartoons || []).map((c) => c.title);
 
     view.innerHTML =
       '<div class="back-row"><h2 class="page-title" style="margin:0"><span class="pt-icon">📚</span>推荐动画库</h2>' +
       '<button class="btn btn-ghost" id="recBack">‹ 返回</button></div>' +
-      '<p class="hint-text">精选适合小朋友的热门动画，一键添加到我的动画库；<br>也可全网搜索，找到喜欢的视频后手动录入链接。</p>' +
+      '<p class="hint-text">精选适合小朋友的热门动画；点「找视频」自动填入关键词，<br>搜索打开后复制<b>视频页链接</b>，粘贴到下方录入，就能在应用内直接播放。</p>' +
 
       '<div class="quiz-area">' +
       '<div class="quiz-question"><span class="q-emoji">🔍</span>全网搜索动画</div>' +
@@ -144,43 +149,33 @@ window.CS = window.CS || {};
       '<button class="btn btn-ghost" id="searchYt">📺 去 YouTube 搜索</button></div>' +
       '<p class="hint-text">打开搜索页后复制视频链接，粘贴到下方录入</p>' +
       '<div class="form-row"><label for="searchUrl">粘贴视频链接（https:// 开头）</label>' +
-      '<input class="form-input" id="searchUrl" placeholder="https://www.bilibili.com/video/..."></div>' +
+      '<input class="form-input" id="searchUrl" placeholder="https://www.bilibili.com/video/BV..."></div>' +
       '<div class="form-row"><label for="searchTitle">给它起个名字</label>' +
       '<input class="form-input" id="searchTitle" maxlength="20" placeholder="比如：小猪佩奇 第一季"></div>' +
       '<button class="btn btn-warn" id="searchAdd">＋ 添加到我的动画库</button></div>' +
 
-      '<div class="section-title">🌟 热门推荐（' + recs.length + ' 部，点一键添加）</div>' +
-      '<div class="card-list">' + recs.map((r) => {
-        const added = addedTitles.includes(r.title);
-        return '<div class="list-card" style="cursor:default">' +
-          '<span class="lc-icon">' + r.emoji + '</span>' +
-          '<span class="lc-body"><span class="lc-title">' + esc(r.title) + '</span>' +
-          '<span class="lc-sub">' + esc(r.desc) + '</span></span>' +
-          (added ? '<span class="done-badge">已添加 ✓</span>' :
-            '<button class="btn btn-primary" data-rec-add="' + esc(r.title) + '" style="padding:.4rem .9rem;font-size:.85rem">一键添加</button>') +
-          '</div>';
-      }).join('') + '</div>';
+      '<div class="section-title">🌟 热门推荐（' + recs.length + ' 部）</div>' +
+      '<div class="card-list">' + recs.map((r) =>
+        '<div class="list-card" style="cursor:default">' +
+        '<span class="lc-icon">' + r.emoji + '</span>' +
+        '<span class="lc-body"><span class="lc-title">' + esc(r.title) + '</span>' +
+        '<span class="lc-sub">' + esc(r.desc) + '</span></span>' +
+        '<button class="btn btn-primary" data-rec-find="' + esc(r.title) + '" style="padding:.4rem .9rem;font-size:.85rem">🔍 找视频</button>' +
+        '</div>'
+      ).join('') + '</div>';
 
     document.getElementById('recBack').onclick = () => { CS.sfx.tap(); CS.navigate('cartoon'); };
 
-    view.querySelectorAll('[data-rec-add]').forEach((btn) => {
+    // 点推荐卡片 → 自动填入搜索关键词，引导家长找到视频页后录入真实链接
+    view.querySelectorAll('[data-rec-find]').forEach((btn) => {
       btn.addEventListener('click', () => {
-        const title = btn.getAttribute('data-rec-add');
+        const title = btn.getAttribute('data-rec-find');
         const rec = recs.find((r) => r.title === title);
         if (!rec) return;
-        if ((state.cartoons || []).some((c) => c.title === title)) return;
-        const urlMap = {
-          bilibili: 'https://search.bilibili.com/all?keyword=' + encodeURIComponent(rec.keyword || rec.title),
-          youtube: 'https://www.youtube.com/results?search_query=' + encodeURIComponent(rec.keyword || rec.title)
-        };
-        state.cartoons.push({
-          id: 'rec' + Date.now() + Math.random().toString(36).slice(2, 6),
-          title: rec.title, url: urlMap[rec.platform] || urlMap.bilibili, emoji: rec.emoji
-        });
-        CS.store.set('cartoons', state.cartoons);
-        CS.sfx.star();
-        CS.toast('已添加：' + rec.title + ' 🎉');
-        renderRecs(view);
+        const kw = document.getElementById('searchKw');
+        if (kw) { kw.value = rec.keyword || rec.title; kw.focus(); }
+        CS.sfx.tap();
+        CS.toast('已填入「' + (rec.keyword || rec.title) + '」，搜索找到视频后复制链接，粘贴到下方录入即可内嵌播放');
       });
     });
 
@@ -238,6 +233,7 @@ window.CS = window.CS || {};
     wrap.id = 'videoPlayer';
 
     const urlInfo = parseVideoUrl(cartoon.url);
+    const isApk = typeof CsAudio !== 'undefined';
     let inner = '';
     if (urlInfo.type === 'video') {
       inner = '<video id="vpVideo" src="' + esc(cartoon.url) + '" controls playsinline></video>';
@@ -245,6 +241,10 @@ window.CS = window.CS || {};
       inner = '<div class="vp-iframe-wrap"><iframe id="vpFrame" src="' + esc(urlInfo.embed) + '" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>';
     } else if (urlInfo.type === 'bilibili') {
       inner = '<div class="vp-iframe-wrap"><iframe id="vpFrame" src="' + esc(urlInfo.embed) + '" frameborder="0" allowfullscreen scrolling="no"></iframe></div>';
+    } else if (isApk) {
+      // APK 内不跳转，引导家长换可内嵌播放的视频链接
+      inner = '<div class="vp-fallback"><div class="result-emoji">🔗</div><p>这个链接无法在应用内播放</p>' +
+        '<p class="hint-text" style="color:#ffd98a">请爸爸妈妈到「家长中心 → 动画库」换个链接：<br>B站视频页（…/video/BV开头的链接）<br>或以 .mp4 结尾的视频直链</p></div>';
     } else {
       inner = '<div class="vp-fallback"><div class="result-emoji">🔗</div><p>这个链接无法内嵌播放</p>' +
         '<a class="btn btn-primary" href="' + esc(cartoon.url) + '" target="_blank" rel="noopener" style="margin-top:.8rem">在新窗口打开</a></div>';
@@ -270,39 +270,53 @@ window.CS = window.CS || {};
     startVideoTimer();
   }
 
-  /* 检测 iframe 是否成功加载，超时则提示 */
+  /* 检测 iframe 是否成功加载：以 load 事件为准，加载成功就撤掉提示；超时才提示（APK 网络慢给 8 秒） */
   function detectEmbedFailure() {
+    const frame = document.getElementById('vpFrame');
+    if (!frame) return;
+    let loaded = false;
+    frame.addEventListener('load', () => { loaded = true; hideEmbedHint(); });
+    const isApk = typeof CsAudio !== 'undefined';
+    const maxChecks = isApk ? 16 : 6;
     let checkCount = 0;
-    const maxChecks = 6; // 3 秒
     const checker = setInterval(() => {
       checkCount++;
-      const frame = document.getElementById('vpFrame');
-      if (!frame) { clearInterval(checker); return; }
-      let loaded = false;
-      try {
-        const doc = frame.contentDocument || frame.contentWindow?.document;
-        if (doc && doc.body && doc.body.innerHTML.length > 100) loaded = true;
-      } catch (e) {
-        // 跨域无法读取，但只要有内容就算加载；超时后提示
-      }
-      // 如果 window 是 file://，YouTube/Bilibili 通常会被阻止
+      if (!document.getElementById('vpFrame')) { clearInterval(checker); return; }
+      if (loaded) { clearInterval(checker); return; }
       if (checkCount >= maxChecks) {
         clearInterval(checker);
         const overlay = document.getElementById('vpOverlay');
-        if (overlay && !overlay.classList.contains('timeup')) {
-          const hint = document.getElementById('vpEmbedHint') || document.createElement('div');
-          hint.id = 'vpEmbedHint';
-          hint.className = 'vp-embed-hint';
-          hint.innerHTML = '⚠️ 视频加载失败：直接打开 index.html 无法播放。<br>请在本地服务器下运行（见 README），或点下方按钮在新窗口打开。<br>' +
-            '<button class="btn btn-primary" id="vpOpenExt" style="margin-top:.6rem">在新窗口打开 ↗</button>';
-          overlay.appendChild(hint);
-          document.getElementById('vpOpenExt').onclick = () => {
-            const frame = document.getElementById('vpFrame');
-            if (frame?.src && frame.src !== 'about:blank') window.open(frame.src.replace('embed/', 'watch?v=').replace(/\?.*/, ''), '_blank', 'noopener');
-          };
-        }
+        if (overlay && !overlay.classList.contains('timeup')) showEmbedHint(overlay, isApk);
       }
     }, 500);
+  }
+
+  function showEmbedHint(overlay, isApk) {
+    let hint = document.getElementById('vpEmbedHint');
+    if (!hint) {
+      hint = document.createElement('div');
+      hint.id = 'vpEmbedHint';
+      hint.className = 'vp-embed-hint';
+      overlay.appendChild(hint);
+    }
+    if (isApk) {
+      // APK 内不提供跳转按钮，避免跳出应用
+      hint.innerHTML = '⚠️ 视频加载不出来：可能是网络不好，或该视频不允许嵌入播放。<br>请退出后换个视频链接试试（B站视频页 / .mp4 直链）';
+    } else {
+      hint.innerHTML = '⚠️ 视频加载失败：直接打开 index.html 无法播放。<br>请在本地服务器下运行（见 README），或点下方按钮在新窗口打开。<br>' +
+        '<button class="btn btn-primary" id="vpOpenExt" style="margin-top:.6rem">在新窗口打开 ↗</button>';
+      document.getElementById('vpOpenExt').onclick = () => {
+        const f = document.getElementById('vpFrame');
+        if (f && f.src && f.src !== 'about:blank') {
+          window.open(f.src.replace('embed/', 'watch?v=').replace(/\?.*/, ''), '_blank', 'noopener');
+        }
+      };
+    }
+  }
+
+  function hideEmbedHint() {
+    const hint = document.getElementById('vpEmbedHint');
+    if (hint) hint.remove();
   }
 
   /* 解析视频链接 → {type, embed} */
@@ -374,15 +388,13 @@ window.CS = window.CS || {};
 
   CS.stopVideo = closeVideoPlayer;
 
-  /* 首次预填充动画库 */
+  /* 首次预填充动画库：旧版本预置过 YouTube/B站搜索页链接，这类链接无法内嵌播放（会跳转），统一清掉 */
   function ensureDefaultCartoons() {
-    if (state.cartoons.length > 0) return;
-    state.cartoons = [
-      { id: 'def1', title: '宝宝巴士 · 儿歌大全', emoji: '🚗', url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
-      { id: 'def2', title: '汪汪队立大功', emoji: '🐶', url: 'https://search.bilibili.com/all?keyword=汪汪队立大功全集' },
-      { id: 'def3', title: '小猪佩奇 · 中文', emoji: '🐷', url: 'https://search.bilibili.com/all?keyword=小猪佩奇中文版全集' }
-    ];
-    CS.store.set('cartoons', state.cartoons);
+    const before = state.cartoons.length;
+    state.cartoons = state.cartoons.filter((c) =>
+      !/^def\d+$/.test(c.id) &&
+      !/search\.bilibili\.com|results\?search_query/.test(c.url || ''));
+    if (state.cartoons.length !== before) CS.store.set('cartoons', state.cartoons);
   }
 
   /* ---------- 小剧场全屏场景 ---------- */

@@ -117,7 +117,7 @@ window.CS = window.CS || {};
 
     document.getElementById('poemBack').onclick = () => { CS.stopSpeak(); navigate('poem'); };
     document.getElementById('poemSpeak').onclick = () => {
-      const ok = CS.speak(poem.title + '，' + poem.author + '。' + poem.lines.join(''));
+      const ok = CS.speak(poem.title + '，' + poem.author + '。' + poem.lines.join(''), { key: 'poem:' + poem.id });
       if (!ok) CS.toast('当前浏览器不支持朗读');
     };
     document.getElementById('poemExplain').onclick = () => {

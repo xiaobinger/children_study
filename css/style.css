@@ -672,27 +672,297 @@ body.eye-care .module-card.reward-card { --mc-bg: #f0e4d0; }
 .result-emoji { font-size: 4.5rem; }
 .result-stars { font-size: 2.4rem; }
 
-/* 吉祥物小猫 */
+/* 吉祥物小猫（内联 SVG 精绘） */
 .mascot {
-  position: fixed; right: 1rem; bottom: 5.5rem; z-index: 40;
-  font-size: 3.5rem; animation: cardFloat 4s ease-in-out infinite;
-  filter: drop-shadow(0 6px 10px rgba(0,0,0,.15)); cursor: pointer;
-  transition: transform .3s;
+  position: fixed; right: 1rem; bottom: 5.6rem; z-index: 40;
+  width: 5.4rem; height: 5.4rem; border: none; background: transparent;
+  outline: none; padding: 0;
+  /* 点击穿透：只有中间的 .pet-hit 热区收事件，透明边缘不挡下层内容 */
+  pointer-events: none;
+  filter: drop-shadow(0 6px 10px rgba(70,100,150,.22));
+  transition: filter .25s, right 2.2s ease-in-out;
+  animation: petIdleBounce 2.6s ease-in-out infinite;
+  touch-action: none;
+  -webkit-user-select: none; user-select: none;
 }
-.mascot:hover { transform: scale(1.2) rotate(10deg); }
-.mascot:active { transform: scale(.9); }
+/* 宠物点击/拖动热区（圆形，占身体中心区域） */
+.pet-hit {
+  position: absolute; inset: 15%; border-radius: 50%;
+  pointer-events: auto; cursor: pointer; z-index: 3;
+  -webkit-tap-highlight-color: transparent;
+}
+.pet-svg {
+  display: block; width: 100%; height: 100%; overflow: visible;
+  transform-origin: 50% 100%;
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+}
+/* 切换动物时的小弹跳 */
+.pet-svg.pet-swap { animation: petSwap .45s cubic-bezier(.34,1.56,.64,1); }
+@keyframes petSwap {
+  0% { transform: scale(.4) rotate(-12deg); opacity: 0; }
+  60% { transform: scale(1.12) rotate(6deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); }
+}
+
+@keyframes petIdleBounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes petWalkBounce {
+  0%,100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-5px) rotate(4deg); }
+}
+@keyframes petWaddle {
+  0%,100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+@keyframes petSurprise {
+  0% { transform: scale(1) rotate(0); }
+  30% { transform: scale(1.18) rotate(-5deg); }
+  60% { transform: scale(.94) rotate(4deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+@keyframes petTailWag {
+  0%,100% { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg); }
+}
+@keyframes petStepL {
+  0%,100% { transform: translate(0,0); }
+  50% { transform: translate(-3px,-2px); }
+}
+@keyframes petStepR {
+  0%,100% { transform: translate(0,0); }
+  50% { transform: translate(3px,-2px); }
+}
+@keyframes petBlink {
+  0%,90%,100% { transform: scaleY(1); }
+  95% { transform: scaleY(.08); }
+}
+@keyframes petMouthTalk {
+  from { transform: scaleY(.5); }
+  to { transform: scaleY(1.15); }
+}
+@keyframes petBellSwing {
+  0%,100% { transform: rotate(-7deg); }
+  50% { transform: rotate(7deg); }
+}
+@keyframes petBreathe {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+@keyframes bubblePop {
+  0% { transform: scale(.5); opacity:0; }
+  60% { transform: scale(1.08); }
+  100% { transform: scale(1); opacity:1; }
+}
+
+/* SVG 部件变换基准 */
+.pet-eye, .pet-eye-happy, .pet-eye-sleep, .pet-paw, .pet-mouth-open,
+.pet-tongue, .pet-torso, .pet-head, .pet-bell, .pet-tail, .pet-ear { transform-box: fill-box; }
+.pet-eye, .pet-eye-happy, .pet-eye-sleep, .pet-paw, .pet-mouth-open,
+.pet-tongue, .pet-torso, .pet-head { transform-origin: center; }
+.pet-tail { transform-origin: 20% 95%; }
+.pet-ear { transform-origin: 50% 100%; }
+.pet-bell { transform-origin: 50% 0; }
+
+/* 常驻小动作 */
+.pet-eye { animation: petBlink 4s ease-in-out infinite; }
+.pet-tail { animation: petTailWag 2.4s ease-in-out infinite; }
+.pet-bell { animation: petBellSwing 2.4s ease-in-out infinite; }
+
+/* 需按表情切换的部件默认隐藏 */
+.pet-eye-happy, .pet-eye-sleep, .pet-mouth-open, .pet-tongue, .pet-mouth-smile { display: none; }
+
+/* 走路 */
+.mascot.pet-walking { animation: petWalkBounce .42s ease-in-out infinite; }
+.mascot.pet-walking .pet-tail { animation: petTailWag .28s ease-in-out infinite; }
+.mascot.pet-walking .pet-paw-l { animation: petStepL .42s ease-in-out infinite; }
+.mascot.pet-walking .pet-paw-r { animation: petStepR .42s ease-in-out infinite; }
+.mascot.pet-walking .pet-bell { animation: petBellSwing .28s ease-in-out infinite; }
+
+/* ---- 步态分化：该飞的飞、该跳的跳、该慢走的慢走 ---- */
+/* 翅膀扇动（附着边为轴心向身体收拢） */
+.pet-wing { transform-box: fill-box; }
+.pet-wing-l { transform-origin: 100% 50%; }
+.pet-wing-r { transform-origin: 0% 50%; }
+@keyframes petWingFlapL {
+  0%,100% { transform: scaleX(1) rotate(0); }
+  50% { transform: scaleX(.5) rotate(8deg); }
+}
+@keyframes petWingFlapR {
+  0%,100% { transform: scaleX(1) rotate(0); }
+  50% { transform: scaleX(.5) rotate(-8deg); }
+}
+
+/* 飞行（🦋）：缓慢起伏滑翔，行走时扇翅加快、小爪不迈步 */
+@keyframes petGlide {
+  0%,100% { transform: translateY(0) rotate(-2.5deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+}
+.mascot[data-gait="fly"] { animation: petGlide 3s ease-in-out infinite; }
+.mascot[data-gait="fly"] .pet-wing-l { animation: petWingFlapL 1.5s ease-in-out infinite; }
+.mascot[data-gait="fly"] .pet-wing-r { animation: petWingFlapR 1.5s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="fly"] { animation: petGlide 1.7s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="fly"] .pet-wing-l { animation: petWingFlapL .4s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="fly"] .pet-wing-r { animation: petWingFlapR .4s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="fly"] .pet-paw { animation: none; }
+
+/* 扑翅小跳（🐣🐥）：轻快蹦跶 + 扑腾翅膀，闲时偶尔抖抖翅 */
+@keyframes petFlutterHop {
+  0%,100% { transform: translateY(0); }
+  45% { transform: translateY(-9px); }
+  55% { transform: translateY(-9.5px); }
+}
+.mascot[data-gait="flutter"] .pet-wing-l { animation: petWingFlapL 2.2s ease-in-out infinite; }
+.mascot[data-gait="flutter"] .pet-wing-r { animation: petWingFlapR 2.2s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="flutter"] { animation: petFlutterHop .55s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="flutter"] .pet-wing-l { animation: petWingFlapL .28s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="flutter"] .pet-wing-r { animation: petWingFlapR .28s ease-in-out infinite; }
+
+/* 蹦跳（🐰）：大弧度跳跃，长耳朵滞后摆动更生动 */
+@keyframes petHop {
+  0%,100% { transform: translateY(0) scaleY(.96); }
+  25% { transform: translateY(-4px) scaleY(1.05); }
+  55% { transform: translateY(-14px) scaleY(1.08); }
+  80% { transform: translateY(-2px) scaleY(.97); }
+}
+@keyframes petEarLagL { 0%,100% { transform: rotate(-8deg); } 45% { transform: rotate(-22deg); } 75% { transform: rotate(4deg); } }
+@keyframes petEarLagR { 0%,100% { transform: rotate(8deg); } 45% { transform: rotate(22deg); } 75% { transform: rotate(-4deg); } }
+.mascot.pet-walking[data-gait="hop"] { animation: petHop .66s cubic-bezier(.34,.8,.64,1) infinite; }
+.mascot.pet-walking[data-gait="hop"] .pet-ear-l { animation: petEarLagL .66s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="hop"] .pet-ear-r { animation: petEarLagR .66s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="hop"] .pet-paw-l { animation: petStepL .33s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="hop"] .pet-paw-r { animation: petStepR .33s ease-in-out infinite; }
+
+/* 蛙跳（🐸）：蓄力压缩-腾空舒展-落地 */
+@keyframes petLeap {
+  0%,100% { transform: translateY(0) scale(1.04,.92); }
+  30% { transform: translateY(-5px) scale(.95,1.1); }
+  60% { transform: translateY(-15px) scale(.97,1.1); }
+}
+.mascot.pet-walking[data-gait="leap"] { animation: petLeap .72s cubic-bezier(.3,.6,.5,1) infinite; }
+
+/* 慢走（🐼🐨）：沉重的左右摇晃，步频慢 */
+@keyframes petLumber {
+  0%,100% { transform: rotate(-4deg) translateY(0); }
+  50% { transform: rotate(4deg) translateY(-2px); }
+}
+.mascot.pet-walking[data-gait="lumber"] { animation: petLumber 1.05s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="lumber"] .pet-paw-l { animation: petStepL .9s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="lumber"] .pet-paw-r { animation: petStepR .9s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="lumber"] .pet-tail { animation: petTailWag .8s ease-in-out infinite; }
+
+/* 小跑（🦊🐷）：默认节奏的轻快步伐 */
+.mascot.pet-walking[data-gait="trot"] .pet-tail { animation: petTailWag .3s ease-in-out infinite; }
+
+/* 奔跑（🐯）：步频明显加快 */
+.mascot.pet-walking[data-gait="run"] { animation: petWalkBounce .32s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="run"] .pet-paw-l { animation: petStepL .32s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="run"] .pet-paw-r { animation: petStepR .32s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="run"] .pet-tail { animation: petTailWag .22s ease-in-out infinite; }
+
+/* 疾驰（🦄）：大幅度起伏摇摆的 gallop */
+@keyframes petGallop {
+  0%,100% { transform: translateY(0) rotate(-6deg); }
+  45% { transform: translateY(-9px) rotate(4deg); }
+  60% { transform: translateY(-10px) rotate(6deg); }
+}
+.mascot.pet-walking[data-gait="gallop"] { animation: petGallop .56s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="gallop"] .pet-paw-l { animation: petStepL .3s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="gallop"] .pet-paw-r { animation: petStepR .3s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="gallop"] .pet-tail { animation: petTailWag .2s ease-in-out infinite; }
+
+/* 游动（🐳）：缓慢起伏漂浮，尾鳍慢摆，不迈小爪 */
+@keyframes petSwim {
+  0%,100% { transform: translateY(0) rotate(3deg); }
+  50% { transform: translateY(-6px) rotate(-3deg); }
+}
+.mascot[data-gait="swim"] { animation: petSwim 2.8s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="swim"] { animation: petSwim 1.9s ease-in-out infinite; }
+.mascot.pet-walking[data-gait="swim"] .pet-paw { animation: none; }
+.mascot.pet-walking[data-gait="swim"] .pet-tail { animation: petTailWag 1.1s ease-in-out infinite; }
+
+/* 说话 */
+.mascot.pet-talking { animation: petWaddle .75s ease-in-out infinite; }
+.mascot.pet-talking .pet-mouth { display: none; }
+.mascot.pet-talking .pet-mouth-open,
+.mascot.pet-talking .pet-tongue { display: block; animation: petMouthTalk .26s ease-in-out infinite alternate; }
+.mascot.pet-talking .pet-tail { animation: petTailWag .5s ease-in-out infinite; }
+
+/* 开心 */
+.mascot.pet-happy { animation: petIdleBounce .9s ease-in-out infinite; }
+.mascot.pet-happy .pet-eye { display: none; }
+.mascot.pet-happy .pet-eye-happy { display: block; }
+.mascot.pet-happy .pet-mouth { display: none; }
+.mascot.pet-happy .pet-mouth-smile { display: block; }
+.mascot.pet-happy .pet-tail { animation: petTailWag .22s ease-in-out infinite; }
+
+/* 惊讶 */
+.mascot.pet-surprised { animation: petSurprise .5s ease-out forwards; }
+.mascot.pet-surprised .pet-eye { animation: none; transform: scale(1.18); }
+.mascot.pet-surprised .pet-mouth { display: none; }
+.mascot.pet-surprised .pet-mouth-open { display: block; }
+.mascot.pet-surprised .pet-ear-l { transform: rotate(-13deg); }
+.mascot.pet-surprised .pet-ear-r { transform: rotate(13deg); }
+.mascot.pet-surprised .pet-tail { animation: petTailWag .18s ease-in-out infinite; }
+
+/* 睡觉 */
+.mascot.pet-sleeping { animation: none; }
+.mascot.pet-sleeping .pet-head { transform: rotate(-7deg); }
+.mascot.pet-sleeping .pet-eye { display: none; }
+.mascot.pet-sleeping .pet-eye-sleep { display: block; }
+.mascot.pet-sleeping .pet-tail,
+.mascot.pet-sleeping .pet-bell,
+.mascot.pet-sleeping .pet-wing { animation: none; }
+.mascot.pet-sleeping .pet-torso { animation: petBreathe 3.2s ease-in-out infinite; }
+/* 走路方向翻转 */
+.mascot.pet-flip .pet-svg { transform: scaleX(-1); }
+
+/* 孩子选的宝宝头像：已直接渲染为对应小动物，不再显示徽章 */
+.mascot:hover:not(.pet-talking):not(.pet-walking):not(.pet-surprised) {
+  transform: scale(1.12) rotate(8deg) !important;
+}
+.mascot:active { transform: scale(.88) !important; }
+.mascot:focus-visible {
+  outline: 3px dashed var(--cyan);
+  outline-offset: 6px;
+  border-radius: 50%;
+}
 .mascot-bubble {
-  position: absolute; bottom: 100%; right: 0; margin-bottom: .4rem;
-  background: var(--card); color: var(--text); font-size: .82rem; font-weight: 700;
-  padding: .4rem .8rem; border-radius: 14px; white-space: nowrap;
-  box-shadow: var(--shadow); border: 2.5px solid var(--cyan);
-  animation: popIn .3s;
+  position: absolute; bottom: calc(100% + .6rem); right: -.3rem; left: auto;
+  background: linear-gradient(135deg, #fff7e6 0%, #ffe9c7 100%);
+  color: #5a3a1a; font-size: .84rem; font-weight: 800; letter-spacing: .02em;
+  padding: .45rem .95rem; border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(214,140,40,.28), inset 0 1px 0 rgba(255,255,255,.9);
+  border: 2.5px solid #ffd98a;
+  width: max-content; max-width: 15rem; text-align: center; line-height: 1.35;
+  animation: bubblePop .45s cubic-bezier(.34,1.56,.64,1) forwards;
+  z-index: 10;
+  pointer-events: none;
 }
+/* 气泡顶部小星星装饰 */
+.mascot-bubble::before {
+  content: '✨'; position: absolute; top: -.7rem; right: 2.4rem;
+  font-size: .95rem; line-height: 1;
+  filter: drop-shadow(0 1px 1px rgba(214,140,40,.4));
+}
+/* 圆润小尾巴 */
 .mascot-bubble::after {
-  content: ''; position: absolute; top: 100%; right: 1rem;
-  border: 7px solid transparent; border-top-color: var(--cyan);
+  content: ''; position: absolute; top: 100%; right: 2.4rem;
+  width: 0; height: 0;
+  border: 9px solid transparent; border-top-color: #ffd98a;
+}
+.z-sleeping { top: auto !important; right: 50% !important; transform: translateX(50%) !important; bottom: 60% !important; font-size: 1rem !important; color: #7c6a9a !important; background: linear-gradient(135deg, #f3f0ff 0%, #e7e1fb 100%) !important; border-color: #d9cff7 !important; opacity: .92 !important; letter-spacing: .2rem; animation: zFloat 2s ease-in-out infinite !important; }
+/* 睡觉时不显示星星装饰 */
+.mascot-bubble.z-sleeping::before { display: none; }
+@keyframes zFloat {
+  0%,100% { transform: translateX(50%) translateY(0); opacity:.8; }
+  50% { transform: translateX(50%) translateY(-.5rem); opacity:.4; }
 }
 @media (min-width: 768px) { .mascot { bottom: 2rem; } }
+@media (orientation: landscape) and (max-height: 500px) {
+  .mascot { bottom: 4.5rem; width: 3.8rem; height: 3.8rem; }
+}
 
 /* 标签页按钮 */
 .tab-btn { border-radius: 999px; padding: .5rem 1.1rem; font-weight: 800; transition: transform .15s; }
@@ -791,5 +1061,215 @@ body.eye-care .module-card.reward-card { --mc-bg: #f0e4d0; }
   padding: 1rem 1.4rem; border-radius: 16px; max-width: 90%; line-height: 1.7;
   font-size: .92rem; border: 2px solid var(--warn);
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  pointer-events: auto;
 }
 @keyframes cloudDrift { from { left: -15%; } to { left: 105%; } }
+
+/* =========================================================
+   📱📺 多屏幕自适应增强（超小屏 / 横屏矮屏 / 平板 / 大屏 / TV）
+   ========================================================= */
+
+/* ---------- 超小屏手机（≤380px）：紧凑布局 ---------- */
+@media (max-width: 380px) {
+  .view { padding: .8rem .7rem 6rem; }
+  .hero { padding: 1.2rem 1rem; border-radius: var(--radius-sm); }
+  .hero h1 { letter-spacing: .05em; }
+  .module-grid { gap: .7rem; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  .mc-icon { width: 3.8rem; height: 3.8rem; font-size: 2.2rem; }
+  .opt-btn { font-size: 1.15rem; min-height: 56px; }
+  .topbar { padding: .35rem .5rem; }
+  .icon-btn { width: 2.05rem; height: 2.05rem; font-size: 1.05rem; }
+  .topbar-age { font-size: .78rem; padding: .25rem .55rem; }
+  .bottombar-item { font-size: .65rem; }
+  .flashcard { height: 270px; }
+  .quiz-area { padding: 1rem .8rem; }
+}
+
+/* ---------- 手机横屏（横向矮屏）：压缩纵向占用，内容一屏放下 ---------- */
+@media (orientation: landscape) and (max-height: 500px) {
+  .view { padding-top: .5rem; }
+  .hero { padding: .7rem 1.2rem; margin-bottom: .8rem; }
+  .hero p { display: none; }
+  .hero-emoji { font-size: 1.6rem; }
+  .module-grid { grid-auto-rows: min-content; }
+  .module-card { padding: .8rem .6rem; gap: .3rem; }
+  .mc-icon { width: 3.2rem; height: 3.2rem; font-size: 2rem; }
+  .quiz-area { margin: .5rem 0; padding: .8rem; }
+  .flashcard { margin: .6rem auto; height: 240px; }
+  .empty-tip { padding: 1.5rem .8rem; }
+}
+
+/* ---------- 平板（≥768px）：内容宽度分级 ---------- */
+@media (min-width: 768px) {
+  .view { max-width: 1000px; }
+}
+
+/* ---------- 大屏 / 平板横屏（≥1024px）：整体放大 ---------- */
+@media (min-width: 1024px) {
+  :root { --fs-base: 18px; }
+  .view { max-width: 1120px; padding-left: 1.5rem; padding-right: 1.5rem; }
+  .module-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.2rem; }
+  .mc-icon { width: 5.2rem; height: 5.2rem; font-size: 3.2rem; }
+  .opt-grid { gap: 1rem; }
+  .opt-btn { font-size: 1.55rem; min-height: 78px; }
+  .quiz-area { padding: 1.8rem 1.6rem; }
+  .flashcard { max-width: 400px; height: 340px; }
+  .fc-char { font-size: 5.6rem; }
+  .modal { max-width: 480px; }
+  .hero { padding: 2.2rem 2rem; }
+}
+
+/* ---------- 超宽屏（≥1440px）：继续放大，内容居中 ---------- */
+@media (min-width: 1440px) {
+  :root { --fs-base: 19px; }
+  .view { max-width: 1280px; }
+  .module-grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+  .card-list { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .modal { max-width: 520px; }
+}
+
+/* ---------- Android TV / 无指针设备（遥控器 10-foot UI）---------- */
+@media (pointer: none) {
+  :root { --fs-base: 21px; }
+  .view { max-width: 1400px; padding-bottom: 8rem; }
+  /* TV 上保留底部导航（遥控器焦点可达，大屏媒体查询里默认隐藏了它） */
+  .bottombar { display: grid; }
+  .bottombar-item { padding: .45rem .2rem; font-size: .85rem; }
+  .bottombar-item .b-icon { font-size: 1.8rem; }
+  /* 遥控器操作：放大交互目标 */
+  .icon-btn { width: 3rem; height: 3rem; font-size: 1.5rem; }
+  .btn { padding: .8rem 1.8rem; }
+  .btn-big { font-size: 1.3rem; padding: 1rem 2.6rem; }
+  .pin-key { font-size: 1.9rem; }
+  .module-card { padding: 1.4rem 1rem; }
+  .mc-name { font-size: 1.35rem; }
+  .mc-desc { font-size: .95rem; }
+  .opt-btn { font-size: 1.7rem; min-height: 90px; }
+  /* 关键：遥控器导航必须有显眼焦点环 */
+  button:focus {
+    outline: 6px solid var(--primary);
+    outline-offset: 5px;
+    box-shadow: 0 0 0 10px color-mix(in srgb, var(--primary) 25%, transparent), var(--shadow-lg);
+  }
+  .module-card:focus { transform: scale(1.06); border-color: var(--mc-bd); }
+  .list-card:focus { transform: scale(1.03); border-color: var(--primary); }
+  /* TV 无悬停：关掉 hover 位移效果，避免焦点移动时"乱跳" */
+  .module-card:hover, .list-card:hover, .opt-btn:hover, .icon-btn:hover,
+  .char-cell:hover, .avatar-cell:hover, .pin-key:hover { transform: none; }
+}
+
+/* ---------- AI 学习伙伴聊天面板 ---------- */
+.mascot-chat {
+  position: fixed; right: 1rem; bottom: 9.6rem; z-index: 95;
+  width: min(340px, calc(100vw - 2rem));
+  background: var(--card); border-radius: 22px; overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid color-mix(in srgb, var(--primary) 30%, transparent);
+  display: flex; flex-direction: column;
+  animation: popIn .3s;
+}
+@media (min-width: 768px) { .mascot-chat { bottom: 6.2rem; } }
+.mchat-head {
+  display: flex; align-items: center; gap: .5rem;
+  padding: .6rem .8rem; font-weight: 800; color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--purple));
+}
+.mchat-avatar { font-size: 1.6rem; }
+.mchat-title { flex: 1; font-size: 1rem; }
+.mchat-close {
+  color: #fff; font-size: 1.05rem; width: 2rem; height: 2rem;
+  border-radius: 50%; background: rgba(255, 255, 255, .22);
+  display: flex; align-items: center; justify-content: center;
+}
+.mchat-msgs {
+  max-height: 42vh; min-height: 128px; overflow-y: auto;
+  padding: .8rem; display: flex; flex-direction: column; gap: .5rem;
+}
+.mchat-msg {
+  max-width: 84%; padding: .5rem .8rem; border-radius: 16px;
+  font-size: .95rem; line-height: 1.6; word-break: break-word;
+}
+.mchat-ai { align-self: flex-start; background: var(--bg2); border-bottom-left-radius: 4px; }
+.mchat-me { align-self: flex-end; background: var(--primary); color: #fff; border-bottom-right-radius: 4px; }
+.mchat-think { opacity: .75; font-style: italic; }
+.mchat-quick { display: flex; gap: .4rem; flex-wrap: wrap; padding: 0 .8rem .5rem; }
+.mchat-quick .tab-btn { font-size: .8rem; padding: .3rem .7rem; box-shadow: none; border: 2px solid color-mix(in srgb, var(--primary) 30%, transparent); }
+.mchat-input-row { display: flex; gap: .5rem; padding: .5rem .8rem .8rem; }
+.mchat-input-row .form-input { flex: 1; min-width: 0; }
+.mchat-input-row .btn { padding: .55rem 1.2rem; white-space: nowrap; }
+@media (pointer: none) {
+  .mascot-chat { width: min(520px, calc(100vw - 2rem)); }
+  .mchat-msgs { max-height: 50vh; }
+  .mchat-msg { font-size: 1.05rem; }
+  .mchat-quick .tab-btn { font-size: .95rem; }
+}
+
+/* ---------- 聊天面板：模式标签 / 宠物状态条 / 麦克风 ---------- */
+.mchat-mode {
+  display: inline-block; font-style: normal; font-size: .68rem; font-weight: 700;
+  padding: .1rem .45rem; margin-left: .4rem; border-radius: 999px;
+  background: rgba(255, 255, 255, .25); vertical-align: 2px;
+}
+.mchat-petbar { padding: .55rem .8rem .5rem; background: var(--bg2); border-bottom: 2px dashed color-mix(in srgb, var(--primary) 22%, transparent); }
+.mp-top { display: flex; align-items: center; gap: .55rem; }
+.mp-avatar { font-size: 1.7rem; filter: drop-shadow(0 2px 3px rgba(70,100,150,.25)); }
+.mp-info { flex: 1; min-width: 0; }
+.mp-title { font-size: .85rem; font-weight: 800; color: var(--text); }
+.mp-track { height: 9px; margin: .25rem 0 .15rem; }
+.mp-exp { font-size: .68rem; color: var(--text); opacity: .65; }
+.mp-foods { display: flex; align-items: center; gap: .45rem; margin-top: .5rem; flex-wrap: wrap; }
+.mp-foods-label { font-size: .75rem; font-weight: 700; color: var(--text); opacity: .8; }
+.mp-stars { font-size: .75rem; font-weight: 700; color: var(--warn); margin-left: auto; }
+.pet-food {
+  display: flex; flex-direction: column; align-items: center; gap: 1px;
+  padding: .28rem .5rem; border-radius: 14px; border: 2px solid color-mix(in srgb, var(--primary) 35%, transparent);
+  background: var(--card); box-shadow: var(--shadow); cursor: pointer;
+  transition: transform .15s;
+}
+.pet-food:active { transform: scale(.92); }
+.pf-emoji { font-size: 1.25rem; line-height: 1.2; }
+.pf-cost { font-size: .68rem; font-weight: 800; color: var(--warn); }
+.mchat-mic {
+  width: 2.6rem; height: 2.6rem; flex: none; border-radius: 50%;
+  border: 2px solid color-mix(in srgb, var(--primary) 40%, transparent);
+  background: var(--card); font-size: 1.2rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .15s;
+}
+.mchat-mic:active { transform: scale(.9); }
+.mchat-mic.mic-on {
+  background: var(--err); border-color: var(--err); color: #fff;
+  animation: micPulse 1.1s ease-in-out infinite;
+}
+@keyframes micPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(242, 109, 125, .55); }
+  50% { box-shadow: 0 0 0 9px rgba(242, 109, 125, 0); }
+}
+
+/* ---------- 宠物等级徽章（挂在宠物身上） ---------- */
+.pet-badge {
+  position: absolute; top: -4px; right: -6px; z-index: 2;
+  font-size: .66rem; font-weight: 800; color: #fff;
+  background: linear-gradient(135deg, var(--warn), #ff9760);
+  padding: .12rem .42rem; border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(180, 110, 30, .4);
+  pointer-events: none; white-space: nowrap;
+}
+
+/* ---------- 童话道理框 ---------- */
+.story-moral {
+  margin-top: 1rem; padding: .8rem 1rem; border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--warn) 18%, var(--card)), var(--card));
+  border: 2px dashed color-mix(in srgb, var(--warn) 55%, transparent);
+  font-size: .95rem; line-height: 1.7; color: var(--text);
+}
+.story-moral-locked { opacity: .75; filter: grayscale(.2); }
+.sm-icon { font-size: 1.2rem; margin-right: .3rem; }
+
+/* ---------- 桌面/外接键盘：标准 focus-visible 焦点环 ---------- */
+@media (pointer: fine) {
+  button:focus-visible, .form-input:focus-visible {
+    outline: 4px solid var(--primary);
+    outline-offset: 3px;
+  }
+}

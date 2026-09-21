@@ -1,12 +1,42 @@
 /* ============ 音频引擎：音效 / 旋律 / 语音朗读 ============ */
+/* 优先走 Android 原生 CsAudio 桥（SoundPool + TTS），不可用时回退 Web Audio API */
 window.CS = window.CS || {};
 
 (function (CS) {
   'use strict';
 
+  const useNative = typeof CsAudio !== 'undefined'; // Android WebView 注入的原生桥
   let ctx = null;
   let muted = !CS.state.sound;
 
+  /* ---------- 原生桥封装 ---------- */
+  const nativePlayTone = useNative
+    ? (freq, startMs, durMs, type, vol) => {
+        try { CsAudio.playTone(freq, startMs, durMs, type || 'sine', vol == null ? 0.22 : vol); }
+        catch (e) { /* 静默失败 */ }
+      }
+    : null;
+
+  const nativeSpeak = useNative
+    ? (text) => {
+        try { return CsAudio.speak(text); }
+        catch (e) { return '{"ok":false}'; }
+      }
+    : null;
+
+  const nativeStopSpeak = useNative
+    ? () => {
+        try { CsAudio.stopSpeak(); } catch (e) {}
+      }
+    : null;
+
+  const nativeStopTones = useNative
+    ? () => {
+        try { CsAudio.stopTones(); } catch (e) {}
+      }
+    : null;
+
+  /* ---------- Web Audio 回退 ---------- */
   function ensureCtx() {
     if (!ctx) {
       const AC = window.AudioContext || window.webkitAudioContext;
@@ -17,7 +47,7 @@ window.CS = window.CS || {};
     return ctx;
   }
 
-  function playTone(freq, start, dur, type, vol) {
+  function webPlayTone(freq, start, dur, type, vol) {
     const c = ensureCtx();
     if (!c) return;
     const osc = c.createOscillator();
@@ -31,6 +61,15 @@ window.CS = window.CS || {};
     osc.connect(gain).connect(c.destination);
     osc.start(c.currentTime + start);
     osc.stop(c.currentTime + start + dur + 0.05);
+  }
+
+  /* ---------- 统一播放接口：用原生 bridge 时转为毫秒 ---------- */
+  function playTone(freq, start, dur, type, vol) {
+    if (useNative) {
+      nativePlayTone(freq, Math.round(start * 1000), Math.round(dur * 1000), type, vol);
+    } else {
+      webPlayTone(freq, start, dur, type, vol);
+    }
   }
 
   const sfx = {
@@ -92,25 +131,26 @@ window.CS = window.CS || {};
   function stopMelody() {
     if (melodyTimer) { clearTimeout(melodyTimer); melodyTimer = null; }
     melodyHandlers = { onNote: null, onEnd: null };
+    if (useNative) nativeStopTones();
   }
 
   function playMelody(notes, bpm, onNote, onEnd) {
     stopMelody();
-    if (muted) { onEnd && onEnd(); return; }
-    const c = ensureCtx();
-    if (!c) { onEnd && onEnd(); return; }
+    if (muted) { onEnd && onEnd(); return }
+    const c = useNative ? { currentTime: 0 } : ensureCtx();
+    if (!c) { onEnd && onEnd(); return }
     const events = parseMelody(notes, bpm);
-    const t0 = c.currentTime + 0.15;
+    const t0 = 0.15;
     events.forEach((ev, i) => {
       if (ev.freq > 0) {
-        playTone(ev.freq, 0.15 + ev.start, ev.dur, 'triangle', 0.2);
-        playTone(ev.freq / 2, 0.15 + ev.start, ev.dur, 'sine', 0.08); // 低八度和声
+        playTone(ev.freq, t0 + ev.start, ev.dur, 'triangle', 0.2);
+        playTone(ev.freq / 2, t0 + ev.start, ev.dur, 'sine', 0.08);
       }
       melodyTimer = setTimeout(() => {
         onNote && onNote(i, events);
-      }, (0.15 + ev.start) * 1000);
+      }, (t0 + ev.start) * 1000);
     });
-    const total = (events.length ? events[events.length - 1].start + events[events.length - 1].dur : 0) + 0.15;
+    const total = (events.length ? events[events.length - 1].start + events[events.length - 1].dur : 0) + t0;
     melodyTimer = setTimeout(() => {
       melodyTimer = null;
       onEnd && onEnd();
@@ -133,7 +173,50 @@ window.CS = window.CS || {};
     pickVoice();
   }
 
+  /* ---------- 预生成配音（Edge TTS 离线 mp3，音质远超系统 TTS） ---------- */
+  let voiceEl = null;
+
+  function hasVoice(key) {
+    return !!(key && typeof CS_VOICE !== 'undefined' && CS_VOICE[key]);
+  }
+
+  function playVoiceFile(src) {
+    if (!voiceEl) voiceEl = new Audio();
+    voiceEl.src = src;
+    voiceEl.onended = null;
+    const pr = voiceEl.play();
+    if (pr && pr.catch) pr.catch(() => {});
+  }
+
+  function stopVoiceFile() {
+    if (voiceEl) {
+      voiceEl.pause();
+      voiceEl.currentTime = 0;
+    }
+  }
+
+  /* ---------- 语音朗读：配音文件 > 原生 TTS > Web Speech ---------- */
   function speak(text, opts) {
+    // 静音 = 全局静音：朗读、音效、旋律统一不出声
+    if (muted) { stopSpeak(); return true; }
+    const key = opts && opts.key;
+    if (hasVoice(key)) {
+      stopSpeak();
+      playVoiceFile(CS_VOICE[key]);
+      return true;
+    }
+    // 原生 TTS（Android 自带中文语音，无需网络）；失败时回退 Web Speech
+    if (useNative) {
+      let ok = false;
+      try {
+        const r = nativeSpeak(text);
+        if (r) {
+          try { const j = JSON.parse(r); ok = j && j.ok === true; } catch (_) { ok = true; }
+        }
+      } catch (_) { ok = false; }
+      if (ok) return true;
+      // 原生 TTS 不可用（未初始化/无语言数据），回退 Web Speech
+    }
     if (!('speechSynthesis' in window)) { return false; }
     try {
       speechSynthesis.cancel();
@@ -149,6 +232,11 @@ window.CS = window.CS || {};
   }
 
   function stopSpeak() {
+    stopVoiceFile();
+    if (useNative) {
+      nativeStopSpeak();
+      return;
+    }
     if ('speechSynthesis' in window) speechSynthesis.cancel();
   }
 
@@ -159,6 +247,7 @@ window.CS = window.CS || {};
 
   Object.assign(CS, {
     sfx, playTone, parseMelody, playMelody, stopMelody,
-    speak, stopSpeak, setMuted, getMuted: () => muted
+    speak, stopSpeak, setMuted, getMuted: () => muted,
+    audioBackend: useNative ? 'native' : 'webaudio'
   });
 })(window.CS);
