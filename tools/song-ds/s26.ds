@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "世上只有妈妈好",
+  "note_seq": "A4 G4 E4 G4 C4 A4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/sh zh/ir zh/sh zh/ang zh/zh zh/ir zh/y zh/iu zh/m zh/a zh/m zh/a zh/h zh/ao",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 6.061364,
+  "text": "有妈的孩子像块宝",
+  "note_seq": "G4 A4 E4 D4 E4 G4 A4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/iu zh/m zh/a zh/d zh/e zh/h zh/ai zh/z zh/i0 zh/x zh/iang zh/k zh/uai zh/b zh/ao",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 12.504545,
+  "text": "投进妈妈的怀抱",
+  "note_seq": "E4 D4 E4 G4 A4 G4 E4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/t zh/ou zh/j zh/in zh/m zh/a zh/m zh/a zh/d zh/e zh/h zh/uai zh/b zh/ao",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 18.265909,
+  "text": "幸福享不了",
+  "note_seq": "D4 E4 G4 A4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/x zh/ing zh/f zh/u zh/x zh/iang zh/b zh/u zh/l zh/e",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 22.663636,
+  "text": "世上只有妈妈好",
+  "note_seq": "A4 G4 E4 G4 C4 A4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/sh zh/ir zh/sh zh/ang zh/zh zh/ir zh/y zh/iu zh/m zh/a zh/m zh/a zh/h zh/ao",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 28.425,
+  "text": "没妈的孩子像根草",
+  "note_seq": "G4 A4 E4 D4 E4 G4 A4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/ei zh/m zh/a zh/d zh/e zh/h zh/ai zh/z zh/i0 zh/x zh/iang zh/g zh/en zh/c zh/ao",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 34.868182,
+  "text": "离开妈妈的怀抱",
+  "note_seq": "E4 D4 E4 G4 A4 G4 E4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/l zh/i zh/k zh/ai zh/m zh/a zh/m zh/a zh/d zh/e zh/h zh/uai zh/b zh/ao",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 40.629545,
+  "text": "幸福哪里找",
+  "note_seq": "D4 E4 G4 A4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/x zh/ing zh/f zh/u zh/n zh/a zh/l zh/i zh/zh zh/ao",
+  "ph_num": "2 2 2 2 2"
+ }
+]

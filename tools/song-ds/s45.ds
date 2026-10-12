@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "赵州桥来什么人修",
+  "note_seq": "G4 E4 G4 E4 D4 E4 D4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/ao zh/zh zh/ou zh/q zh/iao zh/l zh/ai zh/sh zh/en zh/m zh/e zh/r zh/en zh/x zh/iu",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 5.97,
+  "text": "玉石栏杆什么人留",
+  "note_seq": "G4 E4 G4 E4 D4 C4 A3 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/y0 zh/v zh/sh zh/ir zh/l zh/an zh/g zh/an zh/sh zh/en zh/m zh/e zh/r zh/en zh/l zh/iu",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 11.64,
+  "text": "什么人骑驴桥上走",
+  "note_seq": "C4 C4 C4 D4 E4 D4 C4 D4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/sh zh/en zh/m zh/e zh/r zh/en zh/q zh/i zh/l zh/v zh/q zh/iao zh/sh zh/ang zh/z zh/ou",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 17.31,
+  "text": "什么人推车轧了一道沟",
+  "note_seq": "G4 G4 G4 E4 D4 E4 D4 C4 D4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/sh zh/en zh/m zh/e zh/r zh/en zh/t zh/ui zh/ch zh/e zh/y zh/ia zh/l zh/e zh/y zh/i zh/d zh/ao zh/g zh/ou",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 24.18,
+  "text": "赵州桥来鲁班修",
+  "note_seq": "G4 E4 G4 E4 D4 E4 D4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 1 0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/ao zh/zh zh/ou zh/q zh/iao zh/l zh/ai zh/l zh/u zh/b zh/an zh/x zh/iu",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 29.85,
+  "text": "玉石栏杆圣人留",
+  "note_seq": "G4 E4 G4 E4 D4 C4 A3 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 1 0 0 0 0 0 0",
+  "ph_seq": "zh/y0 zh/v zh/sh zh/ir zh/l zh/an zh/g zh/an zh/sh zh/eng zh/r zh/en zh/l zh/iu",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 35.52,
+  "text": "张果老骑驴桥上走",
+  "note_seq": "C4 C4 C4 D4 E4 D4 C4 D4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/ang zh/g zh/uo zh/l zh/ao zh/q zh/i zh/l zh/v zh/q zh/iao zh/sh zh/ang zh/z zh/ou",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 41.19,
+  "text": "柴王爷推车轧了一道沟",
+  "note_seq": "G4 G4 G4 E4 D4 E4 D4 C4 D4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/ch zh/ai zh/w zh/uang zh/y zh/ie zh/t zh/ui zh/ch zh/e zh/y zh/ia zh/l zh/e zh/y zh/i zh/d zh/ao zh/g zh/ou",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ }
+]

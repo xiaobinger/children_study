@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "小兔子乖乖把门儿开开",
+  "note_seq": "G4 C4 A4 G4 G4 E4 G4 E4 D4 D4",
+  "note_dur": "0.326087 0.326087 0.326087 0.326087 0.652174 0.326087 0.326087 0.326087 0.326087 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/t zh/u zh/z zh/i0 zh/g zh/uai zh/g zh/uai zh/b zh/a zh/m zh/en zh/er zh/k zh/ai zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2 1 2 2"
+ },
+ {
+  "offset": 5.158696,
+  "text": "快点儿开开我要进来",
+  "note_seq": "D4 D4 E4 D4 C4 D4 D4 E4 C4",
+  "note_dur": "0.326087 0.326087 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/k zh/uai zh/d zh/ian zh/er zh/k zh/ai zh/k zh/ai zh/w zh/uo zh/y zh/iao zh/j zh/in zh/l zh/ai",
+  "ph_num": "2 2 1 2 2 2 2 2 2"
+ },
+ {
+  "offset": 11.321739,
+  "text": "不开不开我不开",
+  "note_seq": "E4 E4 E4 E4 D4 C4 D4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/b zh/u zh/k zh/ai zh/b zh/u zh/k zh/ai zh/w zh/uo zh/b zh/u zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 16.832609,
+  "text": "妈妈没回来谁来也不开",
+  "note_seq": "E4 E4 G4 E4 D4 C4 D4 C4 A3 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/a zh/m zh/a zh/m zh/ei zh/h zh/ui zh/l zh/ai zh/sh zh/ui zh/l zh/ai zh/y zh/ie zh/b zh/u zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 24.3,
+  "text": "小兔子乖乖把门儿开开",
+  "note_seq": "G4 C4 A4 G4 G4 E4 G4 E4 D4 D4",
+  "note_dur": "0.326087 0.326087 0.326087 0.326087 0.652174 0.326087 0.326087 0.326087 0.326087 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/t zh/u zh/z zh/i0 zh/g zh/uai zh/g zh/uai zh/b zh/a zh/m zh/en zh/er zh/k zh/ai zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2 1 2 2"
+ },
+ {
+  "offset": 29.158696,
+  "text": "快点儿开开我要进来",
+  "note_seq": "D4 D4 E4 D4 C4 D4 D4 E4 C4",
+  "note_dur": "0.326087 0.326087 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/k zh/uai zh/d zh/ian zh/er zh/k zh/ai zh/k zh/ai zh/w zh/uo zh/y zh/iao zh/j zh/in zh/l zh/ai",
+  "ph_num": "2 2 1 2 2 2 2 2 2"
+ },
+ {
+  "offset": 35.321739,
+  "text": "就开就开我就开",
+  "note_seq": "E4 E4 E4 E4 D4 C4 D4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/j zh/iu zh/k zh/ai zh/j zh/iu zh/k zh/ai zh/w zh/uo zh/j zh/iu zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 40.832609,
+  "text": "妈妈回来了这就把门开",
+  "note_seq": "E4 E4 G4 E4 D4 C4 D4 E4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/a zh/m zh/a zh/h zh/ui zh/l zh/ai zh/l zh/e zh/zh zh/e zh/j zh/iu zh/b zh/a zh/m zh/en zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ }
+]

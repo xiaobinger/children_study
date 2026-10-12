@@ -1,0 +1,92 @@
+[
+ {
+  "offset": 0.3,
+  "text": "我有一个美丽的愿望",
+  "note_seq": "E4 E4 C4 D4 C4 G4 G4 G4 G4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/w zh/uo zh/y zh/iu zh/y zh/i zh/g zh/e zh/m zh/ei zh/l zh/i zh/d zh/e zh/y0 zh/van zh/w zh/uang",
+  "ph_num": "2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 6.328846,
+  "text": "长大以后能播种太阳",
+  "note_seq": "E4 E4 C4 D4 C4 F4 F4 F4 F4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/ch zh/ang zh/d zh/a zh/y zh/i zh/h zh/ou zh/n zh/eng zh/b zh/uo zh/zh zh/ong zh/t zh/ai zh/y zh/iang",
+  "ph_num": "2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 12.357692,
+  "text": "播种一颗就够了",
+  "note_seq": "G4 F4 E4 F4 G4 F4 E4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/b zh/uo zh/zh zh/ong zh/y zh/i zh/k zh/e zh/j zh/iu zh/g zh/ou zh/l zh/e",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 17.232692,
+  "text": "会结出许多的许多的太阳",
+  "note_seq": "D4 D4 C4 D4 E4 F4 E4 D4 C4 B3 C4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/ui zh/j zh/ie zh/ch zh/u zh/x zh/v zh/d zh/uo zh/d zh/e zh/x zh/v zh/d zh/uo zh/d zh/e zh/t zh/ai zh/y zh/iang",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 24.415385,
+  "text": "一颗送给南极",
+  "note_seq": "C4 C4 A3 C4 D4 E4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/k zh/e zh/s zh/ong zh/g zh/ei zh/n zh/an zh/j zh/i",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 28.713462,
+  "text": "一颗送给北冰洋",
+  "note_seq": "C4 C4 A3 C4 D4 F4 E4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/k zh/e zh/s zh/ong zh/g zh/ei zh/b zh/ei zh/b zh/ing zh/y zh/iang",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 33.588462,
+  "text": "一颗挂在冬天",
+  "note_seq": "C4 C4 A3 C4 D4 E4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/k zh/e zh/g zh/ua zh/z zh/ai zh/d zh/ong zh/t zh/ian",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 37.886538,
+  "text": "一颗挂在晚上",
+  "note_seq": "C4 C4 A3 C4 D4 F4 E4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 1 0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/k zh/e zh/g zh/ua zh/z zh/ai zh/w zh/uan zh/sh zh/ang",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 42.761538,
+  "text": "到那个时候世界每个角落",
+  "note_seq": "E4 E4 C4 D4 C4 G4 G4 G4 G4 G4 G4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.288462 0.288462 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/d zh/ao zh/n zh/a zh/g zh/e zh/sh zh/ir zh/h zh/ou zh/sh zh/ir zh/j zh/ie zh/m zh/ei zh/g zh/e zh/j zh/iao zh/l zh/uo",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 49.367308,
+  "text": "都会变得温暖又明亮",
+  "note_seq": "E4 E4 C4 D4 C4 F4 F4 E4 C4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/d zh/ou zh/h zh/ui zh/b zh/ian zh/d zh/e zh/w zh/un zh/n zh/uan zh/y zh/iu zh/m zh/ing zh/l zh/iang",
+  "ph_num": "2 2 2 2 2 2 2 2 2"
+ }
+]

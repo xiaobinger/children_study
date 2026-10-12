@@ -1273,3 +1273,165 @@ body.eye-care .module-card.reward-card { --mc-bg: #f0e4d0; }
     outline-offset: 3px;
   }
 }
+
+/* ============ 儿歌 KTV：原唱/伴奏/动画开关 ============ */
+.ktv-toggles {
+  display: flex; justify-content: center; gap: .5rem; flex-wrap: wrap;
+  margin: .9rem 0 .3rem;
+}
+.ktv-toggle {
+  border: 2px solid color-mix(in srgb, var(--primary) 32%, transparent);
+  background: var(--card); color: var(--muted);
+  font-weight: 800; font-size: .9rem; padding: .42rem .9rem; border-radius: 999px;
+  transition: transform .15s, background .2s, color .2s, border-color .2s, box-shadow .2s;
+}
+.ktv-toggle:active { transform: scale(.92); }
+.ktv-toggle.on {
+  background: var(--primary); color: #fff; border-color: var(--primary);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--primary) 42%, transparent);
+}
+
+/* 歌词逐字高亮 */
+.song-line .ch { display: inline-block; transition: color .12s, transform .12s; }
+.song-line .ch.lit { color: var(--primary); transform: translateY(-1px) scale(1.08); }
+.song-line.done .ch.lit { color: var(--text); }
+
+/* ============ 儿歌 KTV 舞台（动画模式） ============ */
+.ktv-stage {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; flex-direction: column; overflow: hidden;
+  background: linear-gradient(160deg, #1b1140 0%, #3a1d63 45%, #12082b 100%);
+  opacity: 0; transition: opacity .3s ease;
+}
+.ktv-stage.show { opacity: 1; }
+.ktv-bg { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.ktv-p {
+  position: absolute; bottom: -12%;
+  animation-name: ktvFloat; animation-timing-function: linear; animation-iteration-count: infinite;
+  opacity: .55; filter: drop-shadow(0 0 6px rgba(255, 255, 255, .25));
+  will-change: transform, opacity;
+}
+@keyframes ktvFloat {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  15% { opacity: .7; }
+  85% { opacity: .7; }
+  100% { transform: translateY(-115vh) rotate(28deg); opacity: 0; }
+}
+.ktv-top {
+  position: relative; z-index: 2;
+  display: flex; align-items: center; justify-content: space-between; gap: .8rem;
+  padding: 1rem 1.2rem calc(.4rem + env(safe-area-inset-top));
+}
+.ktv-title {
+  color: #fff; font-weight: 900; letter-spacing: .04em;
+  font-size: clamp(1.05rem, 3.4vw, 1.6rem);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+}
+.ktv-exit {
+  flex-shrink: 0; width: 2.6rem; height: 2.6rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, .15); color: #fff;
+  border: 2px solid rgba(255, 255, 255, .35);
+  font-size: 1.15rem; font-weight: 900;
+  transition: transform .15s, background .2s;
+}
+.ktv-exit:active { transform: scale(.88); background: rgba(255, 255, 255, .32); }
+.ktv-center {
+  position: relative; z-index: 2; flex: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 1.4rem; padding: 0 1.2rem; text-align: center;
+}
+.ktv-lyric {
+  font-size: clamp(1.9rem, 8vw, 3.6rem); font-weight: 900; line-height: 1.5; letter-spacing: .06em;
+}
+.kch {
+  display: inline-block; color: rgba(255, 255, 255, .42);
+  transition: color .14s, transform .14s, text-shadow .14s;
+}
+.kch.lit {
+  color: #ffe066; transform: translateY(-3px) scale(1.12);
+  text-shadow: 0 0 18px rgba(255, 214, 64, .85), 0 3px 10px rgba(0, 0, 0, .4);
+}
+.ktv-next {
+  min-height: 1.5rem; color: rgba(255, 255, 255, .6);
+  font-size: clamp(.9rem, 3vw, 1.15rem); font-weight: 700;
+}
+.ktv-bar {
+  position: relative; z-index: 2; height: .55rem; overflow: hidden;
+  margin: 0 1.2rem calc(1.4rem + env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, .16); border-radius: 999px;
+}
+.ktv-bar-fill {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, #ff9f43, #ffe066, #7b57d8);
+  border-radius: 999px; transition: width .3s linear;
+}
+
+/* ============ 宠物气泡显隐修复 ============ */
+/* 之前没有基础 display:none，hide 时用 display='' 反而恢复可见（气泡永远挂着） */
+.mascot-bubble { display: none; }
+.mascot-bubble.show { display: block; }
+
+/* ============ 触摸/平板适配 ============ */
+/* 触摸设备没有 hover，取消 sticky :hover，避免"点一下一直放大/位移" */
+@media (hover: none) {
+  .mascot:hover:not(.pet-talking):not(.pet-walking):not(.pet-surprised) { transform: none !important; }
+  .tab-btn:hover:not(.active) { transform: none; }
+  .avatar-cell:hover { transform: none; }
+  .pin-key:hover { transform: none; }
+  .icon-btn:hover { transform: none; }
+  .list-card:hover { transform: none; }
+  .module-card:hover { transform: none; }
+}
+
+/* 平板（宽屏 + 触摸）：≥768px 原先隐藏了底部导航，触摸平板需要它 */
+@media (min-width: 768px) and (pointer: coarse) {
+  .bottombar { display: grid; }
+  .view { padding-bottom: 6.5rem; }
+  .mascot { bottom: 5.6rem; }
+}
+
+/* ============ 65寸电视 10-foot UI（1920×1080，3米观看距离）============ */
+/* 字号分档：桌面大屏 22px → 电视 26px（三米可读下限），覆盖前面 18/19/21px 档位 */
+@media (min-width: 1600px) {
+  :root { --fs-base: 22px; }
+  .view { max-width: 1500px; }
+  .module-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+}
+@media (min-width: 1900px) {
+  :root { --fs-base: 26px; }
+  .view { max-width: 1640px; padding-left: 3vw; padding-right: 3vw; }
+  .module-grid { grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.4rem; }
+  .card-list { grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  .opt-grid { gap: 1.2rem; }
+  .modal { max-width: 620px; }
+  .hero { padding: 2.6rem 2.4rem; }
+  .quiz-area { padding: 2.2rem 2rem; }
+  .song-line { line-height: 2.2; }
+}
+
+/* 遥控器导航激活态（tvnav.js 检测到方向键后给 body 加 .tv-nav）：
+   与 pointer:none 相同的显眼焦点环，覆盖误报 pointer:fine 的电视 WebView */
+body.tv-nav button:focus, body.tv-nav .form-input:focus, body.tv-nav select:focus {
+  outline: 6px solid var(--primary);
+  outline-offset: 5px;
+  box-shadow: 0 0 0 10px color-mix(in srgb, var(--primary) 25%, transparent), var(--shadow-lg);
+}
+body.tv-nav .module-card:focus { transform: scale(1.06); border-color: var(--mc-bd); }
+body.tv-nav .list-card:focus { transform: scale(1.03); border-color: var(--primary); }
+body.tv-nav .bottombar-item:focus {
+  outline-offset: -2px; border-radius: 14px;
+  background: color-mix(in srgb, var(--primary) 14%, transparent);
+}
+body.tv-nav .ktv-exit:focus { outline-color: #ffe066; box-shadow: 0 0 0 10px rgba(255, 224, 102, .25); }
+/* 焦点元素保证在可视区内（fixed 底栏遮挡时也能滚出来） */
+body.tv-nav button:focus { scroll-margin-bottom: 8rem; scroll-margin-top: 5rem; }
+
+/* pointer:none 的电视 + 超宽：四边留过扫描安全区，底栏同步放宽 */
+@media (pointer: none) and (min-width: 1900px) {
+  .view { padding-left: 3vw; padding-right: 3vw; }
+  .topbar { padding-left: 3vw; padding-right: 3vw; }
+  .bottombar { padding-left: 3vw; padding-right: 3vw; }
+  .mascot { right: 3vw; }
+  .mascot-chat { right: 3vw; }
+}

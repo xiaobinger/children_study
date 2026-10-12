@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "没有花香没有树高",
+  "note_seq": "A4 E4 E4 D4 C4 A3 D4 E4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/ei zh/y zh/iu zh/h zh/ua zh/x zh/iang zh/m zh/ei zh/y zh/iu zh/sh zh/u zh/g zh/ao",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 6.463043,
+  "text": "我是一棵无人知道的小草",
+  "note_seq": "A4 C4 C4 A4 G4 A4 C4 D4 E4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/w zh/uo zh/sh zh/ir zh/y zh/i zh/k zh/e zh/w zh/u zh/r zh/en zh/zh zh/ir zh/d zh/ao zh/d zh/e zh/x zh/iao zh/c zh/ao",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 14.582609,
+  "text": "从不寂寞从不烦恼",
+  "note_seq": "A4 E4 E4 D4 C4 A3 D4 E4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/c zh/ong zh/b zh/u zh/j zh/i zh/m zh/uo zh/c zh/ong zh/b zh/u zh/f zh/an zh/n zh/ao",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 20.745652,
+  "text": "你看我的伙伴遍及天涯海角",
+  "note_seq": "A4 C4 C4 A4 G4 A4 C4 D4 E4 D4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/n zh/i zh/k zh/an zh/w zh/uo zh/d zh/e zh/h zh/uo zh/b zh/an zh/b zh/ian zh/j zh/i zh/t zh/ian zh/y zh/ia zh/h zh/ai zh/j zh/iao",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 29.517391,
+  "text": "春风呀春风你把我吹绿",
+  "note_seq": "C4 D4 E4 E4 D4 C4 A3 C4 D4 E4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/ch zh/un zh/f zh/eng zh/y zh/ia zh/ch zh/un zh/f zh/eng zh/n zh/i zh/b zh/a zh/w zh/uo zh/ch zh/ui zh/l zh/v",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 36.984783,
+  "text": "阳光呀阳光你把我照耀",
+  "note_seq": "G4 A4 C4 C4 A4 G4 F4 G4 A4 G4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/iang zh/g zh/uang zh/y zh/ia zh/y zh/iang zh/g zh/uang zh/n zh/i zh/b zh/a zh/w zh/uo zh/zh zh/ao zh/y zh/iao",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 44.452174,
+  "text": "河流呀山川你哺育了我",
+  "note_seq": "C4 D4 E4 E4 D4 C4 A3 C4 D4 E4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/e zh/l zh/iu zh/y zh/ia zh/sh zh/an zh/ch zh/uan zh/n zh/i zh/b zh/u zh/y0 zh/v zh/l zh/e zh/w zh/uo",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 51.919565,
+  "text": "大地呀母亲把我紧紧拥抱",
+  "note_seq": "G4 A4 C4 C4 A4 G4 F4 G4 A4 G4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/d zh/a zh/d zh/i zh/y zh/ia zh/m zh/u zh/q zh/in zh/b zh/a zh/w zh/uo zh/j zh/in zh/j zh/in zh/y zh/iong zh/b zh/ao",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2 2"
+ }
+]

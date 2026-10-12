@@ -1,0 +1,56 @@
+[
+ {
+  "offset": 0.3,
+  "text": "小螺号嘀嘀嘀吹",
+  "note_seq": "A4 E4 E4 E4 E4 E4 D4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/l zh/uo zh/h zh/ao zh/d zh/i zh/d zh/i zh/d zh/i zh/ch zh/ui",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 5.175,
+  "text": "海鸥听了展翅飞",
+  "note_seq": "D4 C4 A3 C4 D4 E4 D4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/ai zh/ou zh/t zh/ing zh/l zh/e zh/zh zh/an zh/ch zh/ir zh/f zh/ei",
+  "ph_num": "2 1 2 2 2 2 2"
+ },
+ {
+  "offset": 10.05,
+  "text": "小螺号嘀嘀嘀吹",
+  "note_seq": "A4 E4 E4 E4 E4 E4 D4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/l zh/uo zh/h zh/ao zh/d zh/i zh/d zh/i zh/d zh/i zh/ch zh/ui",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 14.925,
+  "text": "浪花听了笑微微",
+  "note_seq": "D4 C4 A3 C4 D4 E4 D4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/l zh/ang zh/h zh/ua zh/t zh/ing zh/l zh/e zh/x zh/iao zh/w zh/ui zh/w zh/ui",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 19.8,
+  "text": "小螺号嘀嘀嘀吹",
+  "note_seq": "A4 E4 E4 E4 E4 E4 D4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/l zh/uo zh/h zh/ao zh/d zh/i zh/d zh/i zh/d zh/i zh/ch zh/ui",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 24.675,
+  "text": "声声唤船归啰",
+  "note_seq": "E4 G4 A4 G4 E4 D4",
+  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/sh zh/eng zh/sh zh/eng zh/h zh/uan zh/ch zh/uan zh/g zh/ui zh/l zh/uo",
+  "ph_num": "2 2 2 2 2 2"
+ }
+]

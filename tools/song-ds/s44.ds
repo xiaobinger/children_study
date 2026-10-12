@@ -1,0 +1,56 @@
+[
+ {
+  "offset": 0.3,
+  "text": "小呀嘛小儿郎",
+  "note_seq": "A4 C4 D4 C4 A4 G4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/y zh/ia zh/m zh/a zh/x zh/iao zh/er zh/l zh/ang",
+  "ph_num": "2 2 2 2 1 2"
+ },
+ {
+  "offset": 4.438889,
+  "text": "背着那书包进学堂",
+  "note_seq": "G4 E4 G4 A4 G4 E4 D4 E4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/b zh/ei zh/zh zh/e zh/n zh/a zh/sh zh/u zh/b zh/ao zh/j zh/in zh/x zh/ve zh/t zh/ang",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 9.688889,
+  "text": "不怕太阳晒",
+  "note_seq": "A4 A4 E4 D4 E4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/b zh/u zh/p zh/a zh/t zh/ai zh/y zh/iang zh/sh zh/ai",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 13.272222,
+  "text": "也不怕那风雨狂",
+  "note_seq": "G4 E4 G4 E4 D4 C4 A3",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/ie zh/b zh/u zh/p zh/a zh/n zh/a zh/f zh/eng zh/y0 zh/v zh/k zh/uang",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 17.966667,
+  "text": "只怕先生骂我懒呀",
+  "note_seq": "A4 A4 A4 A4 E4 D4 C4 A3 A3",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 1 0 0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/ir zh/p zh/a zh/x zh/ian zh/sh zh/eng zh/m zh/a zh/w zh/uo zh/l zh/an zh/y zh/ia",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 23.772222,
+  "text": "没有学问无颜见爹娘",
+  "note_seq": "C4 A3 A3 A3 A3 C4 D4 E4 D4 C4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 1 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/ei zh/y zh/iu zh/x zh/ve zh/w zh/un zh/w zh/u zh/y zh/ian zh/j zh/ian zh/d zh/ie zh/n zh/iang",
+  "ph_num": "2 2 2 2 2 2 2 2 2"
+ }
+]

@@ -50,14 +50,13 @@ window.CS = window.CS || {};
     if (bubble) {
       bubble.textContent = msg;
       bubble.classList.remove('z-sleeping');
-      bubble.style.animation = 'none';
+      bubble.classList.remove('show');
       void bubble.offsetWidth;
-      bubble.style.animation = '';
-      bubble.style.display = 'block';
+      bubble.classList.add('show');
       clearTimeout(petSay._t);
-      petSay._t = setTimeout(() => { bubble.style.display = ''; }, ms || 4000);
+      petSay._t = setTimeout(() => { bubble.classList.remove('show'); }, ms || 4000);
     }
-    CS.speak && CS.speak(String(msg).replace(/[*#`_>~|]/g, ''));
+    CS.speak && CS.speak(String(msg).replace(/[*#`_>~|]/g, ''), { rate: 0.95 });
   }
 
   /* ---------- 升级庆祝 ---------- */

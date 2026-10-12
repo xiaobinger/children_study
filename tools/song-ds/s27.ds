@@ -1,0 +1,38 @@
+[
+ {
+  "offset": 0.3,
+  "text": "小兔子乖乖把门开开",
+  "note_seq": "G4 C4 A4 G4 G4 E4 G4 E4 D4",
+  "note_dur": "0.326087 0.326087 0.326087 0.326087 0.652174 0.326087 0.326087 0.326087 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/t zh/u zh/z zh/i0 zh/g zh/uai zh/g zh/uai zh/b zh/a zh/m zh/en zh/k zh/ai zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 4.832609,
+  "text": "不开不开我不开",
+  "note_seq": "E4 E4 E4 E4 D4 C4 D4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/b zh/u zh/k zh/ai zh/b zh/u zh/k zh/ai zh/w zh/uo zh/b zh/u zh/k zh/ai",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 10.343478,
+  "text": "妈妈没回来",
+  "note_seq": "E4 E4 G4 E4 D4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/m zh/a zh/m zh/a zh/m zh/ei zh/h zh/ui zh/l zh/ai",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 14.55,
+  "text": "谁来也不开",
+  "note_seq": "C4 D4 C4 A3 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/sh zh/ui zh/l zh/ai zh/y zh/ie zh/b zh/u zh/k zh/ai",
+  "ph_num": "2 2 2 2 2"
+ }
+]

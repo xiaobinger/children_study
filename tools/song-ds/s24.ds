@@ -1,0 +1,65 @@
+[
+ {
+  "offset": 0.3,
+  "text": "红灯停绿灯行",
+  "note_seq": "C4 C4 D4 D4 E4 E4",
+  "note_dur": "0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/ong zh/d zh/eng zh/t zh/ing zh/l zh/v zh/d zh/eng zh/x zh/ing",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 4.95625,
+  "text": "黄灯亮了等一等",
+  "note_seq": "G4 G4 F4 F4 E4 E4 D4",
+  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/uang zh/d zh/eng zh/l zh/iang zh/l zh/e zh/d zh/eng zh/y zh/i zh/d zh/eng",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 10.2375,
+  "text": "小朋友们记心间",
+  "note_seq": "C4 C4 D4 D4 E4 E4 F4",
+  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/p zh/eng zh/y zh/iu zh/m zh/en zh/j zh/i zh/x zh/in zh/j zh/ian",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 15.51875,
+  "text": "安全出行最重要",
+  "note_seq": "G4 G4 F4 F4 E4 D4 C4",
+  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/an zh/q zh/van zh/ch zh/u zh/x zh/ing zh/z zh/ui zh/ch zh/ong zh/y zh/iao",
+  "ph_num": "1 2 2 2 2 2 2"
+ },
+ {
+  "offset": 20.8,
+  "text": "小手拉大手",
+  "note_seq": "C4 C4 D4 E4 G4",
+  "note_dur": "0.625 0.625 0.625 0.625 1.25",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/sh zh/ou zh/l zh/a zh/d zh/a zh/sh zh/ou",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 24.83125,
+  "text": "过马路走斑马线",
+  "note_seq": "G4 G4 F4 F4 E4 E4 D4",
+  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/g zh/uo zh/m zh/a zh/l zh/u zh/z zh/ou zh/b zh/an zh/m zh/a zh/x zh/ian",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 30.1125,
+  "text": "平平安安回家门",
+  "note_seq": "C4 C4 D4 F4 E4 D4 C4",
+  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/p zh/ing zh/p zh/ing zh/an zh/an zh/h zh/ui zh/j zh/ia zh/m zh/en",
+  "ph_num": "2 2 1 1 2 2 2"
+ }
+]

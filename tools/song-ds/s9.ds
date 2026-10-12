@@ -1,0 +1,38 @@
+[
+ {
+  "offset": 0.3,
+  "text": "小手拍拍小手拍拍",
+  "note_seq": "E4 A4 G4 E4 A4 A4 G4 E4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/sh zh/ou zh/p zh/ai zh/p zh/ai zh/x zh/iao zh/sh zh/ou zh/p zh/ai zh/p zh/ai",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 5.97,
+  "text": "手指伸出来眼睛在哪里",
+  "note_seq": "G4 A4 G4 E4 D4 D4 E4 G4 A4 G4 E4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 1 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/sh zh/ou zh/zh zh/ir zh/sh zh/en zh/ch zh/u zh/l zh/ai zh/y zh/ian zh/j zh/ing zh/z zh/ai zh/n zh/a zh/l zh/i",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 13.44,
+  "text": "用手指出来用手指出来",
+  "note_seq": "G4 A4 E4 D4 C4 G4 A4 E4 D4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/iong zh/sh zh/ou zh/zh zh/ir zh/ch zh/u zh/l zh/ai zh/y zh/iong zh/sh zh/ou zh/zh zh/ir zh/ch zh/u zh/l zh/ai",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 20.31,
+  "text": "眼睛在这里",
+  "note_seq": "D4 E4 G4 A4 G4 E4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 1 0 0 0 0",
+  "ph_seq": "zh/y zh/ian zh/j zh/ing zh/z zh/ai zh/zh zh/e zh/l zh/i",
+  "ph_num": "2 2 2 2 2"
+ }
+]

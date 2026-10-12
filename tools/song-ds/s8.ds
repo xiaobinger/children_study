@@ -1,0 +1,38 @@
+[
+ {
+  "offset": 0.3,
+  "text": "小老鼠上灯台",
+  "note_seq": "C4 C4 G4 A4 G4 F4 E4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 1 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/l zh/ao zh/sh zh/u zh/sh zh/ang zh/d zh/eng zh/t zh/ai",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 4.994444,
+  "text": "偷油吃下不来",
+  "note_seq": "F4 F4 E4 D4 E4 D4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/t zh/ou zh/y zh/iu zh/ch zh/ir zh/x zh/ia zh/b zh/u zh/l zh/ai",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 9.133333,
+  "text": "叫妈妈妈不来",
+  "note_seq": "G4 G4 F4 E4 D4 E4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/j zh/iao zh/m zh/a zh/m zh/a zh/m zh/a zh/b zh/u zh/l zh/ai",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 13.272222,
+  "text": "叽里咕噜滚下来",
+  "note_seq": "G4 F4 E4 D4 C4 A3 C4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/j zh/i zh/l zh/i zh/g zh/u zh/l zh/u zh/g zh/un zh/x zh/ia zh/l zh/ai",
+  "ph_num": "2 2 2 2 2 2 2"
+ }
+]

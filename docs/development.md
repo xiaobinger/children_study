@@ -12,6 +12,7 @@ index.html
      js/audio.js    → 音频引擎
      js/ui.js       → 共享 UI 组件
      js/xiaoai.js   → 小爱音箱联动（配置/播报/提醒计时器）
+     js/tvnav.js    → 电视遥控器焦点导航（方向键/OK/返回）
      js/modules/*.js→ CS.register('路由名', 渲染函数)
      js/main.js     → 启动
 ```
@@ -32,9 +33,18 @@ index.html
 
 ### 音频（audio.js）
 - `CS.sfx.*`：tap/correct/wrong/star/finish 短音效（Web Audio 合成）
-- `CS.parseMelody('1 1 5 5 6 6 5 -', bpm)`：简谱字符串 → 事件列表；`1+` 高八度、`5_` 低八度、`-` 延长
+- `CS.parseMelody('1 1 5 5 6 6 5*2', bpm)`：简谱字符串 → 事件列表；`1+` 高八度、`5_` 低八度、`*N` 时值 N 拍（兼容旧语法 `-`=2 拍、`--`=3 拍）
 - 旋律调度实际由 song.js 自行完成（需要逐行高亮，故逐行 parseMelody 后累加偏移）
+- **儿歌真实演唱双轨**：`CS.hasSongAudio(song)`（注意传歌曲对象非 id）检测 `js/voice-map.js` 中 `song:<id>:v/a` 映射；`CS.playSongAudio(song, opt)` 加载 `audio/song/sNNN_v.mp3`（绮萱童声人声轨）+ `sNNN_a.mp3`（伴奏轨），按 `computeSongTimeline` 调度逐字 KTV 高亮（行首 `lineStart*1000+120`ms）；无渲染音频时回退 `playArrangement` 电子琴编曲
+- 时间数学唯一事实源（三处必须一致）：`t=0.3` 起始偏移，行时长=末音 start+末音 slot*beat，行间隔 `beat*0.45`
 - `CS.speak(text)`：SpeechSynthesis 中文朗读；`CS.getMuted()/setMuted()` 控制全局静音
+
+### 电视遥控器导航（tvnav.js）
+- 方向键首次按下即给 `body` 加 `.tv-nav` 类（焦点描边样式只在此模式显示，不影响触屏/鼠标）
+- **候选收集** `candidates()`：按钮/链接/`[data-nav]` 等可交互元素，过滤不可见与禁用
+- **焦点域** `topScope()`：弹窗 > 吉祥物聊天面板（.mascot-chat）> 页面 body，域内 Tab 循环
+- **移动算法**：半平面过滤（按方向）+ 加权评分 `adx + ady*2.6`（横移优先）；**内容区优先**——当前焦点在 `#view` 内时先在 `#view` 子集选最优，没有再走全量，避免 fixed 定位的漫步吉祥物"吸走"焦点
+- `preferredFirst()`：切页/开域后自动聚焦内容区阅读序首个元素；OK=click，返回=`goBack()`（先关弹层/聊天面板，再 `history.back()`）
 
 ### 共享 UI（ui.js）
 - `CS.showModal / hideModal / toast / confettiBurst`
@@ -111,10 +121,26 @@ index.html
 - 加课目/手工：同上，保持 id 唯一、age 标签正确
 - 加一篇童话：`stories.js` 追加对象（id 唯一、2-3 道理解题、一句 moral）；语音任务导出工具已支持 story 分类
 
+## 儿歌演唱渲染管线（v1.6.0）
+
+```
+js/data/songs.js (melody)
+  → node tools/export-song-tasks.js        # 导出 tools/song-tasks.json
+  → python tools/song2ds.py                # 转 DiffSinger 工程 tools/song-ds/<id>.ds
+  → python tools/gen-song-svs.py [--ids …] # 绮萱童声渲染 → audio/song/sNNN_v.mp3 + sNNN_a.mp3
+  → python tools/verify-song-pitch.py      # pYIN 基频 vs 简谱校验 → tools/song-pitch-report.json
+```
+
+- **环境**：必须用 Python 3.10（依赖在 `tools/pylibs310`）+ `PYTHONUTF8=1`（GBK 会读崩声库 character.txt）；默认 `python` 是 3.14 会挂 numpy
+- **声库**：`tools/qixuan_vb/`（绮萱 v2.7.0 + PC-NSF-HiFiGAN，开源童声，零版权风险）；pylibs310/qixuan_vb 等已入 .gitignore，需自行下载
+- **编号**：音频文件用三位数 `sNNN`（index 字段），voice-map 键为 `song:<id>:v/a`
+- **质量参数**：44.1kHz、128kbps、steps=64；单首 45-145s，建议 3-5 首一批后台渲染
+- **校验标准**：逐音符 15%-75% 时长窗取基频中位数，八度折叠到 ±600¢，50¢ 阈值；当前 40 首 27 首零超阈、其余仅个别瞬态偏差（≤6.5%）
+
 ## 已知限制
 
 - SpeechSynthesis 音色依系统而异；file:// 协议下 Firefox 朗读可能不可用
-- 伴奏为单音轨合成音，非原曲录音（版权考虑）
+- 儿歌人声为 DiffSinger 合成童声（非真人录音）；伴奏为程序编曲（版权考虑）
 - IE 不支持（使用了 CSS 变量、grid、optional chaining 等 modern 特性）
 
 ## 本地验证清单（发布前）
@@ -122,8 +148,9 @@ index.html
 1. 双击 `index.html` 能正常打开，控制台无报错
 2. 顶栏：年龄切换 → 内容数量变化；护眼开关 → 暖色主题且刷新后保持
 3. 六模块各跑一局：正确/错误路径、结算弹窗、星星累加
-4. 儿歌：伴奏播放、逐行高亮、播完结算仅加 1 星
+4. 儿歌：原唱/伴奏双轨播放、逐字 KTV 高亮与音频同步、播完结算仅加 1 星
 5. 手机宽度（≤600px）：底部导航出现、无横向滚动
 6. 连续 20 分钟后休息提醒弹出、可关闭
 7. 小爱音箱：家长中心配置卡渲染正常，外部修改 `cfg` 后 toggle 读取实时值（v1.5.0 闭包修复验证）
 8. 学习小伙伴：12 类互动场景各触发一次，快捷按钮点击正常
+9. 电视模式（1920×1080）：方向键焦点移动不丢、不被吉祥物吸走，OK 触发、返回键先关弹层再退页，切页自动聚焦内容区首元素

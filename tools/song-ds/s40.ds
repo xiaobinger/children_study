@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "在那遥远的小山村",
+  "note_seq": "C4 C4 C4 A4 G4 E4 G4 A4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/z zh/ai zh/n zh/a zh/y zh/iao zh/y0 zh/van zh/d zh/e zh/x zh/iao zh/sh zh/an zh/c zh/un",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 6.743182,
+  "text": "小呀小山村",
+  "note_seq": "A4 G4 E4 G4 A4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/y zh/ia zh/x zh/iao zh/sh zh/an zh/c zh/un",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 11.140909,
+  "text": "我那亲爱的妈妈",
+  "note_seq": "C4 C4 C4 A4 G4 E4 G4 A4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 1 0 0 0 0 0 0",
+  "ph_seq": "zh/w zh/uo zh/n zh/a zh/q zh/in zh/ai zh/d zh/e zh/m zh/a zh/m zh/a",
+  "ph_num": "2 2 2 1 2 2 2"
+ },
+ {
+  "offset": 17.584091,
+  "text": "已白发鬓鬓",
+  "note_seq": "A4 G4 E4 G4 A4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/b zh/ai zh/f zh/a zh/b zh/in zh/b zh/in",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 21.981818,
+  "text": "女儿有个小小心愿",
+  "note_seq": "C4 C4 C4 A4 G4 E4 G4 A4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/n zh/v zh/er zh/y zh/iu zh/g zh/e zh/x zh/iao zh/x zh/iao zh/x zh/in zh/y0 zh/van",
+  "ph_num": "2 1 2 2 2 2 2 2"
+ },
+ {
+  "offset": 28.425,
+  "text": "小呀小心愿",
+  "note_seq": "A4 G4 E4 G4 A4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/y zh/ia zh/x zh/iao zh/x zh/in zh/y0 zh/van",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 32.822727,
+  "text": "再还妈妈一个吻",
+  "note_seq": "C4 C4 C4 A4 G4 E4 G4 E4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 1 0 0 0 0 0 0",
+  "ph_seq": "zh/z zh/ai zh/h zh/ai zh/m zh/a zh/m zh/a zh/y zh/i zh/g zh/e zh/w zh/un",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 39.265909,
+  "text": "一个吻",
+  "note_seq": "G4 E4 C4",
+  "note_dur": "0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0",
+  "ph_seq": "zh/y zh/i zh/g zh/e zh/w zh/un",
+  "ph_num": "2 2 2"
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "晚风轻拂澎湖湾",
+  "note_seq": "G4 G4 C4 C4 A3 A3 G3",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/w zh/uan zh/f zh/eng zh/q zh/ing zh/f zh/u zh/p zh/eng zh/h zh/u zh/w zh/uan",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 5.81087,
+  "text": "白浪逐沙滩",
+  "note_seq": "A3 A3 D4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/b zh/ai zh/l zh/ang zh/zh zh/u zh/sh zh/a zh/t zh/an",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 10.017391,
+  "text": "没有椰林缀斜阳",
+  "note_seq": "E4 E4 F4 F4 E4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/ei zh/y zh/iu zh/y zh/ie zh/l zh/in zh/zh zh/ui zh/x zh/ie zh/y zh/iang",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 15.528261,
+  "text": "只是一片海蓝蓝",
+  "note_seq": "D4 D4 D4 D4 D4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/ir zh/sh zh/ir zh/y zh/i zh/p zh/ian zh/h zh/ai zh/l zh/an zh/l zh/an",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 21.03913,
+  "text": "坐在门前的矮墙上",
+  "note_seq": "G4 G4 C4 C4 A3 A3 G3 A3",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/z zh/uo zh/z zh/ai zh/m zh/en zh/q zh/ian zh/d zh/e zh/ai zh/q zh/iang zh/sh zh/ang",
+  "ph_num": "2 2 2 2 2 1 2 2"
+ },
+ {
+  "offset": 27.202174,
+  "text": "一遍遍怀想",
+  "note_seq": "A3 A3 D4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/b zh/ian zh/b zh/ian zh/h zh/uai zh/x zh/iang",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 31.408696,
+  "text": "黄昏的沙滩上",
+  "note_seq": "E4 E4 F4 F4 E4 D4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/uang zh/h zh/un zh/d zh/e zh/sh zh/a zh/t zh/an zh/sh zh/ang",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 36.267391,
+  "text": "有着脚印两对半",
+  "note_seq": "D4 D4 D4 D4 D4 D4 C4",
+  "note_dur": "0.652174 0.652174 0.652174 0.652174 0.652174 0.652174 1.304348",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/iu zh/zh zh/e zh/j zh/iao zh/y zh/in zh/l zh/iang zh/d zh/ui zh/b zh/an",
+  "ph_num": "2 2 2 2 2 2 2"
+ }
+]

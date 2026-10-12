@@ -13,3 +13,15 @@ Thumbs.db
 # 临时文件
 *.tmp
 *.log
+
+# 本地工具链（可再下载/再安装，不纳入版本控制）
+.agents/
+tools/__pycache__/
+tools/pylibs/
+tools/pylibs310/
+tools/qixuan_vb/
+tools/pcnsf/
+tools/pcnsf_oudep/
+tools/*.zip
+tools/*.oudep
+tools/_svs_tmp/

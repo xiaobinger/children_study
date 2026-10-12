@@ -1,0 +1,56 @@
+[
+ {
+  "offset": 0.3,
+  "text": "虫儿飞虫儿飞",
+  "note_seq": "A3 C4 D4 A3 C4 D4",
+  "note_dur": "0.75 0.75 0.75 0.75 0.75 1.5",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/ch zh/ong zh/er zh/f zh/ei zh/ch zh/ong zh/er zh/f zh/ei",
+  "ph_num": "2 1 2 2 1 2"
+ },
+ {
+  "offset": 5.8875,
+  "text": "你在思念谁",
+  "note_seq": "D4 C4 A3 C4 D4",
+  "note_dur": "0.75 0.75 0.75 0.75 1.5",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/n zh/i zh/z zh/ai zh/s zh/i0 zh/n zh/ian zh/sh zh/ui",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 10.725,
+  "text": "天上的星星流泪",
+  "note_seq": "A4 C4 D4 E4 D4 C4 A4",
+  "note_dur": "0.75 0.75 0.75 0.75 0.75 0.75 1.5",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/t zh/ian zh/sh zh/ang zh/d zh/e zh/x zh/ing zh/x zh/ing zh/l zh/iu zh/l zh/ei",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 17.0625,
+  "text": "地上的玫瑰枯萎",
+  "note_seq": "A4 C4 D4 E4 D4 C4 D4",
+  "note_dur": "0.75 0.75 0.75 0.75 0.75 0.75 1.5",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/d zh/i zh/sh zh/ang zh/d zh/e zh/m zh/ei zh/g zh/ui zh/k zh/u zh/w zh/ui",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 23.4,
+  "text": "冷风吹冷风吹",
+  "note_seq": "A3 C4 D4 A3 C4 D4",
+  "note_dur": "0.75 0.75 0.75 0.75 0.75 1.5",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/l zh/eng zh/f zh/eng zh/ch zh/ui zh/l zh/eng zh/f zh/eng zh/ch zh/ui",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 28.9875,
+  "text": "只要有你陪",
+  "note_seq": "D4 C4 A3 C4 D4",
+  "note_dur": "0.75 0.75 0.75 0.75 1.5",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/zh zh/ir zh/y zh/iao zh/y zh/iu zh/n zh/i zh/p zh/ei",
+  "ph_num": "2 2 2 2 2"
+ }
+]

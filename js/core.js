@@ -133,6 +133,7 @@ window.CS = window.CS || {};
     CS.stopSpeak && CS.stopSpeak();
     CS.stopCartoon && CS.stopCartoon();
     CS.stopVideo && CS.stopVideo();
+    CS.hideModal && CS.hideModal();   // 切页时关掉遗留弹层（如儿歌唱完奖励弹窗）
     view.innerHTML = '';
     view.className = 'view view-enter';
     requestAnimationFrame(() => { view.classList.remove('view-enter'); });

@@ -4,6 +4,7 @@
 """
 import asyncio
 import json
+import re
 import argparse
 import sys
 from pathlib import Path
@@ -62,13 +63,20 @@ async def main():
     await asyncio.gather(*(gen_one(t, sem, stats) for t in tasks))
     print(f"完成: 成功 {stats['ok']}  跳过(已存在) {stats['skip']}  失败 {stats['fail']}")
 
-    # 生成 voice-map.js（只收录实际存在的文件）
+    # 生成 voice-map.js：任务清单条目（文件存在才收录）+ 保留清单外条目
+    # （gen-song.py 写入的 song:<id>:v/a 不在任务清单里，必须保留，否则会被冲掉）
     mapping = {}
-    for t in json.loads(tasks_file.read_text(encoding="utf-8")):
+    out_js = ROOT / "js" / "voice-map.js"
+    if out_js.exists():
+        for m in re.finditer(r'"([^"\n]+)":\s*"(audio/[^"]+)"', out_js.read_text(encoding="utf-8")):
+            mapping[m.group(1)] = m.group(2)
+    all_tasks = json.loads(tasks_file.read_text(encoding="utf-8"))
+    for t in all_tasks:
         f = ROOT / t["file"]
         if f.exists() and f.stat().st_size > 1024:
             mapping[t["key"]] = t["file"]
-    out_js = ROOT / "js" / "voice-map.js"
+        else:
+            mapping.pop(t["key"], None)  # 任务文件不存在时不保留旧映射
     lines = ["/* ============ 预生成配音清单（gen-voice.py 自动生成） ============ */",
              "window.CS_VOICE = {"]
     for k in sorted(mapping):

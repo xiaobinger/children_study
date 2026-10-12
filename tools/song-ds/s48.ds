@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "这是心的呼唤",
+  "note_seq": "E4 E4 A4 A4 G4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/e zh/sh zh/ir zh/x zh/in zh/d zh/e zh/h zh/u zh/h zh/uan",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 5.379545,
+  "text": "这是爱的奉献",
+  "note_seq": "E4 E4 A4 A4 G4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/e zh/sh zh/ir zh/ai zh/d zh/e zh/f zh/eng zh/x zh/ian",
+  "ph_num": "2 2 1 2 2 2"
+ },
+ {
+  "offset": 10.459091,
+  "text": "这是人间的春风",
+  "note_seq": "C4 C4 F4 F4 E4 E4 D4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/e zh/sh zh/ir zh/r zh/en zh/j zh/ian zh/d zh/e zh/ch zh/un zh/f zh/eng",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 16.220455,
+  "text": "这是生命的源泉",
+  "note_seq": "C4 C4 F4 F4 E4 E4 D4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/zh zh/e zh/sh zh/ir zh/sh zh/eng zh/m zh/ing zh/d zh/e zh/y0 zh/van zh/q zh/van",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 21.981818,
+  "text": "再没有心的沙漠",
+  "note_seq": "E4 E4 A4 A4 G4 G4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/z zh/ai zh/m zh/ei zh/y zh/iu zh/x zh/in zh/d zh/e zh/sh zh/a zh/m zh/uo",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 27.743182,
+  "text": "再没有爱的荒原",
+  "note_seq": "E4 E4 A4 A4 G4 G4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/z zh/ai zh/m zh/ei zh/y zh/iu zh/ai zh/d zh/e zh/h zh/uang zh/y0 zh/van",
+  "ph_num": "2 2 2 1 2 2 2"
+ },
+ {
+  "offset": 33.504545,
+  "text": "死神也望而却步",
+  "note_seq": "C4 C4 F4 F4 E4 E4 D4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/s zh/i0 zh/sh zh/en zh/y zh/ie zh/w zh/uang zh/er zh/q zh/ve zh/b zh/u",
+  "ph_num": "2 2 2 2 1 2 2"
+ },
+ {
+  "offset": 39.265909,
+  "text": "幸福之花处处开遍",
+  "note_seq": "C4 C4 F4 F4 E4 D4 C4 A3",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/ing zh/f zh/u zh/zh zh/ir zh/h zh/ua zh/ch zh/u zh/ch zh/u zh/k zh/ai zh/b zh/ian",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ }
+]

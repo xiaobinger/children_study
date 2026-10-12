@@ -97,6 +97,21 @@ if ($xml -notmatch 'resizeableActivity') {
 if ($xml -notmatch 'usesCleartextTraffic') {
     $xml = $xml.Replace('android:allowBackup="true"', 'android:allowBackup="true" android:usesCleartextTraffic="true"')
 }
+# Android 11+（targetSdk 30+）有包可见性限制：不声明就无法发现系统 TTS 引擎，
+# 结果就是宠物/朗读在真机上完全没声音。必须显式声明 TTS_SERVICE 可见。
+if ($xml -notmatch 'TTS_SERVICE') {
+    $q = @(
+        '    <!-- Android 11 及以上：声明 TTS 引擎可见性，否则系统语音无法被发现，导致宠物/朗读静音 -->',
+        '    <queries>',
+        '        <intent>',
+        '            <action android:name="android.intent.action.TTS_SERVICE" />',
+        '        </intent>',
+        '    </queries>',
+        '',
+        ''
+    ) -join "`n"
+    $xml = $xml.Replace('    <application', $q + '    <application')
+}
 [System.IO.File]::WriteAllText($m, $xml, $utf8)
 
 # ---------- 5. MainActivity：去掉强制横屏（手机竖屏自适应，TV 恒横屏不受影响）----------

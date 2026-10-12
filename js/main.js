@@ -116,13 +116,35 @@
     if (!mascotBubble || !mascot) return;
     mascotBubble.textContent = msg;
     // 重新触发动画
-    mascotBubble.style.animation = 'none';
+    mascotBubble.classList.remove('z-sleeping');
+    mascotBubble.classList.remove('show');
     void mascotBubble.offsetWidth;
-    mascotBubble.style.animation = '';
-    mascotBubble.style.display = 'block';
+    mascotBubble.classList.add('show');
     clearTimeout(mascotTimer);
-    mascotTimer = setTimeout(() => { mascotBubble.style.display = ''; }, ms || 3000);
+    mascotTimer = setTimeout(() => { mascotBubble.classList.remove('show'); }, ms || 3000);
   }
+
+  /* ---------- 拖动/旋转后把宠物重新夹回可视区，避免"突然消失" ---------- */
+  function reflowPet() {
+    if (!mascot) return;
+    if (mascot.style.left || mascot.style.top) {
+      const w = mascot.offsetWidth, h = mascot.offsetHeight;
+      const r = mascot.getBoundingClientRect();
+      const x = Math.max(4, Math.min(Math.max(4, window.innerWidth - w - 4), r.left));
+      const y = Math.max(4, Math.min(Math.max(4, window.innerHeight - h - 4), r.top));
+      mascot.style.left = x + 'px';
+      mascot.style.top = y + 'px';
+      mascot.style.right = 'auto';
+      mascot.style.bottom = 'auto';
+    }
+  }
+  let reflowTimer = null;
+  function scheduleReflow() {
+    if (reflowTimer) clearTimeout(reflowTimer);
+    reflowTimer = setTimeout(reflowPet, 250);
+  }
+  window.addEventListener('resize', scheduleReflow);
+  window.addEventListener('orientationchange', scheduleReflow);
 
   /* ---------- 行走系统：按动物步态移动（飞/游/跳/慢走/奔跑） ---------- */
   let walkTimeout = null;
@@ -284,17 +306,18 @@
     if (!mascot || isWalking || _prefersReduced()) return;
     setPetState('sleeping');
     mascot.classList.remove('pet-flip');
+    if (!mascotBubble) return;
     mascotBubble.textContent = sleepMessages[Math.floor(Math.random() * sleepMessages.length)];
     mascotBubble.classList.add('z-sleeping');
-    mascotBubble.style.display = 'block';
+    mascotBubble.classList.add('show');
   }
 
   function wakeUp() {
     if (!mascot) return;
-    mascotBubble.classList.remove('z-sleeping');
+    if (mascotBubble) mascotBubble.classList.remove('z-sleeping');
     if (mascot.classList.contains('pet-sleeping')) {
       resetPetState();
-      mascotBubble.style.display = '';
+      if (mascotBubble) mascotBubble.classList.remove('show');
     }
     scheduleSleep();
   }
@@ -312,8 +335,9 @@
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'hidden') {
       stopWalking();
-    } else if (!mascot.classList.contains('pet-sleeping')) {
+    } else if (mascot && !mascot.classList.contains('pet-sleeping')) {
       scheduleSleep();
+      scheduleReflow();
     }
   });
 

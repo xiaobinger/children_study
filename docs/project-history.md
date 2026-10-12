@@ -94,3 +94,25 @@
 - **浏览器缓存**：`parent.js` 加 `?v=1.5.0` 查询字符串强制加载修复版
 
 **浏览器实测**：外部修改 `cfg.remind=false` → 点击开关 → `cfg.remind=true` ✓；外部 `praise=false` → 点击 → `true` ✓；外部 `levelup=false` → 点击 → `true` ✓；外部 `on=false` → 点击 → `true` ✓；AI 总开关外部 `on=true` → 点击 → `false` ✓；全流程控制台零报错。
+
+---
+
+## 2026-10-12 v1.6.0 电视大屏适配 + 儿歌真实童声重制
+
+**📺 65 寸电视 / Android TV 适配**：
+- **三档大字号**（`css/style.css`）：按屏幕宽度分档放大 `--fs-base`（≥1600px / ≥2200px 两档电视级），全站 rem 布局联动放大，3 米视距清晰可读；首页/列表自动多列排布
+- **遥控器导航**（`js/tvnav.js` 新增）：方向键唤起 `tv-nav` 模式，半平面加权评分算法（`adx + ady*2.6`）挑选最近元素；**内容区优先**——焦点在页面视图内时只在视图内移动，避免被漂浮吉祥物"吸走"（实测 Enter 误开宠物聊天的根因）；弹窗/宠物聊天面板自动成为独立焦点域（`topScope()`）；OK 键点击、返回键后退（`goBack()` 先关弹层/聊天再 `history.back()`）；`preferredFirst()` 保证切页后自动聚焦内容区首个元素
+- **APK leanback 支持**：AndroidManifest 声明 `android.software.leanback` + 双 intent-filter，电视桌面直接上图标
+
+**🎵 儿歌模块真实童声重制（40 首）**：
+- **简谱全面校对重写**（`js/data/songs.js`）：40 首有谱儿歌逐首对照权威简谱校正音高；记谱法扩展 `*N` 时值语法（`5*2`=sol 两拍，向后兼容 `-`/`--` 旧语法），前端 `parseMelody`、`song2ds.py`、`gen-song-svs.py` 三处时间数学保持完全一致
+- **绮萱童声演唱渲染**（`tools/gen-song-svs.py`）：开源 DiffSinger 童声声库"绮萱 v2.7.0"（PC-NSF-HiFiGAN 声码器）逐首演唱，44.1kHz / 128kbps / steps=64；人声轨 + 离线编曲伴奏轨双轨输出（`audio/song/sNNN_v.mp3` / `sNNN_a.mp3`，三位数编号），前端原唱/伴奏开关与逐字 KTV 高亮逻辑不变
+- **自动化音调校验**（`tools/verify-song-pitch.py`）：librosa pYIN（fmin=180/fmax=900）提取演唱基频，逐音符取 15%-75% 时长窗中位数与简谱期望比对，八度折叠消除八度误判，50 音分阈值；全量 40 首：**27 首零超阈，13 首仅个别音符 50-90¢ 瞬态偏差（占比 ≤6.5%），全曲目偏差中位数 ≤10¢**；s24（+587¢）与 s27（3 音符超阈）返工重渲染后达标，报告存于 `tools/song-pitch-report.json`
+- **环境约束**：渲染/校验必须用 Python 3.10（`tools/pylibs310` 依赖）+ `PYTHONUTF8=1`（GBK 会读崩声库 character.txt）；单首 45-145s，分批后台渲染
+
+**🐛 修复**：
+- 切换页面时遗留弹层（如儿歌唱完奖励弹窗）不再残留（`core.js` render 统一 `hideModal`）
+- 吉祥物聊天面板纳入遥控器焦点域，返回键可正确关闭
+- 漫步吉祥物（fixed 定位 + 走动动画）遮挡导致遥控器焦点误选——内容区优先算法根治
+
+**📺 电视端实测（chrome-devtools MCP，1920×1080）**：首页 3 列卡片、儿歌列表/详情大歌词、数学答题版式正常；遥控器完成"logo→卡片→Enter→儿歌列表→详情→原唱开关→▶ 播放 36s→结算弹窗→弹窗按钮"全流程；数学答题方向键选项切换+OK 提交正确进入下一题；KTV 逐字高亮与音频帧级同步（MutationObserver 实测 455.93 vs 理论 455.94，误差 <1ms）；file:// 协议 XHR 限制需本地 HTTP 服务测试（Android WebView 无此限制）。

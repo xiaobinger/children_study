@@ -1,0 +1,38 @@
+[
+ {
+  "offset": 0.3,
+  "text": "小青蛙呱呱呱",
+  "note_seq": "C4 C4 D4 D4 E4 E4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/x zh/iao zh/q zh/ing zh/w zh/ua zh/g zh/u zh/g zh/u zh/g zh/u",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 4.438889,
+  "text": "绿色外衣披在身",
+  "note_seq": "G4 G4 F4 F4 E4 E4 D4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/l zh/v zh/s zh/e zh/w zh/uai zh/y zh/i zh/p zh/i zh/z zh/ai zh/sh zh/en",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 9.133333,
+  "text": "池塘里面捉害虫",
+  "note_seq": "C4 C4 D4 D4 E4 E4 F4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/ch zh/ir zh/t zh/ang zh/l zh/i zh/m zh/ian zh/zh zh/uo zh/h zh/ai zh/ch zh/ong",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 13.827778,
+  "text": "保护庄稼好卫兵",
+  "note_seq": "G4 G4 F4 F4 E4 D4 C4",
+  "note_dur": "0.555556 0.555556 0.555556 0.555556 0.555556 0.555556 1.111111",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/b zh/ao zh/h zh/u zh/zh zh/uang zh/j zh/ia zh/h zh/ao zh/w zh/ui zh/b zh/ing",
+  "ph_num": "2 2 2 2 2 2 2"
+ }
+]

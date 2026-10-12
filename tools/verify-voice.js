@@ -15,6 +15,10 @@ const keys = [...map.matchAll(/"([^"]+)":/g)].map((m) => m[1]);
 console.log('voice-map: poem=' + keys.filter((k) => k.startsWith('poem:')).length +
   ' char=' + keys.filter((k) => k.startsWith('char:')).length +
   ' text=' + keys.filter((k) => k.startsWith('text:')).length +
+  ' story=' + keys.filter((k) => k.startsWith('story:')).length +
+  ' songRead=' + keys.filter((k) => k.startsWith('song:') && k.endsWith(':read')).length +
+  ' songVocal=' + keys.filter((k) => k.startsWith('song:') && k.endsWith(':v')).length +
+  ' songAccomp=' + keys.filter((k) => k.startsWith('song:') && k.endsWith(':a')).length +
   ' 合计=' + keys.length);
 
 let fail = 0;
@@ -27,10 +31,16 @@ console.log(fail === 0 ? '全部映射文件存在 ✓' : '缺失 ' + fail + ' �
 const poemJs = fs.readFileSync(path.join(ROOT, 'js/modules/poem.js'), 'utf8');
 const litJs = fs.readFileSync(path.join(ROOT, 'js/modules/literacy.js'), 'utf8');
 const textJs = fs.readFileSync(path.join(ROOT, 'js/modules/text.js'), 'utf8');
+const storyJs = fs.readFileSync(path.join(ROOT, 'js/modules/story.js'), 'utf8');
+const songJs = fs.readFileSync(path.join(ROOT, 'js/modules/song.js'), 'utf8');
 const audioJs = fs.readFileSync(path.join(ROOT, 'js/audio.js'), 'utf8');
 console.log('poem.js 传key: ' + poemJs.includes("{ key: 'poem:' + poem.id }"));
 console.log('literacy.js 字卡传key: ' + litJs.includes("{ key: 'char:' + state.age + ':' + c.char }"));
 console.log('literacy.js 游戏传key: ' + litJs.includes('{ key: voiceKey }'));
 console.log('text.js 传key: ' + textJs.includes("{ key: 'text:' + text.id }"));
+console.log('story.js 传key: ' + storyJs.includes("{ key: 'story:' + story.id }"));
+console.log('song.js 朗读传key: ' + songJs.includes("{ key: 'song:' + song.id + ':read' }"));
+console.log('song.js 预渲染优先: ' + songJs.includes('CS.hasSongAudio(song)'));
 console.log('audio.js 文件优先: ' + audioJs.includes('hasVoice(key)'));
 console.log('audio.js 停止播文件: ' + /function stopSpeak\(\) \{\s*stopVoiceFile\(\);/.test(audioJs));
+console.log('audio.js 预渲染播放器: ' + (audioJs.includes('function playSongAudio') && audioJs.includes('function setSongMix')));

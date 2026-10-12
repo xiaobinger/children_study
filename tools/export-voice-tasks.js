@@ -12,7 +12,7 @@ ctx.window = ctx;
 const files = [
   'js/data/poems.js', 'js/data/poems-a1.js', 'js/data/poems-a2.js', 'js/data/poems-a3.js', 'js/data/poems-a4.js',
   'js/data/characters.js', 'js/data/chars-a1.js', 'js/data/chars-a2.js', 'js/data/chars-a3.js', 'js/data/chars-a4.js',
-  'js/data/texts.js', 'js/data/stories.js'
+  'js/data/texts.js', 'js/data/stories.js', 'js/data/songs.js'
 ];
 files.forEach((f) => vm.runInContext(fs.readFileSync(path.join(ROOT, f), 'utf8'), ctx, { filename: f }));
 
@@ -57,7 +57,17 @@ D.stories.forEach((s, i) => {
   });
 });
 
+/* 儿歌朗读歌词（num编号与 export-song-tasks.js 的人声/伴奏轨一致，按 songs 总表顺序） */
+D.songs.forEach((s, i) => {
+  const text = s.lines.map((l) => l.replace(/[，。！？、,.!?\s]+$/g, '')).join('，') + '。';
+  tasks.push({
+    key: 'song:' + s.id + ':read',
+    text,
+    file: 'audio/song/s' + pad(i + 1, 3) + '_r.mp3'
+  });
+});
+
 fs.mkdirSync(path.join(ROOT, 'tools'), { recursive: true });
 fs.writeFileSync(path.join(ROOT, 'tools/voice-tasks.json'), JSON.stringify(tasks, null, 1), 'utf8');
 console.log('导出完成: ' + tasks.length + ' 条朗读任务');
-console.log('  古诗: ' + D.poems.length + '  字卡: ' + (D.characters.a1.length + D.characters.a2.length + D.characters.a3.length + D.characters.a4.length) + '  课文: ' + D.texts.length + '  童话: ' + D.stories.length);
+console.log('  古诗: ' + D.poems.length + '  字卡: ' + (D.characters.a1.length + D.characters.a2.length + D.characters.a3.length + D.characters.a4.length) + '  课文: ' + D.texts.length + '  童话: ' + D.stories.length + '  儿歌朗读: ' + D.songs.length);

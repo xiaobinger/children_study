@@ -368,10 +368,11 @@ window.CS = window.CS || {};
   /* ---------- 注册到 CS ---------- */
   CS.ANIMALS = ANIMALS;
 
-  /* 根据 emoji 找到对应渲染器 */
+  /* 根据 emoji 找到对应渲染器；未知头像回退到小鸡，绝不留下空 SVG（否则宠物会"消失"） */
   CS.renderMascotAnimal = function (svgEl, emoji) {
-    if (!svgEl || !ANIMALS[emoji]) return;
-    var factory = ANIMALS[emoji];
+    if (!svgEl) return;
+    var factory = ANIMALS[emoji] || ANIMALS['🐣'];
+    if (!factory) return;
     svgEl.innerHTML = factory();
   };
 

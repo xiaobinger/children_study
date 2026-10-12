@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "请把我的歌带回你的家",
+  "note_seq": "G4 G4 C4 D4 E4 G4 G4 F4 E4 D4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/q zh/ing zh/b zh/a zh/w zh/uo zh/d zh/e zh/g zh/e zh/d zh/ai zh/h zh/ui zh/n zh/i zh/d zh/e zh/j zh/ia",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 7.17,
+  "text": "请把你的微笑留下",
+  "note_seq": "G4 G4 C4 D4 E4 G4 E4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/q zh/ing zh/b zh/a zh/n zh/i zh/d zh/e zh/w zh/ui zh/x zh/iao zh/l zh/iu zh/x zh/ia",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 12.84,
+  "text": "请把我的歌带回你的家",
+  "note_seq": "G4 G4 C4 D4 E4 G4 G4 F4 E4 D4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/q zh/ing zh/b zh/a zh/w zh/uo zh/d zh/e zh/g zh/e zh/d zh/ai zh/h zh/ui zh/n zh/i zh/d zh/e zh/j zh/ia",
+  "ph_num": "2 2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 19.71,
+  "text": "请把你的微笑留下",
+  "note_seq": "G4 G4 C4 D4 E4 G4 E4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/q zh/ing zh/b zh/a zh/n zh/i zh/d zh/e zh/w zh/ui zh/x zh/iao zh/l zh/iu zh/x zh/ia",
+  "ph_num": "2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 25.38,
+  "text": "明天明天这歌声",
+  "note_seq": "C4 C4 D4 E4 G4 G4 A4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/ing zh/t zh/ian zh/m zh/ing zh/t zh/ian zh/zh zh/e zh/g zh/e zh/sh zh/eng",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 30.45,
+  "text": "飞遍海角天涯",
+  "note_seq": "G4 F4 E4 D4 E4 D4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/f zh/ei zh/b zh/ian zh/h zh/ai zh/j zh/iao zh/t zh/ian zh/y zh/ia",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 34.92,
+  "text": "明天明天这微笑",
+  "note_seq": "C4 C4 D4 E4 G4 G4 A4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/ing zh/t zh/ian zh/m zh/ing zh/t zh/ian zh/zh zh/e zh/w zh/ui zh/x zh/iao",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 39.99,
+  "text": "将是遍野春花",
+  "note_seq": "G4 F4 E4 D4 E4 C4",
+  "note_dur": "0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/j zh/iang zh/sh zh/ir zh/b zh/ian zh/y zh/ie zh/ch zh/un zh/h zh/ua",
+  "ph_num": "2 2 2 2 2 2"
+ }
+]

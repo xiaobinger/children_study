@@ -1,0 +1,65 @@
+[
+ {
+  "offset": 0.3,
+  "text": "好一朵美丽的茉莉花",
+  "note_seq": "E4 E4 G4 A4 C5 C5 A4 G4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/ao zh/y zh/i zh/d zh/uo zh/m zh/ei zh/l zh/i zh/d zh/e zh/m zh/uo zh/l zh/i zh/h zh/ua",
+  "ph_num": "2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 7.425,
+  "text": "好一朵美丽的茉莉花",
+  "note_seq": "E4 E4 G4 A4 C5 C5 A4 G4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0 0 0",
+  "ph_seq": "zh/h zh/ao zh/y zh/i zh/d zh/uo zh/m zh/ei zh/l zh/i zh/d zh/e zh/m zh/uo zh/l zh/i zh/h zh/ua",
+  "ph_num": "2 2 2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 14.55,
+  "text": "芬芳美丽满枝桠",
+  "note_seq": "G4 G4 A4 G4 E4 D4 E4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/f zh/en zh/f zh/ang zh/m zh/ei zh/l zh/i zh/m zh/an zh/zh zh/ir zh/y zh/ia",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 20.311364,
+  "text": "又香又白人人夸",
+  "note_seq": "G4 G4 A4 G4 E4 D4 C4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/iu zh/x zh/iang zh/y zh/iu zh/b zh/ai zh/r zh/en zh/r zh/en zh/k zh/ua",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 26.072727,
+  "text": "让我来将你摘下",
+  "note_seq": "E4 D4 C4 D4 E4 D4 C4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/r zh/ang zh/w zh/uo zh/l zh/ai zh/j zh/iang zh/n zh/i zh/zh zh/ai zh/x zh/ia",
+  "ph_num": "2 2 2 2 2 2 2"
+ },
+ {
+  "offset": 31.834091,
+  "text": "送给别人家",
+  "note_seq": "C4 D4 E4 D4 C4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0",
+  "ph_seq": "zh/s zh/ong zh/g zh/ei zh/b zh/ie zh/r zh/en zh/j zh/ia",
+  "ph_num": "2 2 2 2 2"
+ },
+ {
+  "offset": 36.231818,
+  "text": "茉莉花呀茉莉花",
+  "note_seq": "E4 E4 G4 A4 C5 A4 G4",
+  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_slur": "0 0 0 0 0 0 0",
+  "ph_seq": "zh/m zh/uo zh/l zh/i zh/h zh/ua zh/y zh/ia zh/m zh/uo zh/l zh/i zh/h zh/ua",
+  "ph_num": "2 2 2 2 2 2 2"
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "offset": 0.3,
+  "text": "两只老虎",
+  "note_seq": "C4 D4 E4 C4",
+  "note_dur": "0.517241 0.517241 0.517241 1.034483",
+  "note_slur": "0 0 0 0",
+  "ph_seq": "zh/l zh/iang zh/zh zh/ir zh/l zh/ao zh/h zh/u",
+  "ph_num": "2 2 2 2"
+ },
+ {
+  "offset": 3.118966,
+  "text": "两只老虎",
+  "note_seq": "C4 D4 E4 C4",
+  "note_dur": "0.517241 0.517241 0.517241 1.034483",
+  "note_slur": "0 0 0 0",
+  "ph_seq": "zh/l zh/iang zh/zh zh/ir zh/l zh/ao zh/h zh/u",
+  "ph_num": "2 2 2 2"
+ },
+ {
+  "offset": 5.937931,
+  "text": "跑得快",
+  "note_seq": "E4 F4 G4",
+  "note_dur": "0.517241 0.517241 1.034483",
+  "note_slur": "0 0 0",
+  "ph_seq": "zh/p zh/ao zh/d zh/e zh/k zh/uai",
+  "ph_num": "2 2 2"
+ },
+ {
+  "offset": 8.239655,
+  "text": "跑得快",
+  "note_seq": "E4 F4 G4",
+  "note_dur": "0.517241 0.517241 1.034483",
+  "note_slur": "0 0 0",
+  "ph_seq": "zh/p zh/ao zh/d zh/e zh/k zh/uai",
+  "ph_num": "2 2 2"
+ },
+ {
+  "offset": 10.541379,
+  "text": "一只没有耳朵",
+  "note_seq": "G4 A4 G4 F4 E4 C4",
+  "note_dur": "0.258621 0.258621 0.258621 0.258621 0.517241 1.034483",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/zh zh/ir zh/m zh/ei zh/y zh/iu zh/er zh/d zh/uo",
+  "ph_num": "2 2 2 2 1 2"
+ },
+ {
+  "offset": 13.360345,
+  "text": "一只没有尾巴",
+  "note_seq": "G4 A4 G4 F4 E4 C4",
+  "note_dur": "0.258621 0.258621 0.258621 0.258621 0.517241 1.034483",
+  "note_slur": "0 0 0 0 0 0",
+  "ph_seq": "zh/y zh/i zh/zh zh/ir zh/m zh/ei zh/y zh/iu zh/w zh/ui zh/b zh/a",
+  "ph_num": "2 2 2 2 2 2"
+ },
+ {
+  "offset": 16.17931,
+  "text": "真奇怪",
+  "note_seq": "C4 G3 C4",
+  "note_dur": "0.517241 0.517241 1.034483",
+  "note_slur": "0 0 0",
+  "ph_seq": "zh/zh zh/en zh/q zh/i zh/g zh/uai",
+  "ph_num": "2 2 2"
+ },
+ {
+  "offset": 18.481034,
+  "text": "真奇怪",
+  "note_seq": "C4 G3 C4",
+  "note_dur": "0.517241 0.517241 1.034483",
+  "note_slur": "0 0 0",
+  "ph_seq": "zh/zh zh/en zh/q zh/i zh/g zh/uai",
+  "ph_num": "2 2 2"
+ }
+]
