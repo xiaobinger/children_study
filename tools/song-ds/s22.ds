@@ -3,43 +3,43 @@
   "offset": 0.3,
   "text": "丢手绢丢手绢",
   "note_seq": "G4 E4 G4 E4 G4 G4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/d zh/iu zh/sh zh/ou zh/j zh/van zh/d zh/iu zh/sh zh/ou zh/j zh/van",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 4.77,
+  "offset": 4.025,
   "text": "轻轻地放在小朋友的后面",
   "note_seq": "A4 G4 E4 G4 E4 D4 E4 G4 A4 G4 E4 D4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 1 0 0 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/q zh/ing zh/q zh/ing zh/d zh/i zh/f zh/ang zh/z zh/ai zh/x zh/iao zh/p zh/eng zh/y zh/iu zh/d zh/e zh/h zh/ou zh/m zh/ian",
   "ph_num": "2 2 2 2 2 2 2 2 2 2 2"
  },
  {
-  "offset": 12.84,
+  "offset": 10.75,
   "text": "大家不要告诉他",
   "note_seq": "G4 E4 G4 E4 D4 E4 D4 C4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 1 0 0 0 0 0 0",
   "ph_seq": "zh/d zh/a zh/j zh/ia zh/b zh/u zh/y zh/iao zh/g zh/ao zh/s zh/u zh/t zh/a",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 18.51,
+  "offset": 15.475,
   "text": "快点快点捉住他",
   "note_seq": "A4 A4 A4 A4 E4 D4 E4 C4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 1 0 0 0 0 0 0",
   "ph_seq": "zh/k zh/uai zh/d zh/ian zh/k zh/uai zh/d zh/ian zh/zh zh/uo zh/zh zh/u zh/t zh/a",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 24.18,
+  "offset": 20.2,
   "text": "快点快点捉住他",
   "note_seq": "A4 A4 A4 A4 E4 D4 E4 C4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 1 0 0 0 0 0 0",
   "ph_seq": "zh/k zh/uai zh/d zh/ian zh/k zh/uai zh/d zh/ian zh/zh zh/uo zh/zh zh/u zh/t zh/a",
   "ph_num": "2 2 2 2 2 2 2"

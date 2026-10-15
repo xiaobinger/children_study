@@ -7,44 +7,44 @@
   "notes_skipped": 0,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 17.4,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 12.6,
   "bad_notes": [],
   "worst": [
    {
-    "line": 3,
-    "start": 18.41,
-    "expect": 392.0,
-    "measured": 383.62,
-    "cents": -37.4
+    "line": 5,
+    "start": 27.78,
+    "expect": 293.7,
+    "measured": 298.38,
+    "cents": 27.6
    },
    {
-    "line": 0,
-    "start": 0.3,
+    "line": 4,
+    "start": 20.38,
     "expect": 261.6,
     "measured": 265.06,
     "cents": 22.6
    },
    {
-    "line": 3,
-    "start": 22.69,
-    "expect": 293.7,
-    "measured": 297.52,
-    "cents": 22.6
+    "line": 0,
+    "start": 0.3,
+    "expect": 261.6,
+    "measured": 263.54,
+    "cents": 12.6
+   },
+   {
+    "line": 0,
+    "start": 3.27,
+    "expect": 440.0,
+    "measured": 443.21,
+    "cents": 12.6
    },
    {
     "line": 1,
-    "start": 6.34,
-    "expect": 349.2,
-    "measured": 345.73,
-    "cents": -17.4
-   },
-   {
-    "line": 3,
-    "start": 20.55,
-    "expect": 349.2,
-    "measured": 345.73,
-    "cents": -17.4
+    "start": 6.51,
+    "expect": 329.6,
+    "measured": 332.03,
+    "cents": 12.6
    }
   ]
  },
@@ -56,12 +56,12 @@
   "notes_skipped": 0,
   "notes_bad": 1,
   "bad_pct": 3.1,
-  "median_abs_cents": 7.4,
-  "p90_abs_cents": 27.6,
+  "median_abs_cents": 10.1,
+  "p90_abs_cents": 37.6,
   "bad_notes": [
    {
-    "line": 6,
-    "start": 16.18,
+    "line": 7,
+    "start": 15.47,
     "expect": 261.6,
     "measured": 272.83,
     "cents": 72.6
@@ -69,39 +69,39 @@
   ],
   "worst": [
    {
-    "line": 6,
-    "start": 16.18,
+    "line": 7,
+    "start": 15.47,
     "expect": 261.6,
     "measured": 272.83,
     "cents": 72.6
    },
    {
-    "line": 0,
-    "start": 0.3,
-    "expect": 261.6,
-    "measured": 266.6,
-    "cents": 32.6
-   },
-   {
     "line": 3,
-    "start": 8.24,
+    "start": 6.93,
     "expect": 329.6,
-    "measured": 334.92,
-    "cents": 27.6
+    "measured": 337.84,
+    "cents": 42.6
    },
    {
     "line": 6,
-    "start": 16.7,
-    "expect": 196.0,
-    "measured": 199.15,
-    "cents": 27.6
+    "start": 13.55,
+    "expect": 261.6,
+    "measured": 268.14,
+    "cents": 42.6
    },
    {
-    "line": 7,
-    "start": 18.48,
-    "expect": 261.6,
-    "measured": 257.52,
-    "cents": -27.4
+    "line": 2,
+    "start": 5.01,
+    "expect": 329.6,
+    "measured": 336.86,
+    "cents": 37.6
+   },
+   {
+    "line": 4,
+    "start": 8.85,
+    "expect": 392.0,
+    "measured": 400.62,
+    "cents": 37.6
    }
   ]
  },
@@ -111,46 +111,54 @@
   "notes_total": 25,
   "notes_valid": 24,
   "notes_skipped": 1,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 22.6,
-  "bad_notes": [],
+  "notes_bad": 1,
+  "bad_pct": 4.2,
+  "median_abs_cents": 7.6,
+  "p90_abs_cents": 32.6,
+  "bad_notes": [
+   {
+    "line": 3,
+    "start": 10.47,
+    "expect": 349.2,
+    "measured": 360.0,
+    "cents": 52.6
+   }
+  ],
   "worst": [
    {
-    "line": 0,
-    "start": 0.3,
-    "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
-   },
-   {
-    "line": 0,
-    "start": 0.9,
-    "expect": 440.0,
-    "measured": 445.78,
-    "cents": 22.6
-   },
-   {
-    "line": 1,
-    "start": 4.17,
-    "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
+    "line": 3,
+    "start": 10.47,
+    "expect": 349.2,
+    "measured": 360.0,
+    "cents": 52.6
    },
    {
     "line": 3,
-    "start": 13.11,
+    "start": 10.97,
     "expect": 659.2,
-    "measured": 667.91,
-    "cents": 22.6
+    "measured": 673.73,
+    "cents": 37.6
+   },
+   {
+    "line": 1,
+    "start": 3.52,
+    "expect": 392.0,
+    "measured": 399.45,
+    "cents": 32.6
+   },
+   {
+    "line": 1,
+    "start": 4.03,
+    "expect": 440.0,
+    "measured": 448.36,
+    "cents": 32.6
    },
    {
     "line": 0,
-    "start": 0.6,
-    "expect": 392.0,
-    "measured": 394.86,
-    "cents": 12.6
+    "start": 0.8,
+    "expect": 440.0,
+    "measured": 447.07,
+    "cents": 27.6
    }
   ]
  },
@@ -158,53 +166,45 @@
   "id": "s5",
   "title": "小兔子乖乖",
   "notes_total": 72,
-  "notes_valid": 72,
-  "notes_skipped": 0,
-  "notes_bad": 1,
-  "bad_pct": 1.4,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 22.6,
-  "bad_notes": [
-   {
-    "line": 3,
-    "start": 18.14,
-    "expect": 392.0,
-    "measured": 372.7,
-    "cents": -87.4
-   }
-  ],
+  "notes_valid": 71,
+  "notes_skipped": 1,
+  "notes_bad": 0,
+  "bad_pct": 0.0,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 27.6,
+  "bad_notes": [],
   "worst": [
    {
-    "line": 3,
-    "start": 18.14,
-    "expect": 392.0,
-    "measured": 372.7,
-    "cents": -87.4
-   },
-   {
-    "line": 0,
-    "start": 0.3,
-    "expect": 392.0,
-    "measured": 401.76,
-    "cents": 42.6
-   },
-   {
     "line": 4,
-    "start": 24.3,
+    "start": 20.37,
     "expect": 392.0,
-    "measured": 401.76,
-    "cents": 42.6
+    "measured": 400.6,
+    "cents": 37.6
+   },
+   {
+    "line": 3,
+    "start": 15.22,
+    "expect": 392.0,
+    "measured": 383.62,
+    "cents": -37.4
    },
    {
     "line": 0,
-    "start": 0.63,
-    "expect": 261.6,
-    "measured": 266.6,
+    "start": 1.94,
+    "expect": 329.6,
+    "measured": 335.89,
     "cents": 32.6
    },
    {
-    "line": 4,
-    "start": 24.63,
+    "line": 0,
+    "start": 2.75,
+    "expect": 293.7,
+    "measured": 299.25,
+    "cents": 32.6
+   },
+   {
+    "line": 3,
+    "start": 16.85,
     "expect": 261.6,
     "measured": 266.6,
     "cents": 32.6
@@ -220,43 +220,43 @@
   "notes_bad": 0,
   "bad_pct": 0.0,
   "median_abs_cents": 2.6,
-  "p90_abs_cents": 10.1,
+  "p90_abs_cents": 22.6,
   "bad_notes": [],
   "worst": [
    {
     "line": 1,
-    "start": 5.89,
+    "start": 4.96,
     "expect": 293.7,
-    "measured": 299.25,
+    "measured": 300.11,
+    "cents": 37.6
+   },
+   {
+    "line": 0,
+    "start": 0.3,
+    "expect": 220.0,
+    "measured": 224.18,
+    "cents": 32.6
+   },
+   {
+    "line": 1,
+    "start": 6.21,
+    "expect": 220.0,
+    "measured": 224.18,
+    "cents": 32.6
+   },
+   {
+    "line": 4,
+    "start": 19.55,
+    "expect": 220.0,
+    "measured": 224.18,
     "cents": 32.6
    },
    {
     "line": 2,
-    "start": 10.72,
+    "start": 8.99,
     "expect": 440.0,
-    "measured": 445.78,
-    "cents": 22.6
-   },
-   {
-    "line": 5,
-    "start": 28.99,
-    "expect": 293.7,
-    "measured": 290.73,
-    "cents": -17.4
-   },
-   {
-    "line": 4,
-    "start": 26.4,
-    "expect": 261.6,
-    "measured": 263.54,
+    "measured": 443.21,
     "cents": 12.6
-   },
-   {
-    "line": 5,
-    "start": 29.74,
-    "expect": 261.6,
-    "measured": 262.78,
-    "cents": 7.6
    }
   ]
  },
@@ -268,41 +268,41 @@
   "notes_skipped": 0,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 5.0,
+  "median_abs_cents": 2.6,
   "p90_abs_cents": 12.6,
   "bad_notes": [],
   "worst": [
    {
     "line": 2,
-    "start": 12.37,
+    "start": 10.34,
     "expect": 392.0,
     "measured": 397.14,
     "cents": 22.6
    },
    {
-    "line": 0,
-    "start": 0.3,
-    "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
+    "line": 1,
+    "start": 5.32,
+    "expect": 349.2,
+    "measured": 345.73,
+    "cents": -17.4
    },
    {
     "line": 1,
-    "start": 7.76,
-    "expect": 329.6,
-    "measured": 332.03,
+    "start": 7.7,
+    "expect": 293.7,
+    "measured": 295.81,
     "cents": 12.6
    },
    {
     "line": 2,
-    "start": 13.09,
+    "start": 10.93,
     "expect": 392.0,
     "measured": 394.86,
     "cents": 12.6
    },
    {
     "line": 3,
-    "start": 17.69,
+    "start": 14.17,
     "expect": 392.0,
     "measured": 394.86,
     "cents": 12.6
@@ -317,44 +317,44 @@
   "notes_skipped": 1,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 10.6,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 25.6,
   "bad_notes": [],
   "worst": [
    {
-    "line": 2,
-    "start": 9.13,
+    "line": 1,
+    "start": 5.58,
+    "expect": 293.7,
+    "measured": 299.25,
+    "cents": 32.6
+   },
+   {
+    "line": 3,
+    "start": 12.92,
+    "expect": 261.6,
+    "measured": 266.6,
+    "cents": 32.6
+   },
+   {
+    "line": 0,
+    "start": 1.68,
+    "expect": 440.0,
+    "measured": 447.07,
+    "cents": 27.6
+   },
+   {
+    "line": 0,
+    "start": 2.15,
     "expect": 392.0,
     "measured": 397.14,
     "cents": 22.6
    },
    {
-    "line": 2,
-    "start": 11.36,
-    "expect": 293.7,
-    "measured": 295.81,
-    "cents": 12.6
-   },
-   {
     "line": 3,
-    "start": 15.49,
-    "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
-   },
-   {
-    "line": 0,
-    "start": 1.97,
-    "expect": 440.0,
-    "measured": 441.94,
-    "cents": 7.6
-   },
-   {
-    "line": 0,
-    "start": 3.08,
-    "expect": 349.2,
-    "measured": 350.76,
-    "cents": 7.6
+    "start": 13.38,
+    "expect": 220.0,
+    "measured": 222.89,
+    "cents": 22.6
    }
   ]
  },
@@ -366,8 +366,8 @@
   "notes_skipped": 2,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 7.6,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 21.6,
   "bad_notes": [],
   "worst": [
    {
@@ -379,31 +379,31 @@
    },
    {
     "line": 0,
-    "start": 2.7,
+    "start": 2.3,
     "expect": 440.0,
-    "measured": 444.5,
-    "cents": 17.6
-   },
-   {
-    "line": 2,
-    "start": 15.84,
-    "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
+    "measured": 445.78,
+    "cents": 22.6
    },
    {
     "line": 1,
-    "start": 7.77,
-    "expect": 329.6,
-    "measured": 331.08,
-    "cents": 7.6
+    "start": 6.02,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
+   },
+   {
+    "line": 1,
+    "start": 7.02,
+    "expect": 293.7,
+    "measured": 297.52,
+    "cents": 22.6
    },
    {
     "line": 0,
-    "start": 0.9,
-    "expect": 440.0,
-    "measured": 438.12,
-    "cents": -7.4
+    "start": 1.3,
+    "expect": 392.0,
+    "measured": 396.0,
+    "cents": 17.6
    }
   ]
  },
@@ -411,14 +411,36 @@
   "id": "s10",
   "title": "小蜜蜂",
   "notes_total": 51,
-  "notes_valid": 49,
-  "notes_skipped": 2,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 17.4,
-  "bad_notes": [],
+  "notes_valid": 50,
+  "notes_skipped": 1,
+  "notes_bad": 1,
+  "bad_pct": 2.0,
+  "median_abs_cents": 12.6,
+  "p90_abs_cents": 22.6,
+  "bad_notes": [
+   {
+    "line": 3,
+    "start": 10.76,
+    "expect": 261.6,
+    "measured": 180.0,
+    "cents": 552.6
+   }
+  ],
   "worst": [
+   {
+    "line": 3,
+    "start": 10.76,
+    "expect": 261.6,
+    "measured": 180.0,
+    "cents": 552.6
+   },
+   {
+    "line": 1,
+    "start": 3.64,
+    "expect": 261.6,
+    "measured": 268.14,
+    "cents": 42.6
+   },
    {
     "line": 0,
     "start": 0.3,
@@ -428,31 +450,17 @@
    },
    {
     "line": 5,
-    "start": 21.86,
+    "start": 17.87,
     "expect": 392.0,
-    "measured": 384.73,
-    "cents": -32.4
+    "measured": 399.45,
+    "cents": 32.6
    },
    {
     "line": 0,
-    "start": 0.84,
+    "start": 0.75,
     "expect": 329.6,
     "measured": 333.96,
     "cents": 22.6
-   },
-   {
-    "line": 2,
-    "start": 10.96,
-    "expect": 293.7,
-    "measured": 297.52,
-    "cents": 22.6
-   },
-   {
-    "line": 1,
-    "start": 5.9,
-    "expect": 349.2,
-    "measured": 352.8,
-    "cents": 17.6
    }
   ]
  },
@@ -460,48 +468,56 @@
   "id": "s11",
   "title": "小鸭子",
   "notes_total": 28,
-  "notes_valid": 27,
-  "notes_skipped": 1,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
-  "bad_notes": [],
+  "notes_valid": 28,
+  "notes_skipped": 0,
+  "notes_bad": 1,
+  "bad_pct": 3.6,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 24.1,
+  "bad_notes": [
+   {
+    "line": 1,
+    "start": 3.88,
+    "expect": 392.0,
+    "measured": 180.0,
+    "cents": -147.4
+   }
+  ],
   "worst": [
    {
-    "line": 3,
-    "start": 17.23,
-    "expect": 196.0,
-    "measured": 198.0,
-    "cents": 17.6
+    "line": 1,
+    "start": 3.88,
+    "expect": 392.0,
+    "measured": 180.0,
+    "cents": -147.4
    },
    {
     "line": 0,
     "start": 0.3,
     "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
+    "measured": 266.6,
+    "cents": 32.6
    },
    {
-    "line": 1,
-    "start": 6.91,
-    "expect": 392.0,
-    "measured": 394.86,
-    "cents": 12.6
+    "line": 3,
+    "start": 12.47,
+    "expect": 261.6,
+    "measured": 265.83,
+    "cents": 27.6
    },
    {
     "line": 2,
-    "start": 10.05,
+    "start": 8.41,
     "expect": 329.6,
-    "measured": 332.03,
-    "cents": 12.6
+    "measured": 333.96,
+    "cents": 22.6
    },
    {
-    "line": 2,
-    "start": 12.93,
-    "expect": 293.7,
-    "measured": 295.81,
-    "cents": 12.6
+    "line": 3,
+    "start": 14.39,
+    "expect": 196.0,
+    "measured": 198.57,
+    "cents": 22.6
    }
   ]
  },
@@ -511,54 +527,46 @@
   "notes_total": 20,
   "notes_valid": 20,
   "notes_skipped": 0,
-  "notes_bad": 1,
-  "bad_pct": 5.0,
-  "median_abs_cents": 2.6,
+  "notes_bad": 0,
+  "bad_pct": 0.0,
+  "median_abs_cents": 5.0,
   "p90_abs_cents": 12.6,
-  "bad_notes": [
-   {
-    "line": 2,
-    "start": 10.24,
-    "expect": 392.0,
-    "measured": 379.21,
-    "cents": -57.4
-   }
-  ],
+  "bad_notes": [],
   "worst": [
-   {
-    "line": 2,
-    "start": 10.24,
-    "expect": 392.0,
-    "measured": 379.21,
-    "cents": -57.4
-   },
    {
     "line": 0,
     "start": 0.3,
     "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
+    "measured": 267.37,
+    "cents": 37.6
    },
    {
     "line": 0,
-    "start": 1.55,
+    "start": 1.34,
     "expect": 329.6,
     "measured": 332.03,
     "cents": 12.6
    },
    {
-    "line": 0,
-    "start": 2.17,
+    "line": 1,
+    "start": 3.67,
     "expect": 392.0,
-    "measured": 390.32,
-    "cents": -7.4
+    "measured": 394.86,
+    "cents": 12.6
+   },
+   {
+    "line": 2,
+    "start": 7.03,
+    "expect": 329.6,
+    "measured": 332.03,
+    "cents": 12.6
    },
    {
     "line": 1,
-    "start": 6.21,
-    "expect": 293.7,
-    "measured": 292.41,
-    "cents": -7.4
+    "start": 4.71,
+    "expect": 329.6,
+    "measured": 331.08,
+    "cents": 7.6
    }
   ]
  },
@@ -568,46 +576,54 @@
   "notes_total": 27,
   "notes_valid": 27,
   "notes_skipped": 0,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
+  "notes_bad": 1,
+  "bad_pct": 3.7,
   "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
-  "bad_notes": [],
+  "p90_abs_cents": 39.6,
+  "bad_notes": [
+   {
+    "line": 2,
+    "start": 8.25,
+    "expect": 261.6,
+    "measured": 273.62,
+    "cents": 77.6
+   }
+  ],
   "worst": [
+   {
+    "line": 2,
+    "start": 8.25,
+    "expect": 261.6,
+    "measured": 273.62,
+    "cents": 77.6
+   },
+   {
+    "line": 1,
+    "start": 4.02,
+    "expect": 392.0,
+    "measured": 401.76,
+    "cents": 42.6
+   },
+   {
+    "line": 1,
+    "start": 6.02,
+    "expect": 329.6,
+    "measured": 337.84,
+    "cents": 42.6
+   },
    {
     "line": 0,
     "start": 0.3,
     "expect": 261.6,
-    "measured": 265.06,
-    "cents": 22.6
-   },
-   {
-    "line": 0,
-    "start": 0.9,
-    "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
-   },
-   {
-    "line": 0,
-    "start": 1.5,
-    "expect": 293.7,
-    "measured": 295.81,
-    "cents": 12.6
-   },
-   {
-    "line": 0,
-    "start": 2.1,
-    "expect": 293.7,
-    "measured": 295.81,
-    "cents": 12.6
+    "measured": 267.37,
+    "cents": 37.6
    },
    {
     "line": 2,
-    "start": 9.84,
-    "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
+    "start": 9.75,
+    "expect": 293.7,
+    "measured": 298.38,
+    "cents": 27.6
    }
   ]
  },
@@ -615,48 +631,56 @@
   "id": "s14",
   "title": "小闹钟",
   "notes_total": 24,
-  "notes_valid": 24,
-  "notes_skipped": 0,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 7.4,
-  "p90_abs_cents": 22.6,
-  "bad_notes": [],
+  "notes_valid": 23,
+  "notes_skipped": 1,
+  "notes_bad": 1,
+  "bad_pct": 4.3,
+  "median_abs_cents": 7.6,
+  "p90_abs_cents": 26.6,
+  "bad_notes": [
+   {
+    "line": 0,
+    "start": 0.3,
+    "expect": 261.6,
+    "measured": 269.7,
+    "cents": 52.6
+   }
+  ],
   "worst": [
    {
     "line": 0,
     "start": 0.3,
     "expect": 261.6,
+    "measured": 269.7,
+    "cents": 52.6
+   },
+   {
+    "line": 2,
+    "start": 6.52,
+    "expect": 261.6,
     "measured": 268.14,
     "cents": 42.6
    },
    {
-    "line": 1,
-    "start": 4.29,
+    "line": 3,
+    "start": 10.31,
     "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
-   },
-   {
-    "line": 2,
-    "start": 7.75,
-    "expect": 261.6,
-    "measured": 265.06,
-    "cents": 22.6
+    "measured": 398.29,
+    "cents": 27.6
    },
    {
     "line": 3,
-    "start": 13.34,
-    "expect": 329.6,
-    "measured": 333.96,
+    "start": 10.76,
+    "expect": 349.2,
+    "measured": 353.82,
     "cents": 22.6
    },
    {
-    "line": 0,
-    "start": 1.91,
-    "expect": 349.2,
-    "measured": 351.78,
-    "cents": 12.6
+    "line": 1,
+    "start": 4.98,
+    "expect": 293.7,
+    "measured": 296.67,
+    "cents": 17.6
    }
   ]
  },
@@ -668,44 +692,44 @@
   "notes_skipped": 0,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 22.6,
   "bad_notes": [],
   "worst": [
    {
-    "line": 2,
-    "start": 9.78,
-    "expect": 329.6,
-    "measured": 335.89,
-    "cents": 32.6
-   },
-   {
-    "line": 0,
-    "start": 3.03,
-    "expect": 349.2,
-    "measured": 351.78,
-    "cents": 12.6
+    "line": 1,
+    "start": 4.52,
+    "expect": 293.7,
+    "measured": 297.52,
+    "cents": 22.6
    },
    {
     "line": 1,
-    "start": 5.38,
+    "start": 6.22,
     "expect": 293.7,
-    "measured": 295.81,
-    "cents": 12.6
+    "measured": 297.52,
+    "cents": 22.6
    },
    {
-    "line": 3,
-    "start": 14.17,
-    "expect": 293.7,
-    "measured": 294.96,
-    "cents": 7.6
+    "line": 2,
+    "start": 8.17,
+    "expect": 329.6,
+    "measured": 333.96,
+    "cents": 22.6
    },
    {
     "line": 0,
-    "start": 3.71,
-    "expect": 329.6,
-    "measured": 328.22,
-    "cents": -7.4
+    "start": 1.43,
+    "expect": 392.0,
+    "measured": 394.86,
+    "cents": 12.6
+   },
+   {
+    "line": 0,
+    "start": 2.0,
+    "expect": 392.0,
+    "measured": 394.86,
+    "cents": 12.6
    }
   ]
  },
@@ -715,46 +739,54 @@
   "notes_total": 54,
   "notes_valid": 53,
   "notes_skipped": 1,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
+  "notes_bad": 1,
+  "bad_pct": 1.9,
+  "median_abs_cents": 12.6,
   "p90_abs_cents": 22.6,
-  "bad_notes": [],
+  "bad_notes": [
+   {
+    "line": 1,
+    "start": 7.22,
+    "expect": 392.0,
+    "measured": 404.09,
+    "cents": 52.6
+   }
+  ],
   "worst": [
    {
+    "line": 1,
+    "start": 7.22,
+    "expect": 392.0,
+    "measured": 404.09,
+    "cents": 52.6
+   },
+   {
     "line": 2,
-    "start": 13.64,
+    "start": 11.9,
+    "expect": 261.6,
+    "measured": 268.92,
+    "cents": 47.6
+   },
+   {
+    "line": 0,
+    "start": 0.3,
     "expect": 261.6,
     "measured": 266.6,
     "cents": 32.6
    },
    {
-    "line": 2,
-    "start": 18.46,
+    "line": 1,
+    "start": 8.56,
     "expect": 392.0,
     "measured": 399.45,
     "cents": 32.6
    },
    {
     "line": 2,
-    "start": 14.18,
+    "start": 11.45,
     "expect": 261.6,
-    "measured": 265.83,
-    "cents": 27.6
-   },
-   {
-    "line": 1,
-    "start": 9.65,
-    "expect": 392.0,
-    "measured": 385.84,
-    "cents": -27.4
-   },
-   {
-    "line": 1,
-    "start": 7.51,
-    "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
+    "measured": 266.6,
+    "cents": 32.6
    }
   ]
  },
@@ -766,43 +798,43 @@
   "notes_skipped": 4,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 14.1,
   "bad_notes": [],
   "worst": [
    {
     "line": 2,
-    "start": 16.44,
+    "start": 13.75,
     "expect": 293.7,
-    "measured": 296.67,
+    "measured": 299.25,
+    "cents": 32.6
+   },
+   {
+    "line": 0,
+    "start": 0.3,
+    "expect": 392.0,
+    "measured": 398.29,
+    "cents": 27.6
+   },
+   {
+    "line": 0,
+    "start": 0.8,
+    "expect": 329.6,
+    "measured": 333.0,
+    "cents": 17.6
+   },
+   {
+    "line": 3,
+    "start": 16.97,
+    "expect": 440.0,
+    "measured": 444.5,
     "cents": 17.6
    },
    {
     "line": 0,
-    "start": 2.1,
-    "expect": 329.6,
-    "measured": 332.03,
-    "cents": 12.6
-   },
-   {
-    "line": 3,
-    "start": 19.11,
-    "expect": 440.0,
-    "measured": 443.21,
-    "cents": 12.6
-   },
-   {
-    "line": 4,
-    "start": 24.78,
-    "expect": 440.0,
-    "measured": 443.21,
-    "cents": 12.6
-   },
-   {
-    "line": 4,
-    "start": 26.58,
-    "expect": 329.6,
-    "measured": 332.03,
+    "start": 1.3,
+    "expect": 392.0,
+    "measured": 394.86,
     "cents": 12.6
    }
   ]
@@ -815,52 +847,52 @@
   "notes_skipped": 0,
   "notes_bad": 1,
   "bad_pct": 0.8,
-  "median_abs_cents": 7.6,
-  "p90_abs_cents": 22.6,
+  "median_abs_cents": 12.6,
+  "p90_abs_cents": 28.1,
   "bad_notes": [
    {
-    "line": 6,
-    "start": 46.24,
-    "expect": 349.2,
-    "measured": 362.09,
-    "cents": 62.6
+    "line": 2,
+    "start": 11.79,
+    "expect": 261.6,
+    "measured": 269.7,
+    "cents": 52.6
    }
   ],
   "worst": [
    {
-    "line": 6,
-    "start": 46.24,
+    "line": 2,
+    "start": 11.79,
+    "expect": 261.6,
+    "measured": 269.7,
+    "cents": 52.6
+   },
+   {
+    "line": 5,
+    "start": 32.72,
     "expect": 349.2,
-    "measured": 362.09,
-    "cents": 62.6
+    "measured": 358.96,
+    "cents": 47.6
    },
    {
     "line": 2,
-    "start": 18.58,
+    "start": 15.48,
     "expect": 349.2,
     "measured": 357.93,
     "cents": 42.6
    },
    {
-    "line": 8,
-    "start": 55.63,
-    "expect": 261.6,
-    "measured": 268.14,
+    "line": 6,
+    "start": 37.08,
+    "expect": 392.0,
+    "measured": 401.76,
     "cents": 42.6
    },
    {
-    "line": 3,
-    "start": 25.49,
+    "line": 7,
+    "start": 44.22,
     "expect": 349.2,
-    "measured": 355.87,
-    "cents": 32.6
-   },
-   {
-    "line": 5,
-    "start": 38.77,
-    "expect": 392.0,
-    "measured": 399.45,
-    "cents": 32.6
+    "measured": 356.9,
+    "cents": 37.6
    }
   ]
  },
@@ -872,24 +904,24 @@
   "notes_skipped": 0,
   "notes_bad": 1,
   "bad_pct": 2.2,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 15.0,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 15.1,
   "bad_notes": [
    {
     "line": 3,
-    "start": 15.52,
+    "start": 13.0,
     "expect": 392.0,
-    "measured": 406.43,
-    "cents": 62.6
+    "measured": 408.78,
+    "cents": 72.6
    }
   ],
   "worst": [
    {
     "line": 3,
-    "start": 15.52,
+    "start": 13.0,
     "expect": 392.0,
-    "measured": 406.43,
-    "cents": 62.6
+    "measured": 408.78,
+    "cents": 72.6
    },
    {
     "line": 0,
@@ -899,25 +931,25 @@
     "cents": 32.6
    },
    {
-    "line": 4,
-    "start": 20.8,
-    "expect": 261.6,
-    "measured": 266.6,
-    "cents": 32.6
-   },
-   {
-    "line": 2,
-    "start": 10.24,
-    "expect": 261.6,
-    "measured": 265.06,
+    "line": 3,
+    "start": 14.57,
+    "expect": 349.2,
+    "measured": 353.82,
     "cents": 22.6
    },
    {
-    "line": 0,
-    "start": 2.8,
-    "expect": 329.6,
-    "measured": 326.33,
-    "cents": -17.4
+    "line": 5,
+    "start": 20.78,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
+   },
+   {
+    "line": 4,
+    "start": 17.41,
+    "expect": 261.6,
+    "measured": 264.3,
+    "cents": 17.6
    }
   ]
  },
@@ -927,46 +959,61 @@
   "notes_total": 41,
   "notes_valid": 41,
   "notes_skipped": 0,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 7.4,
-  "p90_abs_cents": 22.4,
-  "bad_notes": [],
+  "notes_bad": 2,
+  "bad_pct": 4.9,
+  "median_abs_cents": 7.6,
+  "p90_abs_cents": 27.6,
+  "bad_notes": [
+   {
+    "line": 1,
+    "start": 5.32,
+    "expect": 220.0,
+    "measured": 228.1,
+    "cents": 62.6
+   },
+   {
+    "line": 4,
+    "start": 16.52,
+    "expect": 440.0,
+    "measured": 453.57,
+    "cents": 52.6
+   }
+  ],
   "worst": [
    {
-    "line": 3,
-    "start": 17.23,
-    "expect": 293.7,
-    "measured": 301.85,
-    "cents": 47.6
+    "line": 1,
+    "start": 5.32,
+    "expect": 220.0,
+    "measured": 228.1,
+    "cents": 62.6
+   },
+   {
+    "line": 4,
+    "start": 16.52,
+    "expect": 440.0,
+    "measured": 453.57,
+    "cents": 52.6
    },
    {
     "line": 3,
-    "start": 16.08,
+    "start": 13.43,
     "expect": 220.0,
-    "measured": 224.83,
-    "cents": 37.6
+    "measured": 225.48,
+    "cents": 42.6
    },
    {
     "line": 5,
-    "start": 24.67,
+    "start": 20.58,
     "expect": 329.6,
-    "measured": 334.92,
-    "cents": 27.6
-   },
-   {
-    "line": 3,
-    "start": 18.39,
-    "expect": 293.7,
-    "measured": 289.05,
-    "cents": -27.4
+    "measured": 335.89,
+    "cents": 32.6
    },
    {
     "line": 2,
-    "start": 11.2,
-    "expect": 329.6,
-    "measured": 325.39,
-    "cents": -22.4
+    "start": 8.41,
+    "expect": 440.0,
+    "measured": 447.07,
+    "cents": 27.6
    }
   ]
  },
@@ -976,61 +1023,54 @@
   "notes_total": 54,
   "notes_valid": 54,
   "notes_skipped": 0,
-  "notes_bad": 2,
-  "bad_pct": 3.7,
+  "notes_bad": 1,
+  "bad_pct": 1.9,
   "median_abs_cents": 2.6,
-  "p90_abs_cents": 21.0,
+  "p90_abs_cents": 12.6,
   "bad_notes": [
    {
-    "line": 4,
-    "start": 22.66,
+    "line": 5,
+    "start": 24.22,
     "expect": 440.0,
     "measured": 425.65,
     "cents": -57.4
-   },
-   {
-    "line": 4,
-    "start": 26.07,
-    "expect": 440.0,
-    "measured": 423.2,
-    "cents": -67.4
    }
   ],
   "worst": [
    {
-    "line": 4,
-    "start": 26.07,
-    "expect": 440.0,
-    "measured": 423.2,
-    "cents": -67.4
-   },
-   {
-    "line": 4,
-    "start": 22.66,
+    "line": 5,
+    "start": 24.22,
     "expect": 440.0,
     "measured": 425.65,
     "cents": -57.4
+   },
+   {
+    "line": 0,
+    "start": 3.13,
+    "expect": 440.0,
+    "measured": 429.35,
+    "cents": -42.4
+   },
+   {
+    "line": 2,
+    "start": 10.43,
+    "expect": 329.6,
+    "measured": 333.96,
+    "cents": 22.6
    },
    {
     "line": 0,
     "start": 0.3,
     "expect": 440.0,
-    "measured": 450.96,
-    "cents": 42.6
+    "measured": 443.21,
+    "cents": 12.6
    },
    {
-    "line": 0,
-    "start": 3.71,
-    "expect": 440.0,
-    "measured": 433.09,
-    "cents": -27.4
-   },
-   {
-    "line": 5,
-    "start": 28.43,
-    "expect": 392.0,
-    "measured": 385.84,
-    "cents": -27.4
+    "line": 1,
+    "start": 6.78,
+    "expect": 293.7,
+    "measured": 295.81,
+    "cents": 12.6
    }
   ]
  },
@@ -1040,54 +1080,46 @@
   "notes_total": 26,
   "notes_valid": 26,
   "notes_skipped": 0,
-  "notes_bad": 1,
-  "bad_pct": 3.8,
-  "median_abs_cents": 10.0,
-  "p90_abs_cents": 27.4,
-  "bad_notes": [
-   {
-    "line": 0,
-    "start": 0.3,
-    "expect": 392.0,
-    "measured": 404.09,
-    "cents": 52.6
-   }
-  ],
+  "notes_bad": 0,
+  "bad_pct": 0.0,
+  "median_abs_cents": 12.6,
+  "p90_abs_cents": 30.1,
+  "bad_notes": [],
   "worst": [
    {
     "line": 0,
     "start": 0.3,
     "expect": 392.0,
-    "measured": 404.09,
-    "cents": 52.6
+    "measured": 399.45,
+    "cents": 32.6
    },
    {
-    "line": 0,
-    "start": 0.63,
+    "line": 1,
+    "start": 4.09,
+    "expect": 329.6,
+    "measured": 335.89,
+    "cents": 32.6
+   },
+   {
+    "line": 3,
+    "start": 12.22,
     "expect": 261.6,
     "measured": 266.6,
     "cents": 32.6
    },
    {
-    "line": 1,
-    "start": 6.14,
+    "line": 0,
+    "start": 1.94,
     "expect": 329.6,
-    "measured": 324.45,
-    "cents": -27.4
+    "measured": 334.92,
+    "cents": 27.6
    },
    {
-    "line": 2,
-    "start": 11.65,
-    "expect": 392.0,
-    "measured": 385.84,
-    "cents": -27.4
-   },
-   {
-    "line": 1,
-    "start": 4.83,
-    "expect": 329.6,
-    "measured": 333.96,
-    "cents": 22.6
+    "line": 3,
+    "start": 13.85,
+    "expect": 220.0,
+    "measured": 223.54,
+    "cents": 27.6
    }
   ]
  },
@@ -1099,66 +1131,10 @@
   "notes_skipped": 0,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 22.6,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 30.6,
   "bad_notes": [],
   "worst": [
-   {
-    "line": 1,
-    "start": 6.74,
-    "expect": 293.7,
-    "measured": 298.38,
-    "cents": 27.6
-   },
-   {
-    "line": 0,
-    "start": 0.3,
-    "expect": 261.6,
-    "measured": 265.06,
-    "cents": 22.6
-   },
-   {
-    "line": 1,
-    "start": 6.22,
-    "expect": 293.7,
-    "measured": 297.52,
-    "cents": 22.6
-   },
-   {
-    "line": 3,
-    "start": 12.38,
-    "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
-   },
-   {
-    "line": 1,
-    "start": 5.71,
-    "expect": 329.6,
-    "measured": 325.39,
-    "cents": -22.4
-   }
-  ]
- },
- {
-  "id": "s29",
-  "title": "小星星的梦",
-  "notes_total": 28,
-  "notes_valid": 28,
-  "notes_skipped": 0,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 17.4,
-  "bad_notes": [],
-  "worst": [
-   {
-    "line": 0,
-    "start": 2.44,
-    "expect": 392.0,
-    "measured": 402.92,
-    "cents": 47.6
-   },
    {
     "line": 0,
     "start": 0.3,
@@ -1168,24 +1144,88 @@
    },
    {
     "line": 1,
-    "start": 6.34,
-    "expect": 349.2,
-    "measured": 345.73,
-    "cents": -17.4
+    "start": 5.67,
+    "expect": 293.7,
+    "measured": 300.11,
+    "cents": 37.6
    },
    {
     "line": 2,
-    "start": 14.51,
-    "expect": 349.2,
-    "measured": 345.73,
-    "cents": -17.4
+    "start": 7.16,
+    "expect": 329.6,
+    "measured": 335.89,
+    "cents": 32.6
+   },
+   {
+    "line": 1,
+    "start": 3.52,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
    },
    {
     "line": 0,
-    "start": 1.73,
-    "expect": 392.0,
-    "measured": 394.86,
+    "start": 0.73,
+    "expect": 293.7,
+    "measured": 295.81,
     "cents": 12.6
+   }
+  ]
+ },
+ {
+  "id": "s29",
+  "title": "小星星的梦",
+  "notes_total": 28,
+  "notes_valid": 28,
+  "notes_skipped": 0,
+  "notes_bad": 1,
+  "bad_pct": 3.6,
+  "median_abs_cents": 2.6,
+  "p90_abs_cents": 25.6,
+  "bad_notes": [
+   {
+    "line": 0,
+    "start": 0.3,
+    "expect": 261.6,
+    "measured": 276.0,
+    "cents": 92.6
+   }
+  ],
+  "worst": [
+   {
+    "line": 0,
+    "start": 0.3,
+    "expect": 261.6,
+    "measured": 276.0,
+    "cents": 92.6
+   },
+   {
+    "line": 3,
+    "start": 15.36,
+    "expect": 392.0,
+    "measured": 400.6,
+    "cents": 37.6
+   },
+   {
+    "line": 0,
+    "start": 1.49,
+    "expect": 392.0,
+    "measured": 399.45,
+    "cents": 32.6
+   },
+   {
+    "line": 0,
+    "start": 2.08,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
+   },
+   {
+    "line": 2,
+    "start": 10.34,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
    }
   ]
  },
@@ -1195,46 +1235,54 @@
   "notes_total": 27,
   "notes_valid": 27,
   "notes_skipped": 0,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
+  "notes_bad": 1,
+  "bad_pct": 3.7,
   "median_abs_cents": 7.4,
-  "p90_abs_cents": 14.5,
-  "bad_notes": [],
+  "p90_abs_cents": 30.6,
+  "bad_notes": [
+   {
+    "line": 2,
+    "start": 7.64,
+    "expect": 261.6,
+    "measured": 270.48,
+    "cents": 57.6
+   }
+  ],
   "worst": [
+   {
+    "line": 2,
+    "start": 7.64,
+    "expect": 261.6,
+    "measured": 270.48,
+    "cents": 57.6
+   },
    {
     "line": 0,
     "start": 0.3,
     "expect": 261.6,
-    "measured": 265.83,
-    "cents": 27.6
+    "measured": 268.14,
+    "cents": 42.6
    },
    {
-    "line": 2,
-    "start": 9.13,
+    "line": 0,
+    "start": 0.76,
     "expect": 261.6,
-    "measured": 265.06,
+    "measured": 268.14,
+    "cents": 42.6
+   },
+   {
+    "line": 1,
+    "start": 3.74,
+    "expect": 392.0,
+    "measured": 397.14,
     "cents": 22.6
    },
    {
-    "line": 2,
-    "start": 9.69,
-    "expect": 261.6,
-    "measured": 259.01,
-    "cents": -17.4
-   },
-   {
-    "line": 1,
-    "start": 4.44,
+    "line": 3,
+    "start": 11.54,
     "expect": 392.0,
-    "measured": 394.86,
-    "cents": 12.6
-   },
-   {
-    "line": 1,
-    "start": 4.99,
-    "expect": 392.0,
-    "measured": 394.86,
-    "cents": 12.6
+    "measured": 397.14,
+    "cents": 22.6
    }
   ]
  },
@@ -1244,46 +1292,54 @@
   "notes_total": 52,
   "notes_valid": 52,
   "notes_skipped": 0,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
-  "bad_notes": [],
+  "notes_bad": 1,
+  "bad_pct": 1.9,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 22.1,
+  "bad_notes": [
+   {
+    "line": 5,
+    "start": 26.52,
+    "expect": 196.0,
+    "measured": 202.04,
+    "cents": 52.6
+   }
+  ],
   "worst": [
    {
-    "line": 1,
-    "start": 5.58,
+    "line": 5,
+    "start": 26.52,
+    "expect": 196.0,
+    "measured": 202.04,
+    "cents": 52.6
+   },
+   {
+    "line": 3,
+    "start": 18.22,
+    "expect": 220.0,
+    "measured": 225.48,
+    "cents": 42.6
+   },
+   {
+    "line": 3,
+    "start": 15.09,
     "expect": 293.7,
     "measured": 299.25,
     "cents": 32.6
    },
    {
-    "line": 3,
-    "start": 18.02,
+    "line": 1,
+    "start": 4.71,
     "expect": 293.7,
     "measured": 298.38,
     "cents": 27.6
    },
    {
-    "line": 5,
-    "start": 31.71,
-    "expect": 196.0,
-    "measured": 198.57,
-    "cents": 22.6
-   },
-   {
-    "line": 2,
-    "start": 10.86,
-    "expect": 329.6,
-    "measured": 326.33,
-    "cents": -17.4
-   },
-   {
-    "line": 0,
-    "start": 0.3,
+    "line": 4,
+    "start": 20.54,
     "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
+    "measured": 265.83,
+    "cents": 27.6
    }
   ]
  },
@@ -1293,75 +1349,46 @@
   "notes_total": 62,
   "notes_valid": 62,
   "notes_skipped": 0,
-  "notes_bad": 4,
-  "bad_pct": 6.5,
+  "notes_bad": 0,
+  "bad_pct": 0.0,
   "median_abs_cents": 2.6,
-  "p90_abs_cents": 26.4,
-  "bad_notes": [
-   {
-    "line": 0,
-    "start": 0.3,
-    "expect": 392.0,
-    "measured": 406.43,
-    "cents": 62.6
-   },
-   {
-    "line": 3,
-    "start": 23.31,
-    "expect": 329.6,
-    "measured": 317.04,
-    "cents": -67.4
-   },
-   {
-    "line": 4,
-    "start": 25.38,
-    "expect": 261.6,
-    "measured": 271.26,
-    "cents": 62.6
-   },
-   {
-    "line": 6,
-    "start": 34.92,
-    "expect": 261.6,
-    "measured": 276.0,
-    "cents": 92.6
-   }
-  ],
+  "p90_abs_cents": 22.6,
+  "bad_notes": [],
   "worst": [
    {
-    "line": 6,
-    "start": 34.92,
-    "expect": 261.6,
-    "measured": 276.0,
-    "cents": 92.6
-   },
-   {
-    "line": 3,
-    "start": 23.31,
-    "expect": 329.6,
-    "measured": 317.04,
-    "cents": -67.4
-   },
-   {
     "line": 0,
     "start": 0.3,
     "expect": 392.0,
-    "measured": 406.43,
-    "cents": 62.6
+    "measured": 401.76,
+    "cents": 42.6
    },
    {
-    "line": 4,
-    "start": 25.38,
+    "line": 6,
+    "start": 29.15,
     "expect": 261.6,
-    "measured": 271.26,
-    "cents": 62.6
+    "measured": 268.14,
+    "cents": 42.6
    },
    {
-    "line": 5,
-    "start": 30.45,
+    "line": 1,
+    "start": 8.52,
     "expect": 392.0,
     "measured": 399.45,
     "cents": 32.6
+   },
+   {
+    "line": 1,
+    "start": 6.02,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
+   },
+   {
+    "line": 2,
+    "start": 10.75,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
    }
   ]
  },
@@ -1373,52 +1400,52 @@
   "notes_skipped": 1,
   "notes_bad": 1,
   "bad_pct": 1.2,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 27.6,
   "bad_notes": [
    {
-    "line": 8,
-    "start": 43.34,
-    "expect": 329.6,
-    "measured": 317.04,
-    "cents": -67.4
+    "line": 3,
+    "start": 14.39,
+    "expect": 293.7,
+    "measured": 302.72,
+    "cents": 52.6
    }
   ],
   "worst": [
    {
-    "line": 8,
-    "start": 43.34,
-    "expect": 329.6,
-    "measured": 317.04,
-    "cents": -67.4
-   },
-   {
-    "line": 8,
-    "start": 46.22,
-    "expect": 392.0,
-    "measured": 400.6,
-    "cents": 37.6
-   },
-   {
     "line": 3,
-    "start": 17.23,
+    "start": 14.39,
     "expect": 293.7,
-    "measured": 299.25,
-    "cents": 32.6
-   },
-   {
-    "line": 2,
-    "start": 12.36,
-    "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
+    "measured": 302.72,
+    "cents": 52.6
    },
    {
     "line": 3,
-    "start": 20.69,
+    "start": 14.87,
+    "expect": 293.7,
+    "measured": 300.98,
+    "cents": 42.6
+   },
+   {
+    "line": 7,
+    "start": 32.53,
+    "expect": 220.0,
+    "measured": 225.48,
+    "cents": 42.6
+   },
+   {
+    "line": 4,
+    "start": 22.76,
     "expect": 329.6,
-    "measured": 333.96,
-    "cents": 22.6
+    "measured": 321.65,
+    "cents": -42.4
+   },
+   {
+    "line": 4,
+    "start": 21.32,
+    "expect": 220.0,
+    "measured": 224.83,
+    "cents": 37.6
    }
   ]
  },
@@ -1428,68 +1455,75 @@
   "notes_total": 60,
   "notes_valid": 60,
   "notes_skipped": 0,
-  "notes_bad": 3,
-  "bad_pct": 5.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 17.9,
+  "notes_bad": 4,
+  "bad_pct": 6.7,
+  "median_abs_cents": 12.6,
+  "p90_abs_cents": 32.6,
   "bad_notes": [
    {
     "line": 5,
-    "start": 24.33,
+    "start": 20.26,
     "expect": 349.2,
-    "measured": 332.03,
-    "cents": -87.4
+    "measured": 335.89,
+    "cents": -67.4
    },
    {
     "line": 5,
-    "start": 25.44,
+    "start": 21.18,
     "expect": 349.2,
-    "measured": 337.84,
-    "cents": -57.4
+    "measured": 328.22,
+    "cents": -107.4
    },
    {
     "line": 7,
-    "start": 35.94,
+    "start": 28.52,
     "expect": 349.2,
-    "measured": 333.96,
-    "cents": -77.4
+    "measured": 278.43,
+    "cents": -392.2
+   },
+   {
+    "line": 7,
+    "start": 29.91,
+    "expect": 349.2,
+    "measured": 333.0,
+    "cents": -82.4
    }
   ],
   "worst": [
    {
-    "line": 5,
-    "start": 24.33,
+    "line": 7,
+    "start": 28.52,
     "expect": 349.2,
-    "measured": 332.03,
-    "cents": -87.4
+    "measured": 278.43,
+    "cents": -392.2
+   },
+   {
+    "line": 5,
+    "start": 21.18,
+    "expect": 349.2,
+    "measured": 328.22,
+    "cents": -107.4
    },
    {
     "line": 7,
-    "start": 35.94,
+    "start": 29.91,
     "expect": 349.2,
-    "measured": 333.96,
-    "cents": -77.4
+    "measured": 333.0,
+    "cents": -82.4
    },
    {
     "line": 5,
-    "start": 25.44,
+    "start": 20.26,
     "expect": 349.2,
-    "measured": 337.84,
-    "cents": -57.4
+    "measured": 335.89,
+    "cents": -67.4
    },
    {
-    "line": 2,
-    "start": 9.69,
-    "expect": 440.0,
-    "measured": 445.78,
-    "cents": 22.6
-   },
-   {
-    "line": 3,
-    "start": 14.38,
-    "expect": 440.0,
-    "measured": 445.78,
-    "cents": 22.6
+    "line": 7,
+    "start": 28.98,
+    "expect": 349.2,
+    "measured": 339.79,
+    "cents": -47.4
    }
   ]
  },
@@ -1499,46 +1533,54 @@
   "notes_total": 70,
   "notes_valid": 70,
   "notes_skipped": 0,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 17.4,
-  "bad_notes": [],
+  "notes_bad": 1,
+  "bad_pct": 1.4,
+  "median_abs_cents": 7.4,
+  "p90_abs_cents": 22.6,
+  "bad_notes": [
+   {
+    "line": 6,
+    "start": 31.65,
+    "expect": 293.7,
+    "measured": 303.6,
+    "cents": 57.6
+   }
+  ],
   "worst": [
    {
-    "line": 2,
-    "start": 13.44,
-    "expect": 329.6,
-    "measured": 324.45,
-    "cents": -27.4
-   },
-   {
-    "line": 2,
-    "start": 12.84,
+    "line": 6,
+    "start": 31.65,
     "expect": 293.7,
-    "measured": 297.52,
-    "cents": 22.6
+    "measured": 303.6,
+    "cents": 57.6
    },
    {
     "line": 3,
-    "start": 22.71,
-    "expect": 329.6,
-    "measured": 333.96,
-    "cents": 22.6
+    "start": 16.48,
+    "expect": 392.0,
+    "measured": 401.76,
+    "cents": 42.6
    },
    {
     "line": 5,
-    "start": 35.85,
+    "start": 29.43,
     "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
+    "measured": 400.6,
+    "cents": 37.6
    },
    {
-    "line": 6,
-    "start": 37.92,
-    "expect": 293.7,
-    "measured": 297.52,
-    "cents": 22.6
+    "line": 4,
+    "start": 21.2,
+    "expect": 392.0,
+    "measured": 399.45,
+    "cents": 32.6
+   },
+   {
+    "line": 5,
+    "start": 26.43,
+    "expect": 392.0,
+    "measured": 399.45,
+    "cents": 32.6
    }
   ]
  },
@@ -1548,53 +1590,45 @@
   "notes_total": 68,
   "notes_valid": 68,
   "notes_skipped": 0,
-  "notes_bad": 1,
-  "bad_pct": 1.5,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 14.0,
-  "bad_notes": [
-   {
-    "line": 3,
-    "start": 17.39,
-    "expect": 293.7,
-    "measured": 280.82,
-    "cents": -77.4
-   }
-  ],
+  "notes_bad": 0,
+  "bad_pct": 0.0,
+  "median_abs_cents": 5.0,
+  "p90_abs_cents": 12.6,
+  "bad_notes": [],
   "worst": [
    {
-    "line": 3,
-    "start": 17.39,
-    "expect": 293.7,
-    "measured": 280.82,
-    "cents": -77.4
+    "line": 0,
+    "start": 0.3,
+    "expect": 329.6,
+    "measured": 336.86,
+    "cents": 37.6
    },
    {
     "line": 7,
-    "start": 46.64,
+    "start": 37.42,
     "expect": 392.0,
     "measured": 399.45,
     "cents": 32.6
    },
    {
-    "line": 3,
-    "start": 18.64,
+    "line": 7,
+    "start": 38.99,
     "expect": 392.0,
-    "measured": 385.84,
-    "cents": -27.4
+    "measured": 399.45,
+    "cents": 32.6
    },
    {
-    "line": 6,
-    "start": 39.49,
-    "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
+    "line": 1,
+    "start": 6.27,
+    "expect": 220.0,
+    "measured": 223.54,
+    "cents": 27.6
    },
    {
     "line": 2,
-    "start": 12.11,
-    "expect": 329.6,
-    "measured": 333.0,
+    "start": 12.25,
+    "expect": 293.7,
+    "measured": 296.67,
     "cents": 17.6
    }
   ]
@@ -1603,55 +1637,47 @@
   "id": "s40",
   "title": "妈妈的吻",
   "notes_total": 50,
-  "notes_valid": 49,
-  "notes_skipped": 1,
-  "notes_bad": 1,
-  "bad_pct": 2.0,
+  "notes_valid": 48,
+  "notes_skipped": 2,
+  "notes_bad": 0,
+  "bad_pct": 0.0,
   "median_abs_cents": 2.6,
   "p90_abs_cents": 12.6,
-  "bad_notes": [
-   {
-    "line": 2,
-    "start": 11.14,
-    "expect": 261.6,
-    "measured": 555.2,
-    "cents": 102.6
-   }
-  ],
+  "bad_notes": [],
   "worst": [
-   {
-    "line": 2,
-    "start": 11.14,
-    "expect": 261.6,
-    "measured": 555.2,
-    "cents": 102.6
-   },
-   {
-    "line": 7,
-    "start": 39.27,
-    "expect": 392.0,
-    "measured": 385.84,
-    "cents": -27.4
-   },
-   {
-    "line": 4,
-    "start": 21.98,
-    "expect": 261.6,
-    "measured": 265.06,
-    "cents": 22.6
-   },
    {
     "line": 0,
     "start": 0.3,
+    "expect": 261.6,
+    "measured": 265.83,
+    "cents": 27.6
+   },
+   {
+    "line": 1,
+    "start": 5.65,
+    "expect": 440.0,
+    "measured": 443.21,
+    "cents": 12.6
+   },
+   {
+    "line": 1,
+    "start": 7.91,
+    "expect": 440.0,
+    "measured": 443.21,
+    "cents": 12.6
+   },
+   {
+    "line": 2,
+    "start": 10.43,
     "expect": 261.6,
     "measured": 263.54,
     "cents": 12.6
    },
    {
-    "line": 5,
-    "start": 30.47,
-    "expect": 392.0,
-    "measured": 394.86,
+    "line": 6,
+    "start": 29.0,
+    "expect": 440.0,
+    "measured": 443.21,
     "cents": 12.6
    }
   ]
@@ -1669,38 +1695,38 @@
   "bad_notes": [],
   "worst": [
    {
-    "line": 3,
-    "start": 20.75,
-    "expect": 440.0,
-    "measured": 448.36,
-    "cents": 32.6
+    "line": 4,
+    "start": 24.74,
+    "expect": 261.6,
+    "measured": 267.37,
+    "cents": 37.6
    },
    {
-    "line": 1,
-    "start": 6.46,
-    "expect": 440.0,
-    "measured": 444.5,
+    "line": 3,
+    "start": 21.22,
+    "expect": 293.7,
+    "measured": 298.38,
+    "cents": 27.6
+   },
+   {
+    "line": 3,
+    "start": 18.49,
+    "expect": 261.6,
+    "measured": 265.06,
+    "cents": 22.6
+   },
+   {
+    "line": 6,
+    "start": 40.5,
+    "expect": 220.0,
+    "measured": 222.25,
     "cents": 17.6
    },
    {
     "line": 4,
-    "start": 29.52,
-    "expect": 261.6,
-    "measured": 264.3,
-    "cents": 17.6
-   },
-   {
-    "line": 6,
-    "start": 44.45,
-    "expect": 261.6,
-    "measured": 259.01,
-    "cents": -17.4
-   },
-   {
-    "line": 7,
-    "start": 51.92,
-    "expect": 392.0,
-    "measured": 388.07,
+    "start": 26.92,
+    "expect": 293.7,
+    "measured": 290.73,
     "cents": -17.4
    }
   ]
@@ -1718,36 +1744,36 @@
   "bad_notes": [],
   "worst": [
    {
-    "line": 3,
-    "start": 20.31,
-    "expect": 392.0,
-    "measured": 401.76,
+    "line": 5,
+    "start": 26.48,
+    "expect": 261.6,
+    "measured": 268.14,
     "cents": 42.6
    },
    {
-    "line": 4,
-    "start": 26.07,
-    "expect": 329.6,
-    "measured": 333.0,
-    "cents": 17.6
+    "line": 3,
+    "start": 16.91,
+    "expect": 392.0,
+    "measured": 397.14,
+    "cents": 22.6
    },
    {
     "line": 4,
-    "start": 28.12,
-    "expect": 293.7,
-    "measured": 290.73,
+    "start": 22.83,
+    "expect": 261.6,
+    "measured": 265.06,
+    "cents": 22.6
+   },
+   {
+    "line": 0,
+    "start": 3.13,
+    "expect": 523.2,
+    "measured": 518.02,
     "cents": -17.4
    },
    {
     "line": 0,
-    "start": 5.07,
-    "expect": 392.0,
-    "measured": 394.86,
-    "cents": 12.6
-   },
-   {
-    "line": 1,
-    "start": 12.88,
+    "start": 1.43,
     "expect": 392.0,
     "measured": 394.86,
     "cents": 12.6
@@ -1760,46 +1786,54 @@
   "notes_total": 59,
   "notes_valid": 57,
   "notes_skipped": 2,
-  "notes_bad": 0,
-  "bad_pct": 0.0,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
-  "bad_notes": [],
+  "notes_bad": 1,
+  "bad_pct": 1.8,
+  "median_abs_cents": 7.6,
+  "p90_abs_cents": 22.6,
+  "bad_notes": [
+   {
+    "line": 5,
+    "start": 27.3,
+    "expect": 261.6,
+    "measured": 245.89,
+    "cents": -107.4
+   }
+  ],
   "worst": [
    {
-    "line": 1,
-    "start": 12.67,
-    "expect": 293.7,
-    "measured": 287.39,
-    "cents": -37.4
-   },
-   {
-    "line": 0,
-    "start": 0.3,
-    "expect": 440.0,
-    "measured": 447.07,
-    "cents": 27.6
+    "line": 5,
+    "start": 27.3,
+    "expect": 261.6,
+    "measured": 245.89,
+    "cents": -107.4
    },
    {
     "line": 5,
-    "start": 34.48,
+    "start": 28.74,
+    "expect": 220.0,
+    "measured": 224.18,
+    "cents": 32.6
+   },
+   {
+    "line": 0,
+    "start": 2.7,
+    "expect": 293.7,
+    "measured": 297.52,
+    "cents": 22.6
+   },
+   {
+    "line": 0,
+    "start": 3.66,
     "expect": 220.0,
     "measured": 222.89,
     "cents": 22.6
    },
    {
     "line": 0,
-    "start": 4.34,
+    "start": 4.14,
     "expect": 220.0,
-    "measured": 222.25,
-    "cents": 17.6
-   },
-   {
-    "line": 0,
-    "start": 1.45,
-    "expect": 440.0,
-    "measured": 443.21,
-    "cents": 12.6
+    "measured": 222.89,
+    "cents": 22.6
    }
   ]
  },
@@ -1811,43 +1845,43 @@
   "notes_skipped": 2,
   "notes_bad": 0,
   "bad_pct": 0.0,
-  "median_abs_cents": 7.4,
+  "median_abs_cents": 12.6,
   "p90_abs_cents": 22.6,
   "bad_notes": [],
   "worst": [
    {
+    "line": 3,
+    "start": 11.08,
+    "expect": 392.0,
+    "measured": 399.45,
+    "cents": 32.6
+   },
+   {
     "line": 5,
-    "start": 25.99,
+    "start": 21.18,
+    "expect": 220.0,
+    "measured": 224.18,
+    "cents": 32.6
+   },
+   {
+    "line": 4,
+    "start": 18.21,
     "expect": 220.0,
     "measured": 223.54,
     "cents": 27.6
    },
    {
-    "line": 1,
-    "start": 4.44,
-    "expect": 392.0,
-    "measured": 397.14,
-    "cents": 22.6
-   },
-   {
-    "line": 1,
-    "start": 7.22,
-    "expect": 329.6,
-    "measured": 333.96,
+    "line": 0,
+    "start": 0.76,
+    "expect": 261.6,
+    "measured": 265.06,
     "cents": 22.6
    },
    {
     "line": 2,
-    "start": 10.24,
-    "expect": 440.0,
-    "measured": 445.78,
-    "cents": 22.6
-   },
-   {
-    "line": 4,
-    "start": 21.3,
-    "expect": 261.6,
-    "measured": 265.06,
+    "start": 9.02,
+    "expect": 329.6,
+    "measured": 333.96,
     "cents": 22.6
    }
   ]
@@ -1861,42 +1895,42 @@
   "notes_bad": 0,
   "bad_pct": 0.0,
   "median_abs_cents": 7.4,
-  "p90_abs_cents": 17.4,
+  "p90_abs_cents": 20.0,
   "bad_notes": [],
   "worst": [
    {
     "line": 5,
-    "start": 32.85,
+    "start": 27.43,
     "expect": 261.6,
     "measured": 267.37,
     "cents": 37.6
    },
    {
-    "line": 0,
-    "start": 3.9,
+    "line": 1,
+    "start": 7.02,
     "expect": 293.7,
-    "measured": 287.39,
-    "cents": -37.4
+    "measured": 299.25,
+    "cents": 32.6
    },
    {
-    "line": 6,
-    "start": 35.52,
+    "line": 2,
+    "start": 9.75,
     "expect": 261.6,
     "measured": 265.83,
     "cents": 27.6
    },
    {
     "line": 1,
-    "start": 6.57,
-    "expect": 329.6,
-    "measured": 333.96,
-    "cents": 22.6
+    "start": 6.02,
+    "expect": 392.0,
+    "measured": 385.84,
+    "cents": -27.4
    },
    {
-    "line": 2,
-    "start": 11.64,
-    "expect": 261.6,
-    "measured": 265.06,
+    "line": 0,
+    "start": 0.3,
+    "expect": 392.0,
+    "measured": 397.14,
     "cents": 22.6
    }
   ]
@@ -1909,52 +1943,52 @@
   "notes_skipped": 0,
   "notes_bad": 1,
   "bad_pct": 1.9,
-  "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
+  "median_abs_cents": 5.0,
+  "p90_abs_cents": 22.6,
   "bad_notes": [
    {
-    "line": 6,
-    "start": 32.06,
-    "expect": 261.6,
-    "measured": 241.66,
-    "cents": -137.4
+    "line": 1,
+    "start": 4.91,
+    "expect": 293.7,
+    "measured": 245.41,
+    "cents": -310.8
    }
   ],
   "worst": [
    {
-    "line": 6,
-    "start": 32.06,
+    "line": 1,
+    "start": 4.91,
+    "expect": 293.7,
+    "measured": 245.41,
+    "cents": -310.8
+   },
+   {
+    "line": 3,
+    "start": 14.13,
     "expect": 261.6,
-    "measured": 241.66,
-    "cents": -137.4
+    "measured": 268.92,
+    "cents": 47.6
    },
    {
-    "line": 0,
-    "start": 0.3,
-    "expect": 392.0,
-    "measured": 398.29,
-    "cents": 27.6
+    "line": 5,
+    "start": 24.98,
+    "expect": 196.0,
+    "measured": 200.88,
+    "cents": 42.6
    },
    {
-    "line": 4,
-    "start": 21.04,
-    "expect": 392.0,
-    "measured": 398.29,
-    "cents": 27.6
+    "line": 3,
+    "start": 13.58,
+    "expect": 261.6,
+    "measured": 257.52,
+    "cents": -27.4
    },
    {
-    "line": 0,
-    "start": 0.95,
-    "expect": 329.6,
-    "measured": 332.03,
-    "cents": 12.6
-   },
-   {
-    "line": 0,
-    "start": 2.91,
-    "expect": 220.0,
-    "measured": 221.61,
-    "cents": 12.6
+    "line": 2,
+    "start": 10.06,
+    "expect": 261.6,
+    "measured": 265.06,
+    "cents": 22.6
    }
   ]
  },
@@ -1967,43 +2001,43 @@
   "notes_bad": 0,
   "bad_pct": 0.0,
   "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
+  "p90_abs_cents": 22.6,
   "bad_notes": [],
   "worst": [
    {
-    "line": 3,
-    "start": 16.22,
+    "line": 2,
+    "start": 8.73,
     "expect": 261.6,
-    "measured": 265.83,
-    "cents": 27.6
+    "measured": 268.14,
+    "cents": 42.6
+   },
+   {
+    "line": 2,
+    "start": 9.3,
+    "expect": 261.6,
+    "measured": 268.14,
+    "cents": 42.6
    },
    {
     "line": 6,
-    "start": 33.5,
+    "start": 27.87,
     "expect": 261.6,
-    "measured": 265.06,
-    "cents": 22.6
+    "measured": 268.14,
+    "cents": 42.6
    },
    {
     "line": 1,
-    "start": 5.38,
-    "expect": 329.6,
-    "measured": 326.33,
-    "cents": -17.4
-   },
-   {
-    "line": 1,
-    "start": 8.11,
+    "start": 6.78,
     "expect": 392.0,
-    "measured": 388.07,
-    "cents": -17.4
+    "measured": 399.45,
+    "cents": 32.6
    },
    {
-    "line": 4,
-    "start": 21.98,
+    "line": 0,
+    "start": 0.3,
     "expect": 329.6,
-    "measured": 326.33,
-    "cents": -17.4
+    "measured": 333.96,
+    "cents": 22.6
    }
   ]
  },
@@ -2016,43 +2050,43 @@
   "notes_bad": 0,
   "bad_pct": 0.0,
   "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
+  "p90_abs_cents": 16.9,
   "bad_notes": [],
   "worst": [
    {
     "line": 6,
-    "start": 31.41,
+    "start": 26.32,
     "expect": 329.6,
-    "measured": 333.96,
+    "measured": 336.86,
+    "cents": 37.6
+   },
+   {
+    "line": 7,
+    "start": 30.38,
+    "expect": 293.7,
+    "measured": 299.25,
+    "cents": 32.6
+   },
+   {
+    "line": 0,
+    "start": 1.94,
+    "expect": 261.6,
+    "measured": 265.06,
     "cents": 22.6
    },
    {
     "line": 1,
-    "start": 5.81,
+    "start": 4.91,
     "expect": 220.0,
-    "measured": 222.25,
-    "cents": 17.6
-   },
-   {
-    "line": 4,
-    "start": 21.04,
-    "expect": 392.0,
-    "measured": 388.07,
-    "cents": -17.4
+    "measured": 222.89,
+    "cents": 22.6
    },
    {
     "line": 0,
-    "start": 1.6,
+    "start": 1.39,
     "expect": 261.6,
-    "measured": 263.54,
-    "cents": 12.6
-   },
-   {
-    "line": 5,
-    "start": 27.85,
-    "expect": 220.0,
-    "measured": 221.61,
-    "cents": 12.6
+    "measured": 264.3,
+    "cents": 17.6
    }
   ]
  },
@@ -2065,43 +2099,43 @@
   "notes_bad": 0,
   "bad_pct": 0.0,
   "median_abs_cents": 2.6,
-  "p90_abs_cents": 12.6,
+  "p90_abs_cents": 22.6,
   "bad_notes": [],
   "worst": [
+   {
+    "line": 4,
+    "start": 21.59,
+    "expect": 440.0,
+    "measured": 450.96,
+    "cents": 42.6
+   },
    {
     "line": 0,
     "start": 0.3,
     "expect": 329.6,
-    "measured": 333.96,
-    "cents": 22.6
-   },
-   {
-    "line": 1,
-    "start": 6.83,
-    "expect": 261.6,
-    "measured": 265.06,
-    "cents": 22.6
-   },
-   {
-    "line": 3,
-    "start": 18.02,
-    "expect": 261.6,
-    "measured": 265.06,
-    "cents": 22.6
+    "measured": 336.86,
+    "cents": 37.6
    },
    {
     "line": 5,
-    "start": 30.46,
+    "start": 25.47,
     "expect": 329.6,
-    "measured": 333.96,
-    "cents": 22.6
+    "measured": 336.86,
+    "cents": 37.6
    },
    {
-    "line": 4,
-    "start": 25.8,
-    "expect": 440.0,
-    "measured": 443.21,
-    "cents": 12.6
+    "line": 2,
+    "start": 10.68,
+    "expect": 329.6,
+    "measured": 335.89,
+    "cents": 32.6
+   },
+   {
+    "line": 3,
+    "start": 15.09,
+    "expect": 261.6,
+    "measured": 266.6,
+    "cents": 32.6
    }
   ]
  }

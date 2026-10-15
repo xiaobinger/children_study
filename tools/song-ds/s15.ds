@@ -3,34 +3,34 @@
   "offset": 0.3,
   "text": "小水滴天上落",
   "note_seq": "E4 F4 G4 G4 F4 E4",
-  "note_dur": "0.681818 0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_dur": "0.566038 0.566038 0.566038 0.566038 0.566038 1.132075",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/sh zh/ui zh/d zh/i zh/t zh/ian zh/sh zh/ang zh/l zh/uo",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 5.379545,
+  "offset": 4.516981,
   "text": "落在田野里",
   "note_seq": "D4 E4 F4 D4 C4",
-  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_dur": "0.566038 0.566038 0.566038 0.566038 1.132075",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/l zh/uo zh/z zh/ai zh/t zh/ian zh/y zh/ie zh/l zh/i",
   "ph_num": "2 2 2 2 2"
  },
  {
-  "offset": 9.777273,
+  "offset": 8.167925,
   "text": "禾苗喝饱水",
   "note_seq": "E4 F4 G4 F4 E4",
-  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_dur": "0.566038 0.566038 0.566038 0.566038 1.132075",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/h zh/e zh/m zh/iao zh/h zh/e zh/b zh/ao zh/sh zh/ui",
   "ph_num": "2 2 2 2 2"
  },
  {
-  "offset": 14.175,
+  "offset": 11.818868,
   "text": "长大结硕果",
   "note_seq": "D4 E4 F4 D4 C4",
-  "note_dur": "0.681818 0.681818 0.681818 0.681818 1.363636",
+  "note_dur": "0.566038 0.566038 0.566038 0.566038 1.132075",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/ch zh/ang zh/d zh/a zh/j zh/ie zh/sh zh/uo zh/g zh/uo",
   "ph_num": "2 2 2 2 2"

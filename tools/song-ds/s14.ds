@@ -3,34 +3,34 @@
   "offset": 0.3,
   "text": "小闹钟嘀嘀嗒",
   "note_seq": "C4 D4 E4 F4 G4 G4",
-  "note_dur": "0.535714 0.535714 0.535714 0.535714 0.535714 1.071429",
+  "note_dur": "0.447761 0.447761 0.447761 0.447761 0.447761 0.895522",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/n zh/ao zh/zh zh/ong zh/d zh/i zh/d zh/i zh/d zh/a",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 4.291071,
+  "offset": 3.635821,
   "text": "催我快起早",
   "note_seq": "G4 F4 E4 D4 C4",
-  "note_dur": "0.535714 0.535714 0.535714 0.535714 1.071429",
+  "note_dur": "0.447761 0.447761 0.447761 0.447761 0.895522",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/c zh/ui zh/w zh/uo zh/k zh/uai zh/q zh/i zh/z zh/ao",
   "ph_num": "2 2 2 2 2"
  },
  {
-  "offset": 7.746429,
+  "offset": 6.523881,
   "text": "嘀嘀嗒嘀嘀嗒",
   "note_seq": "C4 D4 E4 F4 G4 G4",
-  "note_dur": "0.535714 0.535714 0.535714 0.535714 0.535714 1.071429",
+  "note_dur": "0.447761 0.447761 0.447761 0.447761 0.447761 0.895522",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/d zh/i zh/d zh/i zh/d zh/a zh/d zh/i zh/d zh/i zh/d zh/a",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 11.7375,
+  "offset": 9.859701,
   "text": "我是守时好宝宝",
   "note_seq": "G4 G4 F4 E4 D4 D4 C4",
-  "note_dur": "0.535714 0.535714 0.535714 0.535714 0.535714 0.535714 1.071429",
+  "note_dur": "0.447761 0.447761 0.447761 0.447761 0.447761 0.447761 0.895522",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/w zh/uo zh/sh zh/ir zh/sh zh/ou zh/sh zh/ir zh/h zh/ao zh/b zh/ao zh/b zh/ao",
   "ph_num": "2 2 2 2 2 2 2"

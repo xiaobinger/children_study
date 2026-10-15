@@ -3,34 +3,34 @@
   "offset": 0.3,
   "text": "小猫咪喵喵喵",
   "note_seq": "C4 C4 D4 D4 E4 E4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/m zh/ao zh/m zh/i zh/m zh/iao zh/m zh/iao zh/m zh/iao",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 4.77,
+  "offset": 4.025,
   "text": "走起路来静悄悄",
   "note_seq": "G4 G4 F4 F4 E4 E4 D4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/z zh/ou zh/q zh/i zh/l zh/u zh/l zh/ai zh/j zh/ing zh/q zh/iao zh/q zh/iao",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 9.84,
+  "offset": 8.25,
   "text": "看见老鼠捉住它",
   "note_seq": "C4 C4 D4 D4 E4 E4 F4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/k zh/an zh/j zh/ian zh/l zh/ao zh/sh zh/u zh/zh zh/uo zh/zh zh/u zh/t zh/a",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 14.91,
+  "offset": 12.475,
   "text": "喵呜喵呜吃个饱",
   "note_seq": "G4 G4 F4 F4 E4 D4 C4",
-  "note_dur": "0.6 0.6 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.5 0.5 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/m zh/iao zh/w zh/u zh/m zh/iao zh/w zh/u zh/ch zh/ir zh/g zh/e zh/b zh/ao",
   "ph_num": "2 2 2 2 2 2 2"

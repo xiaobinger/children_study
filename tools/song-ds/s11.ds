@@ -3,34 +3,34 @@
   "offset": 0.3,
   "text": "小鸭子一身黄",
   "note_seq": "C4 C4 C4 D4 E4 E4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/y zh/ia zh/z zh/i0 zh/y zh/i zh/sh zh/en zh/h zh/uang",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 4.598077,
+  "offset": 3.876,
   "text": "扁扁嘴巴红脚掌",
   "note_seq": "G4 G4 G4 A4 G4 F4 E4 D4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 1 0 0 0 0 0 0",
   "ph_seq": "zh/b zh/ian zh/b zh/ian zh/z zh/ui zh/b zh/a zh/h zh/ong zh/j zh/iao zh/zh zh/ang",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 10.05,
+  "offset": 8.412,
   "text": "嘎嘎嘎嘎高声唱",
   "note_seq": "E4 E4 E4 E4 D4 D4 D4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/g zh/a zh/g zh/a zh/g zh/a zh/g zh/a zh/g zh/ao zh/sh zh/eng zh/ch zh/ang",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 14.925,
+  "offset": 12.468,
   "text": "摇摇摆摆下池塘",
   "note_seq": "C4 C4 C4 C4 G3 G3 C4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/y zh/iao zh/y zh/iao zh/b zh/ai zh/b zh/ai zh/x zh/ia zh/ch zh/ir zh/t zh/ang",
   "ph_num": "2 2 2 2 2 2 2"

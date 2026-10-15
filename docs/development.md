@@ -134,8 +134,9 @@ js/data/songs.js (melody)
 - **环境**：必须用 Python 3.10（依赖在 `tools/pylibs310`）+ `PYTHONUTF8=1`（GBK 会读崩声库 character.txt）；默认 `python` 是 3.14 会挂 numpy
 - **声库**：`tools/qixuan_vb/`（绮萱 v2.7.0 + PC-NSF-HiFiGAN，开源童声，零版权风险）；pylibs310/qixuan_vb 等已入 .gitignore，需自行下载
 - **编号**：音频文件用三位数 `sNNN`（index 字段），voice-map 键为 `song:<id>:v/a`
-- **质量参数**：44.1kHz、128kbps、steps=64；单首 45-145s，建议 3-5 首一批后台渲染
-- **校验标准**：逐音符 15%-75% 时长窗取基频中位数，八度折叠到 ±600¢，50¢ 阈值；当前 40 首 27 首零超阈、其余仅个别瞬态偏差（≤6.5%）
+- **质量参数**：44.1kHz、128kbps、steps=64；单首 30-150s，建议 3-5 首一批后台渲染
+- **校验标准**：逐音符 15%-75% 时长窗取基频中位数，八度折叠到 ±600¢，50¢ 阈值；当前 40 首（v1.6.1 提速版）21 首零超阈、其余仅个别瞬态偏差
+- **改 BPM 后流程**：改 `songs.js` → `node tools/export-song-tasks.js` → `python tools/song2ds.py` → 分批 `gen-song-svs.py --force` → `verify-song-pitch.py` 全量复验；BPM 变更音调不变（时长按拍数缩放），但需重渲染音频
 
 ## 已知限制
 

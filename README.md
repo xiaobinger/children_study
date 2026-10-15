@@ -5,7 +5,7 @@
 ![年龄](https://img.shields.io/badge/年龄-3--12岁-blue)
 ![技术](https://img.shields.io/badge/技术-原生HTML%2FCSS%2FJS-green)
 ![依赖](https://img.shields.io/badge/依赖-零-orange)
-![版本](https://img.shields.io/badge/版本-v1.6.0-purple)
+![版本](https://img.shields.io/badge/版本-v1.6.1-purple)
 
 ---
 
@@ -241,6 +241,15 @@ children_study/
 ---
 
 ## 📦 版本升级明细
+
+### v1.6.1（2026-10-15）儿歌曲速提升至正常范围
+
+- **全 40 首 BPM +20%**（`js/data/songs.js`）：原 80-116 拍/分整体提升到 96-139（如小星星 84→101、两只老虎 116→139、小兔子乖乖 92→110），演唱语速回归正常儿歌速度；音调完全不变，KTV 逐字高亮自动同步
+- **全量重渲染**：40 首按新 BPM 重新渲染绮萱童声 + 伴奏双轨；s28 采样偏差返工后达标
+- **音调复验**（`tools/song-pitch-report.json`）：21 首零超阈、19 首仅个别瞬态偏差、0 首需返工，偏差中位数 ≤10¢
+- **实测**：小星星（30.1s）6 行歌词高亮切换实测与理论时间误差 ≤23ms
+
+---
 
 ### v1.6.0（2026-10-12）电视大屏适配 + 儿歌真实童声重制
 

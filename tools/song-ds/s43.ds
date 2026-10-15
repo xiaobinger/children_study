@@ -3,52 +3,52 @@
   "offset": 0.3,
   "text": "小二郎背着书包上学堂",
   "note_seq": "A4 A4 A4 A4 E4 D4 C4 A3 A3 C4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 0 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/er zh/l zh/ang zh/b zh/ei zh/zh zh/e zh/sh zh/u zh/b zh/ao zh/sh zh/ang zh/x zh/ve zh/t zh/ang",
   "ph_num": "2 1 2 2 2 2 2 2 2 2"
  },
  {
-  "offset": 6.905769,
+  "offset": 5.796,
   "text": "不怕太阳晒也不怕那风雨狂",
   "note_seq": "E4 E4 D4 E4 E4 D4 C4 A3 A3 C4 D4 E4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 0 0 0 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/b zh/u zh/p zh/a zh/t zh/ai zh/y zh/iang zh/sh zh/ai zh/y zh/ie zh/b zh/u zh/p zh/a zh/n zh/a zh/f zh/eng zh/y0 zh/v zh/k zh/uang",
   "ph_num": "2 2 2 2 2 2 2 2 2 2 2 2"
  },
  {
-  "offset": 14.665385,
+  "offset": 12.252,
   "text": "只怕先生骂我懒呀",
   "note_seq": "A4 A4 A4 A4 E4 D4 C4 A3 A3",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 1 0 0 0 0 0 0 0",
   "ph_seq": "zh/zh zh/ir zh/p zh/a zh/x zh/ian zh/sh zh/eng zh/m zh/a zh/w zh/uo zh/l zh/an zh/y zh/ia",
   "ph_num": "2 2 2 2 2 2 2 2"
  },
  {
-  "offset": 20.694231,
+  "offset": 17.268,
   "text": "没有学问无颜见爹娘",
   "note_seq": "C4 A3 A3 A3 A3 C4 D4 E4 D4 C4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 1 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/m zh/ei zh/y zh/iu zh/x zh/ve zh/w zh/un zh/w zh/u zh/y zh/ian zh/j zh/ian zh/d zh/ie zh/n zh/iang",
   "ph_num": "2 2 2 2 2 2 2 2 2"
  },
  {
-  "offset": 27.3,
+  "offset": 22.764,
   "text": "叮叮咯咚咯咣咣",
   "note_seq": "G4 G4 E4 E4 D4 D4 C4 C4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 1 0 0 0 0 0 0",
   "ph_seq": "zh/d zh/ing zh/d zh/ing zh/g zh/e zh/d zh/ong zh/g zh/e zh/g zh/uang zh/g zh/uang",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 32.751923,
+  "offset": 27.3,
   "text": "没有学问无颜见爹娘",
   "note_seq": "C4 A3 A3 A3 A3 C4 D4 E4 D4 C4",
-  "note_dur": "0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 0.576923 1.153846",
+  "note_dur": "0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.48 0.96",
   "note_slur": "0 1 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/m zh/ei zh/y zh/iu zh/x zh/ve zh/w zh/un zh/w zh/u zh/y zh/ian zh/j zh/ian zh/d zh/ie zh/n zh/iang",
   "ph_num": "2 2 2 2 2 2 2 2 2"

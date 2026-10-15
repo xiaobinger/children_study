@@ -3,34 +3,34 @@
   "offset": 0.3,
   "text": "小羊咩咩叫",
   "note_seq": "C4 D4 E4 G4 G4",
-  "note_dur": "0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/y zh/iang zh/m zh/ie zh/m zh/ie zh/j zh/iao",
   "ph_num": "2 2 2 2 2"
  },
  {
-  "offset": 4.33125,
+  "offset": 3.665217,
   "text": "青草吃得饱",
   "note_seq": "G4 F4 E4 D4 C4",
-  "note_dur": "0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/q zh/ing zh/c zh/ao zh/ch zh/ir zh/d zh/e zh/b zh/ao",
   "ph_num": "2 2 2 2 2"
  },
  {
-  "offset": 8.3625,
+  "offset": 7.030435,
   "text": "白白羊毛软",
   "note_seq": "E4 E4 F4 G4 G4",
-  "note_dur": "0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/b zh/ai zh/b zh/ai zh/y zh/iang zh/m zh/ao zh/r zh/uan",
   "ph_num": "2 2 2 2 2"
  },
  {
-  "offset": 12.39375,
+  "offset": 10.395652,
   "text": "冬天穿得暖",
   "note_seq": "G4 F4 E4 D4 C4",
-  "note_dur": "0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0",
   "ph_seq": "zh/d zh/ong zh/t zh/ian zh/ch zh/uan zh/d zh/e zh/n zh/uan",
   "ph_num": "2 2 2 2 2"

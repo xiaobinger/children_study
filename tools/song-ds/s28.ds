@@ -3,34 +3,34 @@
   "offset": 0.3,
   "text": "小毛炉呜呜叫",
   "note_seq": "C4 D4 E4 F4 G4 G4",
-  "note_dur": "0.517241 0.517241 0.517241 0.517241 0.517241 1.034483",
+  "note_dur": "0.431655 0.431655 0.431655 0.431655 0.431655 0.863309",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/m zh/ao zh/l zh/u zh/w zh/u zh/w zh/u zh/j zh/iao",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 4.153448,
+  "offset": 3.515827,
   "text": "呜呜呜呜向前跑",
   "note_seq": "G4 G4 F4 E4 D4 D4 C4",
-  "note_dur": "0.517241 0.517241 0.517241 0.517241 0.517241 0.517241 1.034483",
+  "note_dur": "0.431655 0.431655 0.431655 0.431655 0.431655 0.431655 0.863309",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/w zh/u zh/w zh/u zh/w zh/u zh/w zh/u zh/x zh/iang zh/q zh/ian zh/p zh/ao",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 8.524138,
+  "offset": 7.163309,
   "text": "钻山洞过大桥",
   "note_seq": "E4 E4 F4 F4 G4 G4",
-  "note_dur": "0.517241 0.517241 0.517241 0.517241 0.517241 1.034483",
+  "note_dur": "0.431655 0.431655 0.431655 0.431655 0.431655 0.863309",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/z zh/uan zh/sh zh/an zh/d zh/ong zh/g zh/uo zh/d zh/a zh/q zh/iao",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 12.377586,
+  "offset": 10.379137,
   "text": "呜到站了",
   "note_seq": "G4 E4 D4 C4",
-  "note_dur": "1.034483 0.517241 0.517241 1.034483",
+  "note_dur": "0.863309 0.431655 0.431655 0.863309",
   "note_slur": "0 0 0 0",
   "ph_seq": "zh/w zh/u zh/d zh/ao zh/zh zh/an zh/l zh/e",
   "ph_num": "2 2 2 2"

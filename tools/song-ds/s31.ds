@@ -3,52 +3,52 @@
   "offset": 0.3,
   "text": "让我们荡起双桨",
   "note_seq": "C4 D4 E4 G4 A4 G4 E4",
-  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/r zh/ang zh/w zh/uo zh/m zh/en zh/d zh/ang zh/q zh/i zh/sh zh/uang zh/j zh/iang",
   "ph_num": "2 2 2 2 2 2 2"
  },
  {
-  "offset": 5.58125,
+  "offset": 4.708696,
   "text": "小船儿推开波浪",
   "note_seq": "D4 F4 A4 G4 E4 C4 D4",
-  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/ch zh/uan zh/er zh/t zh/ui zh/k zh/ai zh/b zh/uo zh/l zh/ang",
   "ph_num": "2 2 1 2 2 2 2"
  },
  {
-  "offset": 10.8625,
+  "offset": 9.117391,
   "text": "海面倒映着美丽的白塔",
   "note_seq": "E4 E4 C4 C4 A3 A3 A3 G3 A3 C4",
-  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/h zh/ai zh/m zh/ian zh/d zh/ao zh/y zh/ing zh/zh zh/e zh/m zh/ei zh/l zh/i zh/d zh/e zh/b zh/ai zh/t zh/a",
   "ph_num": "2 2 2 2 2 2 2 2 2 2"
  },
  {
-  "offset": 18.01875,
+  "offset": 15.091304,
   "text": "四周环绕着绿树红墙",
   "note_seq": "D4 D4 B3 B3 G3 G3 A3 B3 C4",
-  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/s zh/i0 zh/zh zh/ou zh/h zh/uan zh/r zh/ao zh/zh zh/e zh/l zh/v zh/sh zh/u zh/h zh/ong zh/q zh/iang",
   "ph_num": "2 2 2 2 2 2 2 2 2"
  },
  {
-  "offset": 24.55,
+  "offset": 20.543478,
   "text": "小船儿轻轻飘荡在水中",
   "note_seq": "C4 D4 E4 G4 A4 G4 E4 D4 E4 D4",
-  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/x zh/iao zh/ch zh/uan zh/er zh/q zh/ing zh/q zh/ing zh/p zh/iao zh/d zh/ang zh/z zh/ai zh/sh zh/ui zh/zh zh/ong",
   "ph_num": "2 2 1 2 2 2 2 2 2 2"
  },
  {
-  "offset": 31.70625,
+  "offset": 26.517391,
   "text": "迎面吹来了凉爽的风",
   "note_seq": "G3 A3 C4 D4 E4 D4 C4 A3 C4",
-  "note_dur": "0.625 0.625 0.625 0.625 0.625 0.625 0.625 0.625 1.25",
+  "note_dur": "0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 1.043478",
   "note_slur": "0 0 0 0 0 0 0 0 0",
   "ph_seq": "zh/y zh/ing zh/m zh/ian zh/ch zh/ui zh/l zh/ai zh/l zh/e zh/l zh/iang zh/sh zh/uang zh/d zh/e zh/f zh/eng",
   "ph_num": "2 2 2 2 2 2 2 2 2"

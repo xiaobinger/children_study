@@ -3,34 +3,34 @@
   "offset": 0.3,
   "text": "祝你生日快乐",
   "note_seq": "G4 G4 A4 G4 C5 B4",
-  "note_dur": "0.3 0.3 0.6 0.6 0.6 1.2",
+  "note_dur": "0.25 0.25 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/zh zh/u zh/n zh/i zh/sh zh/eng zh/r zh/ir zh/k zh/uai zh/l zh/e",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 4.17,
+  "offset": 3.525,
   "text": "祝你生日快乐",
   "note_seq": "G4 G4 A4 G4 D5 C5",
-  "note_dur": "0.3 0.3 0.6 0.6 0.6 1.2",
+  "note_dur": "0.25 0.25 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/zh zh/u zh/n zh/i zh/sh zh/eng zh/r zh/ir zh/k zh/uai zh/l zh/e",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 8.04,
+  "offset": 6.75,
   "text": "祝你生日快乐",
   "note_seq": "G4 G4 G5 E5 C5 B4 A4",
-  "note_dur": "0.3 0.3 0.6 0.6 0.6 0.6 1.2",
+  "note_dur": "0.25 0.25 0.5 0.5 0.5 0.5 1.0",
   "note_slur": "0 1 0 0 0 0 0",
   "ph_seq": "zh/zh zh/u zh/n zh/i zh/sh zh/eng zh/r zh/ir zh/k zh/uai zh/l zh/e",
   "ph_num": "2 2 2 2 2 2"
  },
  {
-  "offset": 12.51,
+  "offset": 10.475,
   "text": "祝你生日快乐",
   "note_seq": "F4 F4 E5 C5 D5 C5",
-  "note_dur": "0.3 0.3 0.6 0.6 0.6 1.2",
+  "note_dur": "0.25 0.25 0.5 0.5 0.5 1.0",
   "note_slur": "0 0 0 0 0 0",
   "ph_seq": "zh/zh zh/u zh/n zh/i zh/sh zh/eng zh/r zh/ir zh/k zh/uai zh/l zh/e",
   "ph_num": "2 2 2 2 2 2"
